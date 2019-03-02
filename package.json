@@ -4,6 +4,7 @@
   "description": "Personal page for posting and curriculum",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Joao Menighin",
