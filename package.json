@@ -1,0 +1,14 @@
+{
+  "name": "menighin-dev",
+  "version": "0.0.1",
+  "description": "Personal page for posting and curriculum",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joao Menighin",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
