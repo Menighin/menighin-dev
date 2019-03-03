@@ -1,10 +1,10 @@
 {
-  "name": "wat2",
+  "name": "menighin-dev",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "heroku-prebuild": "vue-cli-service build",
+    "heroku-postbuild": "vue-cli-service build",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
