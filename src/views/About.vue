@@ -4,9 +4,12 @@
 
 			<change-grid :layout="layout" />
 
+			<step :component="Test" :props="{msg: 'WAT'}" :target="4" />
+
 			<change-grid :layout="layout2" />
 
 			<change-grid :layout="layout3" />
+
 
 		</interactivue>
 	</div>
@@ -16,15 +19,20 @@
 
 import Interactivue from '@/components/interactivue/Interactivue';
 import ChangeGrid from '@/components/interactivue/ChangeGrid';
+import Step from '@/components/interactivue/Step';
+import Test from './Test';
 
 export default {
 	name: 'about',
 	components: {
 		Interactivue,
-		ChangeGrid
+		ChangeGrid,
+		Step,
+		Test
 	},
 	data() {
 		return {
+			Test: Test,
 			layout: [
 				[1, 1, 2],
 				[3, 4, 2],

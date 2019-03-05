@@ -13,7 +13,9 @@
                 transition: all ${gridTransitionTime}ms;`">
 
             <div class="content" :style="`background-color: ${colors[i]};`">
-                {{ item }}
+                <transition name="fade">
+                    <component v-if="gridContent[item.id]" :is="gridContent[item.id].component" v-bind="gridContent[item.id].props" />
+                </transition>
             </div>
 
         </div>
@@ -24,8 +26,14 @@
 
 <script>
 
+const ACTIONS = {
+    Show: 'show'
+};
+export { ACTIONS };
+
 const COMPONENTS = {
-    ChangeGrid: 'ChangeGrid'
+    ChangeGrid: 'ChangeGrid',
+    Step: 'Step'
 };
 
 export default {
@@ -44,6 +52,7 @@ export default {
         return {
             grid: [],
             steps: [],
+            gridContent: {},
             currentStep: null,
             width: 0,
             height: 0,
@@ -55,8 +64,10 @@ export default {
     watch: {
         currentStep(stepNumber) {
             const step = this.steps[stepNumber];
-            if (step.component === COMPONENTS.ChangeGrid) {
+            if (step.type === COMPONENTS.ChangeGrid) {
                 this.calculateGrid(step);
+            } else if (step.type === COMPONENTS.Step) {
+                this.handleStep(step);
             }
         }
     },
@@ -72,7 +83,7 @@ export default {
 
             // Removing deleted items from grid
             for (let i = 0; i < this.grid.length; i++)
-                if (!ids[this.grid[i].id]) 
+                if (!ids[this.grid[i].id])
                     this.grid.splice(i--, 1);
 
 
@@ -114,6 +125,12 @@ export default {
                     }
                 }
             }
+        },
+        handleStep(step) {
+            this.$set(this.gridContent, step.target, {
+                component: step.component,
+                props: step.props
+            });
         }
     },
     created() {
@@ -123,14 +140,20 @@ export default {
         this.width = this.$parent.$el.clientWidth;
         this.height = this.$parent.$el.clientHeight;
 
-
-
         // Generating steps
         this.$children.forEach(c => {
             if (c.$options.name === COMPONENTS.ChangeGrid) {
                 this.steps.push({
-                    component: COMPONENTS.ChangeGrid,
+                    type: COMPONENTS.ChangeGrid,
                     layout: c.layout
+                });
+            } else if (c.$options.name === COMPONENTS.Step) {
+                this.steps.push({
+                    type: COMPONENTS.Step,
+                    component: c.component,
+                    target: c.target,
+                    props: c.props,
+                    action: c.action
                 });
             }
         });
@@ -157,6 +180,13 @@ export default {
         }
 
     }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active em versões anteriores a 2.1.8 */ {
+  opacity: 0;
 }
 
 </style>
