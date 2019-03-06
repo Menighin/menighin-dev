@@ -4,9 +4,17 @@
 
 			<change-grid :layout="layout" />
 
-			<step :component="Test" :props="{msg: 'WAT'}" :target="4" />
+			<step :component="Test" :action="Actions.SHOW" :props="{msg: 'WAT1'}" :target="4" />
+
+			<step :component="Test" :action="Actions.SHOW" :props="{msg: 'WAT2'}" :target="5" :trigger="Triggers.WITH_PREVIOUS"  />
+
+			<step :component="Test" :action="Actions.SHOW" :props="{msg: 'WAT3'}" :target="1" :trigger="Triggers.AFTER_PREVIOUS" />
+
+			<step :action="Actions.HIDE" :target="1" />
 
 			<change-grid :layout="layout2" />
+
+			<step :component="Test" :action="Actions.SHOW" :props="{msg: 'WAT3'}" :target="1" :trigger="Triggers.AFTER_PREVIOUS" />
 
 			<change-grid :layout="layout3" />
 
@@ -21,6 +29,7 @@ import Interactivue from '@/components/interactivue/Interactivue';
 import ChangeGrid from '@/components/interactivue/ChangeGrid';
 import Step from '@/components/interactivue/Step';
 import Test from './Test';
+import { Actions, Triggers, Components } from '@/components/interactivue/Constants';
 
 export default {
 	name: 'about',
@@ -32,6 +41,9 @@ export default {
 	},
 	data() {
 		return {
+			Actions,
+			Triggers,
+			Components,
 			Test: Test,
 			layout: [
 				[1, 1, 2],
@@ -56,7 +68,7 @@ export default {
 <style>
 
 .about {
-	min-height: 1000px;
+	min-height: 600px;
 }
 
 </style>

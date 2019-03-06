@@ -13,7 +13,7 @@
                 transition: all ${gridTransitionTime}ms;`">
 
             <div class="content" :style="`background-color: ${colors[i]};`">
-                <transition name="fade">
+                <transition name="fade" @after-enter="afterAnimation" @after-leave="afterAnimation">
                     <component v-if="gridContent[item.id]" :is="gridContent[item.id].component" v-bind="gridContent[item.id].props" />
                 </transition>
             </div>
@@ -26,15 +26,8 @@
 
 <script>
 
-const ACTIONS = {
-    Show: 'show'
-};
-export { ACTIONS };
-
-const COMPONENTS = {
-    ChangeGrid: 'ChangeGrid',
-    Step: 'Step'
-};
+import { Actions, Triggers, Components } from './Constants';
+import { setTimeout } from 'timers';
 
 export default {
     name: 'Interactivue',
@@ -64,11 +57,18 @@ export default {
     watch: {
         currentStep(stepNumber) {
             const step = this.steps[stepNumber];
-            if (step.type === COMPONENTS.ChangeGrid) {
+            const nextStep = this.steps[stepNumber + 1];
+
+            if (step.type === Components.CHANGE_GRID) {
                 this.calculateGrid(step);
-            } else if (step.type === COMPONENTS.Step) {
+                if (nextStep.trigger === Triggers.AFTER_PREVIOUS)
+                    this.timeout = setTimeout(this.afterAnimation, this.gridTransitionTime);
+            } else if (step.type === Components.STEP) {
                 this.handleStep(step);
             }
+
+            if (nextStep.trigger === Triggers.WITH_PREVIOUS)
+                this.currentStep++;
         }
     },
     methods: {
@@ -127,10 +127,20 @@ export default {
             }
         },
         handleStep(step) {
-            this.$set(this.gridContent, step.target, {
-                component: step.component,
-                props: step.props
-            });
+            if (step.action === Actions.SHOW) {
+                this.$set(this.gridContent, step.target, {
+                    component: step.component,
+                    props: step.props
+                });
+            } else if (step.action === Actions.HIDE) {
+                this.$set(this.gridContent, step.target, undefined);
+            }
+        },
+        afterAnimation() {
+            // Checking for next step
+            const nextStep = this.steps[this.currentStep + 1];
+            if (nextStep && nextStep.trigger === Triggers.AFTER_PREVIOUS)
+                this.currentStep++;
         }
     },
     created() {
@@ -142,18 +152,19 @@ export default {
 
         // Generating steps
         this.$children.forEach(c => {
-            if (c.$options.name === COMPONENTS.ChangeGrid) {
+            if (c.$options.name === Components.CHANGE_GRID) {
                 this.steps.push({
-                    type: COMPONENTS.ChangeGrid,
+                    type: Components.CHANGE_GRID,
                     layout: c.layout
                 });
-            } else if (c.$options.name === COMPONENTS.Step) {
+            } else if (c.$options.name === Components.STEP) {
                 this.steps.push({
-                    type: COMPONENTS.Step,
+                    type: Components.STEP,
                     component: c.component,
                     target: c.target,
                     props: c.props,
-                    action: c.action
+                    action: c.action,
+                    trigger: c.trigger
                 });
             }
         });

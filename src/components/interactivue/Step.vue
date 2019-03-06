@@ -4,11 +4,14 @@
 </template>
 
 <script>
+
+import { Actions, Triggers, Components } from './Constants';
+
 export default {
-    name: 'Step',
+    name: Components.STEP,
     props: {
         component: {
-            required: true,
+            default: () => null,
             type: Object
         },
         target: {
@@ -20,9 +23,13 @@ export default {
             type: Object
         },
         action: {
-            default: 'show',
+            default: Actions.SHOW,
             type: String
         },
+        trigger: {
+            default: Triggers.ON_INTERACT,
+            type: String
+        }
     }
 }
 </script>
