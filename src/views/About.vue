@@ -12,7 +12,7 @@
 
 			<step :action="Actions.HIDE" :target="1" />
 
-			<change-grid :layout="layout2" />
+			<change-grid :layout="layout2" :trigger="Triggers.AFTER_PREVIOUS" />
 
 			<step :component="Test" :action="Actions.SHOW" :props="{msg: 'WAT3'}" :target="1" :trigger="Triggers.AFTER_PREVIOUS" />
 

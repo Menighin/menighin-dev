@@ -61,13 +61,13 @@ export default {
 
             if (step.type === Components.CHANGE_GRID) {
                 this.calculateGrid(step);
-                if (nextStep.trigger === Triggers.AFTER_PREVIOUS)
+                if (nextStep && nextStep.trigger === Triggers.AFTER_PREVIOUS)
                     this.timeout = setTimeout(this.afterAnimation, this.gridTransitionTime);
             } else if (step.type === Components.STEP) {
                 this.handleStep(step);
             }
 
-            if (nextStep.trigger === Triggers.WITH_PREVIOUS)
+            if (nextStep && nextStep.trigger === Triggers.WITH_PREVIOUS)
                 this.currentStep++;
         }
     },
@@ -155,7 +155,8 @@ export default {
             if (c.$options.name === Components.CHANGE_GRID) {
                 this.steps.push({
                     type: Components.CHANGE_GRID,
-                    layout: c.layout
+                    layout: c.layout,
+                    trigger: c.trigger
                 });
             } else if (c.$options.name === Components.STEP) {
                 this.steps.push({

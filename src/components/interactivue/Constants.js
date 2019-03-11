@@ -10,6 +10,7 @@ export const Triggers = Object.freeze({
 });
 
 export const Components = Object.freeze({
+    INTERACTIVUE: 'Interactivue',
     CHANGE_GRID: 'ChangeGrid',
     STEP: 'Step'
 });
