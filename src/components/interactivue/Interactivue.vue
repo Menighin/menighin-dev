@@ -13,7 +13,7 @@
                 transition: all ${gridTransitionTime}ms;`">
 
             <div class="content" :style="`background-color: ${colors[i]};`">
-                <transition name="fade" @after-enter="afterAnimation" @after-leave="afterAnimation">
+                <transition :name="gridContent[item.id] ? gridContent[item.id].animation : 'slide-left'" @after-enter="afterAnimation" @after-leave="afterAnimation">
                     <component v-if="gridContent[item.id]" :is="gridContent[item.id].component" v-bind="gridContent[item.id].props" />
                 </transition>
             </div>
@@ -57,8 +57,8 @@ export default {
     watch: {
         currentStep(stepNumber) {
             const step = this.steps[stepNumber];
-            const nextStep = this.steps[stepNumber + 1];
-
+			const nextStep = this.steps[stepNumber + 1];
+			
             if (step.type === Components.CHANGE_GRID) {
                 this.calculateGrid(step);
                 if (nextStep && nextStep.trigger === Triggers.AFTER_PREVIOUS)
@@ -130,11 +130,12 @@ export default {
             if (step.action === Actions.SHOW) {
                 this.$set(this.gridContent, step.target, {
                     component: step.component,
-                    props: step.props
+					props: step.props,
+					animation: step.animation
                 });
             } else if (step.action === Actions.HIDE) {
                 this.$set(this.gridContent, step.target, undefined);
-            }
+			}
         },
         afterAnimation() {
             // Checking for next step
@@ -165,11 +166,11 @@ export default {
                     target: c.target,
                     props: c.props,
                     action: c.action,
-                    trigger: c.trigger
+					trigger: c.trigger,
+					animation: c.animation
                 });
             }
         });
-
         // Triggers computed property
         this.currentStep = 0;
     }
@@ -199,6 +200,13 @@ export default {
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active em versões anteriores a 2.1.8 */ {
   opacity: 0;
+}
+
+.slide-left-enter-active, .slide-left-leave-active {
+  transition: all .5s;
+}
+.slide-left-enter, .slide-left-leave-to /* .fade-leave-active em versões anteriores a 2.1.8 */ {
+  transform: rotate(90deg);
 }
 
 </style>

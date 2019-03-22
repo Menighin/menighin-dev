@@ -5,7 +5,7 @@
 
 <script>
 
-import { Actions, Triggers, Components } from './Constants';
+import { Actions, Triggers, Components, Animations } from './Constants';
 
 export default {
     name: Components.STEP,
@@ -29,7 +29,11 @@ export default {
         trigger: {
             default: Triggers.ON_INTERACT,
             type: String
-        }
+		},
+		animation: {
+			default: Animations.FADE,
+			type: String
+		}
     },
     mounted() {
         if (this.$parent.$options.name != Components.INTERACTIVUE)

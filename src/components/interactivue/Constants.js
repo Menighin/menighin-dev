@@ -14,3 +14,8 @@ export const Components = Object.freeze({
     CHANGE_GRID: 'ChangeGrid',
     STEP: 'Step'
 });
+
+export const Animations = Object.freeze({
+    FADE: 'fade',
+    SLIDE_LEFT: 'slide-left'
+});
