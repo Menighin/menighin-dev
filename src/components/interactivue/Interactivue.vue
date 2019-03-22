@@ -14,7 +14,7 @@
 
             <div class="content" :style="`background-color: ${colors[i]};`">
                 <transition :name="gridContent[item.id] ? gridContent[item.id].animation : 'slide-left'" @after-enter="afterAnimation" @after-leave="afterAnimation">
-                    <component v-if="gridContent[item.id]" :is="gridContent[item.id].component" v-bind="gridContent[item.id].props" />
+                    <component :ref="`item-${item.id}`" v-if="gridContent[item.id]" :is="gridContent[item.id].component" v-bind="gridContent[item.id].props" />
                 </transition>
             </div>
 
@@ -135,6 +135,8 @@ export default {
                 });
             } else if (step.action === Actions.HIDE) {
                 this.$set(this.gridContent, step.target, undefined);
+			} else if (step.action === Actions.METHOD) {
+                this.$refs[`item-${step.target}`][0][step.method]();
 			}
         },
         afterAnimation() {
@@ -167,7 +169,8 @@ export default {
                     props: c.props,
                     action: c.action,
 					trigger: c.trigger,
-					animation: c.animation
+					animation: c.animation,
+					method: c.method
                 });
             }
         });
@@ -179,8 +182,10 @@ export default {
 
 <style scoped lang="scss">
 
+@import './scss/animations.scss';
+
 .interactivue {
-    position: relative;
+	position: relative;
 
     .grid-item {
         position: absolute;
@@ -193,20 +198,6 @@ export default {
         }
 
     }
-}
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active em versões anteriores a 2.1.8 */ {
-  opacity: 0;
-}
-
-.slide-left-enter-active, .slide-left-leave-active {
-  transition: all .5s;
-}
-.slide-left-enter, .slide-left-leave-to /* .fade-leave-active em versões anteriores a 2.1.8 */ {
-  transform: rotate(90deg);
 }
 
 </style>

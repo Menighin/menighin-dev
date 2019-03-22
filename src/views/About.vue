@@ -8,6 +8,8 @@
 
 			<step :component="Test" :action="Actions.SHOW" :props="{msg: 'WAT2'}" :target="5" :trigger="Triggers.WITH_PREVIOUS"  />
 
+			<step :component="Test" method="sayHi" :action="Actions.METHOD" :props="{msg: 'WAT2'}" :target="4" />
+
 			<step :component="Test" :action="Actions.SHOW" :props="{msg: 'WAT3'}" :target="1" :animation="Animations.SLIDE_LEFT" :trigger="Triggers.AFTER_PREVIOUS" />
 
 			<step :action="Actions.HIDE" :target="1" />

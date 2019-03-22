@@ -33,6 +33,10 @@ export default {
 		animation: {
 			default: Animations.FADE,
 			type: String
+		},
+		method: {
+			default: null,
+			type: String
 		}
     },
     mounted() {

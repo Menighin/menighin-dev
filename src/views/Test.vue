@@ -2,7 +2,7 @@
     <div>
         <br>
         <br>
-        <h1>{{msg}}</h1>
+        <h1>{{msg}} {{testProp}}</h1>
     </div>
 </template>
 
@@ -11,7 +11,17 @@ export default {
     name: 'Test',
     props: {
         msg: {type: String, required: true}
-    }
+	},
+	data() {
+		return {
+			testProp: ''
+		}
+	},
+	methods: {
+		sayHi() {
+			this.testProp = 'said it!';
+		}
+	}
 }
 </script>
 
