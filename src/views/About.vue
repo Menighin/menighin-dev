@@ -4,7 +4,7 @@
 
 			<change-grid :layout="layout" />
 
-			<step :component="Test" :action="Actions.SHOW" :props="{msg: 'WAT1'}" :target="4"/>
+			<step :component="Profile" :action="Actions.SHOW" :props="{msg: 'WAT1'}" :target="4"/>
 
 			<step :component="Test" :action="Actions.SHOW" :props="{msg: 'WAT2'}" :target="5" :trigger="Triggers.WITH_PREVIOUS"  />
 
@@ -30,6 +30,7 @@
 import Interactivue from '@/components/interactivue/Interactivue';
 import ChangeGrid from '@/components/interactivue/ChangeGrid';
 import Step from '@/components/interactivue/Step';
+import Profile from '@/components/resume/Profile';
 import Test from './Test';
 import { Actions, Triggers, Components, Animations } from '@/components/interactivue/Constants';
 
@@ -39,6 +40,7 @@ export default {
 		Interactivue,
 		ChangeGrid,
 		Step,
+		Profile,
 		Test
 	},
 	data() {
@@ -48,6 +50,7 @@ export default {
 			Components,
 			Animations,
 			Test: Test,
+			Profile: Profile,
 			layout: [
 				[1, 1, 2],
 				[3, 4, 2],
