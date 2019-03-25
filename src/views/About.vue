@@ -1,12 +1,12 @@
 <template>
 	<div class="about">
-		<interactivue :layout="layout">
+		<interactivue>
 
 			<change-grid :layout="layout" />
 
-			<step :component="Profile" :action="Actions.SHOW" :props="{msg: 'WAT1'}" :target="4"/>
+			<step :component="Profile" :action="Actions.SHOW" :target="1"/>
 
-			<step :component="Test" :action="Actions.SHOW" :props="{msg: 'WAT2'}" :target="5" :trigger="Triggers.WITH_PREVIOUS"  />
+			<!-- <step :component="Test" :action="Actions.SHOW" :props="{msg: 'WAT2'}" :target="5" :trigger="Triggers.WITH_PREVIOUS"  />
 
 			<step :component="Test" method="sayHi" :action="Actions.METHOD" :props="{msg: 'WAT2'}" :target="4" />
 
@@ -18,7 +18,7 @@
 
 			<step :component="Test" :action="Actions.SHOW" :props="{msg: 'WAT3'}" :target="1" :animation="Animations.SLIDE_LEFT"  :trigger="Triggers.AFTER_PREVIOUS" />
 
-			<change-grid :layout="layout3" />
+			<change-grid :layout="layout3" /> -->
 
 
 		</interactivue>
@@ -52,9 +52,12 @@ export default {
 			Test: Test,
 			Profile: Profile,
 			layout: [
-				[1, 1, 2],
-				[3, 4, 2],
-				[5, 5, 2]
+				[1, 1, 2, 2],
+				[1, 1, 2, 2],
+				[1, 1, 2, 2],
+				[1, 1, 2, 2],
+				[3, 3, 4, 4],
+				[3, 3, 4, 4],
 			],
 			layout2: [
 				[1, 1, 1],
@@ -74,7 +77,7 @@ export default {
 <style>
 
 .about {
-	min-height: 600px;
+	min-height: 800px;
 }
 
 </style>

@@ -193,8 +193,10 @@ export default {
         box-sizing: border-box;
 
         .content {
+			position: relative;
             width: 100%;
             height: 100%;
+			overflow: auto;
         }
 
     }
