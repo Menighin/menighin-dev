@@ -4,7 +4,13 @@
 
 			<change-grid :layout="layout" />
 
-			<step :component="Profile" :action="Actions.SHOW" :target="1"/>
+			<step :component="Profile" :action="Actions.SHOW" :target="1" :trigger="Triggers.AFTER_PREVIOUS"/>
+
+			<step method="toggleShowName" :action="Actions.METHOD" :target="1" :trigger="Triggers.AFTER_PREVIOUS" />
+
+			<step method="toggleShowInfo" :action="Actions.METHOD" :target="1" :trigger="Triggers.AFTER_PREVIOUS" />
+
+			<change-grid :layout="layout2" :trigger="Triggers.AFTER_PREVIOUS" />
 
 			<!-- <step :component="Test" :action="Actions.SHOW" :props="{msg: 'WAT2'}" :target="5" :trigger="Triggers.WITH_PREVIOUS"  />
 
@@ -52,17 +58,12 @@ export default {
 			Test: Test,
 			Profile: Profile,
 			layout: [
-				[1, 1, 2, 2],
-				[1, 1, 2, 2],
-				[1, 1, 2, 2],
-				[1, 1, 2, 2],
-				[3, 3, 4, 4],
-				[3, 3, 4, 4],
+				[1]
 			],
 			layout2: [
-				[1, 1, 1],
-				[3, 4, 2],
-				[5, 5, 5]
+				[1, 2, 2, 2],
+				[1, 2, 2, 2],
+				[1, 2, 2, 2]
 			],
 			layout3: [
 				[1, 1, 1],

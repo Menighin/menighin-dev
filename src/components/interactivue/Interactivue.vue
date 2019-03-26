@@ -12,7 +12,7 @@
                 padding: ${gridPadding}px;
                 transition: all ${gridTransitionTime}ms;`">
 
-            <div class="content" :style="`background-color: ${colors[i]};`">
+            <div class="content" :style="debug ? `background-color: ${colors[i]};` : ''">
                 <transition :name="gridContent[item.id] ? gridContent[item.id].animation : 'slide-left'" @after-enter="afterAnimation" @after-leave="afterAnimation">
                     <component :ref="`item-${item.id}`" v-if="gridContent[item.id]" :is="gridContent[item.id].component" v-bind="gridContent[item.id].props" />
                 </transition>
@@ -43,6 +43,7 @@ export default {
     },
     data() {
         return {
+			debug: false,
             grid: [],
             steps: [],
             gridContent: {},
@@ -51,7 +52,7 @@ export default {
             height: 0,
             stepWidth: 0,
             stepHeight: 0,
-            colors: ['red', 'blue', 'green', 'pink', 'yellow', 'purple', 'grey']
+            colors: ['#eee', '#ddd', '#ccc', '#bbb', '#aaa', 'purple', 'grey']
         };
     },
     watch: {
