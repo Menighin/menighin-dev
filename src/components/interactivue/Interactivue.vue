@@ -137,7 +137,7 @@ export default {
             } else if (step.action === Actions.HIDE) {
                 this.$set(this.gridContent, step.target, undefined);
 			} else if (step.action === Actions.METHOD) {
-                this.$refs[`item-${step.target}`][0][step.method]();
+                this.$refs[`item-${step.target}`][0][step.method](this.afterAnimation);
 			}
         },
         afterAnimation() {
@@ -163,6 +163,8 @@ export default {
                     trigger: c.trigger
                 });
             } else if (c.$options.name === Components.STEP) {
+				c.$on('wat', function() { alert('waaaat'); });
+
                 this.steps.push({
                     type: Components.STEP,
                     component: c.component,

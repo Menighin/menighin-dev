@@ -4,13 +4,16 @@
 			<img alt="Joao Menighin profile picture" src="../../assets/menighin.jpg">
 		</div>
 		<div class="profile-info">
-			<h2 v-show="showName" class="name">João Menighin, {{ age }}</h2>
-			<ul v-if="showInfo" class="info">
-				<li><font-awesome-icon icon="envelope" /> joao.menighin@gmail.com</li>
-				<li><font-awesome-icon icon="map-marker" /> Belo Horizonte, Brasil</li>
-				<li><font-awesome-icon :icon="['fab', 'github']" /> Menighin</li>
-			</ul>
-
+			<transition name="slide-right">
+				<h2 v-if="showName" class="name">João Menighin, {{ age }}</h2>
+			</transition>
+			<transition name="slide-right">
+				<ul v-if="showInfo" class="info">
+					<li><font-awesome-icon icon="envelope" /> joao.menighin@gmail.com</li>
+					<li><font-awesome-icon icon="map-marker" /> Belo Horizonte, Brasil</li>
+					<li><font-awesome-icon :icon="['fab', 'github']" /> Menighin</li>
+				</ul>
+			</transition>
 		</div>
 	</div>
 </template>
@@ -24,8 +27,14 @@ export default {
 		}
 	},
 	methods: {
-		toggleShowName() { this.showName = !this.showName },
-		toggleShowInfo() { this.showInfo = !this.showInfo }
+		toggleShowName(callback) { 
+			this.showName = !this.showName;
+			setTimeout(callback, 500);
+		},
+		toggleShowInfo(callback) { 
+			this.showInfo = !this.showInfo;
+			setTimeout(callback, 500);
+		}
 	},
 	computed: {
 		age() {
@@ -36,6 +45,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+	@import '../interactivue/scss/animations.scss';	
 
 	.profile {
 

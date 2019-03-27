@@ -12,6 +12,10 @@
 
 			<change-grid :layout="layout2" :trigger="Triggers.AFTER_PREVIOUS" />
 
+			<step :component="Formation" :action="Actions.SHOW" :target="2" :trigger="Triggers.AFTER_PREVIOUS"/>
+
+			<change-grid :layout="layout3" :trigger="Triggers.AFTER_PREVIOUS" />
+
 			<!-- <step :component="Test" :action="Actions.SHOW" :props="{msg: 'WAT2'}" :target="5" :trigger="Triggers.WITH_PREVIOUS"  />
 
 			<step :component="Test" method="sayHi" :action="Actions.METHOD" :props="{msg: 'WAT2'}" :target="4" />
@@ -37,6 +41,7 @@ import Interactivue from '@/components/interactivue/Interactivue';
 import ChangeGrid from '@/components/interactivue/ChangeGrid';
 import Step from '@/components/interactivue/Step';
 import Profile from '@/components/resume/Profile';
+import Formation from '@/components/resume/Formation';
 import Test from './Test';
 import { Actions, Triggers, Components, Animations } from '@/components/interactivue/Constants';
 
@@ -47,6 +52,7 @@ export default {
 		ChangeGrid,
 		Step,
 		Profile,
+		Formation,
 		Test
 	},
 	data() {
@@ -57,18 +63,21 @@ export default {
 			Animations,
 			Test: Test,
 			Profile: Profile,
+			Formation: Formation,
 			layout: [
 				[1]
 			],
 			layout2: [
 				[1, 2, 2, 2],
 				[1, 2, 2, 2],
+				[1, 2, 2, 2],
 				[1, 2, 2, 2]
 			],
 			layout3: [
-				[1, 1, 1],
-				[3, 4, 4],
-				[5, 5, 5]
+				[1, 2, 2, 2],
+				[1, 3, 3, 3],
+				[1, 3, 3, 3],
+				[1, 3, 3, 3]
 			],
 		};
 	}
