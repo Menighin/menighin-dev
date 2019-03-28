@@ -4,8 +4,9 @@
 			<img alt="Joao Menighin profile picture" src="../../assets/menighin.jpg">
 		</div>
 		<div class="profile-info">
-			<transition name="slide-right">
-				<h2 v-if="showName" class="name">João Menighin, {{ age }}</h2>
+			<transition name="slide-right" mode="out-in">
+				<h2 v-if="showQuestion" class="name" key="question">Who am I?</h2>
+				<h2 v-else-if="showName" class="name" key="name">João Menighin, {{ age }}</h2>
 			</transition>
 			<transition name="slide-right">
 				<ul v-if="showInfo" class="info">
@@ -23,17 +24,23 @@ export default {
 	data() {
 		return {
 			showName: false,
-			showInfo: false
+			showInfo: false,
+			showQuestion: false
 		}
 	},
 	methods: {
-		toggleShowName(callback) { 
+		toggleShowQuestion(callback) { 
+			this.showQuestion = !this.showQuestion;
+			setTimeout(callback, 2000);
+		},
+		toggleShowName(callback) {
+			this.showQuestion = false;
 			this.showName = !this.showName;
-			setTimeout(callback, 500);
+			setTimeout(callback, 2000);
 		},
 		toggleShowInfo(callback) { 
 			this.showInfo = !this.showInfo;
-			setTimeout(callback, 500);
+			setTimeout(callback, 2000);
 		}
 	},
 	computed: {
@@ -68,6 +75,11 @@ export default {
 			position: absolute;
 			width: 100%;
 			text-align: center;
+
+			.name {
+				display: inline-block;
+				margin: 0 auto;
+			}
 
 			.info {
 				list-style: none;

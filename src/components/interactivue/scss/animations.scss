@@ -168,3 +168,20 @@ $translate-amount: 100px;
 	transform: translateY($translate-amount);
 	opacity: 0;
 }
+
+
+/* grow-shrink */
+.grow-shrink-enter-active, .grow-shrink-leave-active {
+	transition: all $transition-time;
+}
+.grow-shrink-enter {
+	transform: scale(0);
+}
+
+.grow-shrink-enter-to, .grow-shrink-leave {
+	transform: scale(1);
+}
+
+.grow-shrink-leave-to {
+	transform: scale(0);
+}

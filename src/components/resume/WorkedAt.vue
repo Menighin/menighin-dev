@@ -23,8 +23,8 @@
 						<img alt="U Porto Logo" src="../../assets/uporto.jpg">
 					</div>
 					<div class="info">
-						<div class="course">Masters in Computer Engineering</div>
-						<div class="issuer">Universidade do Porto / Portugal (sandwich) </div>
+						<div class="course">Masters in Computer Engineering (part)</div>
+						<div class="issuer">Universidade do Porto / Portugal</div>
 						<div class="period">2012-2013</div>
 					</div>
 				</div>
@@ -48,7 +48,7 @@ export default {
 		},
 		toggleUp(callback) {
 			this.showUp = !this.showUp;
-			setTimeout(callback, 2000);
+			setTimeout(callback, 1000);
 		}
 	}
 }

@@ -6,6 +6,8 @@
 
 			<step :component="Profile" :action="Actions.SHOW" :target="1" :trigger="Triggers.AFTER_PREVIOUS"/>
 
+			<step method="toggleShowQuestion" :action="Actions.METHOD" :target="1" :trigger="Triggers.AFTER_PREVIOUS" />
+
 			<step method="toggleShowName" :action="Actions.METHOD" :target="1" :trigger="Triggers.AFTER_PREVIOUS" />
 
 			<step method="toggleShowInfo" :action="Actions.METHOD" :target="1" :trigger="Triggers.AFTER_PREVIOUS" />
@@ -14,21 +16,11 @@
 
 			<step :component="Formation" :action="Actions.SHOW" :target="2" :trigger="Triggers.AFTER_PREVIOUS"/>
 
+			<step method="toggleUfv" :action="Actions.METHOD" :target="2" :trigger="Triggers.AFTER_PREVIOUS" />
+
+			<step method="toggleUp" :action="Actions.METHOD" :target="2" :trigger="Triggers.AFTER_PREVIOUS" />
+
 			<change-grid :layout="layout3" :trigger="Triggers.AFTER_PREVIOUS" />
-
-			<!-- <step :component="Test" :action="Actions.SHOW" :props="{msg: 'WAT2'}" :target="5" :trigger="Triggers.WITH_PREVIOUS"  />
-
-			<step :component="Test" method="sayHi" :action="Actions.METHOD" :props="{msg: 'WAT2'}" :target="4" />
-
-			<step :component="Test" :action="Actions.SHOW" :props="{msg: 'WAT3'}" :target="1" :animation="Animations.SLIDE_LEFT" :trigger="Triggers.AFTER_PREVIOUS" />
-
-			<step :action="Actions.HIDE" :target="1" />
-
-			<change-grid :layout="layout2" :trigger="Triggers.AFTER_PREVIOUS" />
-
-			<step :component="Test" :action="Actions.SHOW" :props="{msg: 'WAT3'}" :target="1" :animation="Animations.SLIDE_LEFT"  :trigger="Triggers.AFTER_PREVIOUS" />
-
-			<change-grid :layout="layout3" /> -->
 
 
 		</interactivue>
