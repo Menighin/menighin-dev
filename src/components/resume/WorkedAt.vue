@@ -1,16 +1,16 @@
 <template>
-	<div class="formation">
+	<div class="worked-at">
 		
 		<div class="item">
 			<transition name="grow-shrink">
-				<div class="content" v-if="showUfv">
+				<div class="content" v-if="showGapso">
 					<div class="logo">
-						<img alt="UFV Logo" src="../../assets/ufv.png">
+						<img alt="Gapso Logo" src="../../assets/gapso.png">
 					</div>
 					<div class="info">
-						<div class="course">Computer Science</div>
-						<div class="issuer">Universidade Federal de Viçosa / Brazil</div>
-						<div class="period">2010-2015</div>
+						<div class="course">Software Developer</div>
+						<div class="issuer">Gapso Analytics</div>
+						<div class="period">2013-2015</div>
 					</div>
 				</div>
 			</transition>
@@ -18,14 +18,14 @@
 		
 		<div class="item">
 			<transition name="grow-shrink">
-				<div class="content" v-if="showUp">
+				<div class="content" v-if="showAccenture">
 					<div class="logo">
-						<img alt="U Porto Logo" src="../../assets/uporto.jpg">
+						<img alt="Accenture Logo" src="../../assets/accenture.png">
 					</div>
 					<div class="info">
-						<div class="course">Masters in Computer Engineering (part)</div>
-						<div class="issuer">Universidade do Porto / Portugal</div>
-						<div class="period">2012-2013</div>
+						<div class="course">IT Consultant</div>
+						<div class="issuer">Accenture Digital</div>
+						<div class="period">2015-Now</div>
 					</div>
 				</div>
 			</transition>
@@ -37,17 +37,17 @@
 export default {
 	data() {
 		return {
-			showUfv: false,
-			showUp: false
+			showGapso: false,
+			showAccenture: false
 		}
 	},
 	methods: {
-		toggleUfv(callback) {
-			this.showUfv = !this.showUfv;
+		toggleGapso(callback) {
+			this.showGapso = !this.showGapso;
 			setTimeout(callback, 500);
 		},
-		toggleUp(callback) {
-			this.showUp = !this.showUp;
+		toggleAccenture(callback) {
+			this.showAccenture = !this.showAccenture;
 			setTimeout(callback, 1000);
 		}
 	}
@@ -58,9 +58,10 @@ export default {
 
 	@import '../interactivue/scss/animations.scss';	
 
-	.formation {
+	.worked-at {
 		display: flex;
 		align-items: center;
+		overflow: hidden;
 		height: 100%;
 
 		.item {

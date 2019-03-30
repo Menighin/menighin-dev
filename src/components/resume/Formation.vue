@@ -62,6 +62,7 @@ export default {
 		display: flex;
 		align-items: center;
 		height: 100%;
+		overflow: hidden;
 
 		.item {
 			flex: 1;
