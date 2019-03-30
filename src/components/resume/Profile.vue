@@ -61,6 +61,7 @@ export default {
 		width: 100%;
 		top: 50%;
 		transform: translateY(-70%);
+		text-align: center;
 
 		.profile-picture {
 			img {

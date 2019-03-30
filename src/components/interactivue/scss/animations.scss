@@ -2,8 +2,8 @@ $transition-time: .5s;
 $translate-amount: 100px;
 
 /* fade */
-.fade-enter-active, .fade-leave-active {
-	transition: opacity $transition-time;
+.fade-enter-active, .fade-leave-active, .fade-move {
+	transition: all $transition-time;
 }
 .fade-enter, .fade-leave-to {
   opacity: 0;

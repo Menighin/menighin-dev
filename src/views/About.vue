@@ -39,7 +39,6 @@ import WorkedAt from '@/components/resume/WorkedAt';
 import TechStack from '@/components/resume/TechStack';
 import Test from './Test';
 import { Actions, Triggers, Components, Animations } from '@/components/interactivue/Constants';
-import TechStackVue from '../components/resume/TechStack.vue';
 
 export default {
 	name: 'about',
@@ -68,28 +67,28 @@ export default {
 				[1]
 			],
 			layout2: [
-				[1, 2, 2, 2],
-				[1, 2, 2, 2],
-				[1, 2, 2, 2],
-				[1, 2, 2, 2],
-				[1, 2, 2, 2],
-				[1, 2, 2, 2],
+				[1, 2, 2, 2, 2],
+				[1, 2, 2, 2, 2],
+				[1, 2, 2, 2, 2],
+				[1, 2, 2, 2, 2],
+				[1, 2, 2, 2, 2],
+				[1, 2, 2, 2, 2],
 			],
 			layout3: [
-				[1, 2, 2, 2],
-				[1, 3, 3, 3],
-				[1, 3, 3, 3],
-				[1, 3, 3, 3],
-				[1, 3, 3, 3],
-				[1, 3, 3, 3],
+				[1, 2, 2, 2, 2],
+				[1, 3, 3, 3, 3],
+				[1, 3, 3, 3, 3],
+				[1, 3, 3, 3, 3],
+				[1, 3, 3, 3, 3],
+				[1, 3, 3, 3, 3],
 			],
 			layout4: [
-				[1, 2, 2, 2],
-				[1, 3, 3, 3],
-				[1, 4, 4, 4],
-				[1, 4, 4, 4],
-				[1, 4, 4, 4],
-				[1, 4, 4, 4],
+				[1, 2, 2, 2, 2],
+				[1, 3, 3, 3, 3],
+				[1, 4, 4, 5, 5],
+				[1, 4, 4, 5, 5],
+				[1, 4, 4, 5, 5],
+				[1, 4, 4, 5, 5],
 			],
 		};
 	}

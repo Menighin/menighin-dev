@@ -1,6 +1,6 @@
 <template>
 	<div class="love-rating">
-		<svg v-for="(h, i) in hearts" :key="`h-${i}`"
+		<svg v-for="(h, i) in hearts" :key="`h-${i}`" class="heart"
 			:width="size" :height="size" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<defs>
 				<clipPath id="heart">
@@ -62,5 +62,7 @@ export default {
 </script>
 
 <style>
-
+	.heart {
+		padding: 0 5px;
+	}
 </style>
