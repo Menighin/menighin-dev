@@ -3,7 +3,7 @@
 
 <script>
 
-import { Actions, Triggers, Components } from './Constants';
+import { Triggers, Components } from './Constants';
 
 export default {
     name: 'ChangeGrid',
@@ -12,7 +12,7 @@ export default {
             required: true,
             type: Array
         },
-        trigger: {
+        trigger: { 
             default: Triggers.ON_INTERACT,
             type: String
         }

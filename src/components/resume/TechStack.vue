@@ -1,10 +1,13 @@
 <template>
-	<div class="tech-stack">
-		<h2>Tech Love Stack</h2>
-		<select v-model="filter">
-			<option v-for="(o, i) in filterOptions" :key="`o-${i}`" :value="o.value">{{ o.name }}</option>
-		</select>
-		<table>
+	<div class="tech-stack" ref="tech-stack-root">
+		<div class="header">
+			<h2>Tech Love Stack</h2>
+			<select v-model="filter">
+				<option v-for="(o, i) in filterOptions" :key="`o-${i}`" :value="o.value">{{ o.name }}</option>
+			</select>
+		</div>
+		<div style="clear: both;"></div>
+		<table ref="tech-stack-table">
 			<transition-group name="fade" tag="tbody">
 				<tr v-for="t in techStackFiltered" :key="t.name">
 					<td class="name">{{ t.name }}</td>
@@ -138,6 +141,10 @@ export default {
 			]
 		}
 	},
+	mounted() {
+		const height = this.$refs['tech-stack-root'].clientHeight;
+		this.$refs['tech-stack-table'].style.height = `${height - 50}px`;
+	},
 	computed: {
 		techStackFiltered() {
 			return this.techStack
@@ -175,9 +182,44 @@ export default {
 	}
 
 	.tech-stack {
-		padding: 20px;
+		padding: 20px 0 20px 20px;
+		overflow: hidden;
+
+		.header {
+			h2 {
+				float: left;
+				padding: 0;
+				margin: 0;
+			}
+			select {
+				float: right;
+				padding: 5px;
+			}
+		}
 
 		table {
+
+			height: 300px;
+			display: block;
+			overflow-y: scroll;
+			margin-top: 15px;
+
+			&::-webkit-scrollbar {
+				width: 5px;
+			}
+
+			&::-webkit-scrollbar-track {
+				background: #f1f1f1; 
+			}
+			
+			&::-webkit-scrollbar-thumb {
+				background: #ccc; 
+			}
+
+			&::-webkit-scrollbar-thumb:hover {
+				background: #555; 
+			}
+
 			tr {
 				transition: all 1s;
 
