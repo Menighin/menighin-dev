@@ -47,8 +47,8 @@ export default {
 					value: 'framework-front'
 				},
 				{
-					name: 'Languages',
-					value: 'lang'
+					name: 'Databases',
+					value: 'database'
 				}
 			],
 			techStack: [
@@ -64,7 +64,7 @@ export default {
 				},
 				{
 					name: 'Java',
-					love: 4.5,
+					love: 3.5,
 					type: 'lang'
 				},
 				{
@@ -118,6 +118,11 @@ export default {
 					type: 'framework-back'
 				},
 				{
+					name: 'Express',
+					love: 4.5,
+					type: 'framework-back'
+				},
+				{
 					name: 'Django',
 					love: 2.0,
 					type: 'framework-back'
@@ -136,6 +141,37 @@ export default {
 					name: 'React',
 					love: 2.0,
 					type: 'framework-front'
+				},
+				{
+					name: 'Electron',
+					love: 5.0,
+					type: 'framework-front'
+				},
+
+				{
+					name: 'MongoDB',
+					love: 5.0,
+					type: 'database'
+				},
+				{
+					name: 'MySQL',
+					love: 5.0,
+					type: 'database'
+				},
+				{
+					name: 'SQL Server',
+					love: 5.0,
+					type: 'database'
+				},
+				{
+					name: 'PostgreSQL',
+					love: 4.0,
+					type: 'database'
+				},
+				{
+					name: 'Oracle 12c',
+					love: 2.0,
+					type: 'database'
 				},
 
 			]

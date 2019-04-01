@@ -10,9 +10,11 @@
 			</transition>
 			<transition name="slide-right">
 				<ul v-if="showInfo" class="info">
-					<li><font-awesome-icon icon="envelope" /> joao.menighin@gmail.com</li>
 					<li><font-awesome-icon icon="map-marker" /> Belo Horizonte, Brasil</li>
-					<li><font-awesome-icon :icon="['fab', 'github']" /> Menighin</li>
+					<li>
+						<a href="mailto:joao.menighin@gmail.com"><font-awesome-icon icon="envelope" /></a> 
+						<a href="https://github.com/Menighin"><font-awesome-icon :icon="['fab', 'github']" /></a>
+					</li>
 				</ul>
 			</transition>
 		</div>

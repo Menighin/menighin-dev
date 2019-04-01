@@ -37,7 +37,6 @@ import Profile from '@/components/resume/Profile';
 import Formation from '@/components/resume/Formation';
 import WorkedAt from '@/components/resume/WorkedAt';
 import TechStack from '@/components/resume/TechStack';
-import Test from './Test';
 import { Actions, Triggers, Components, Animations } from '@/components/interactivue/Constants';
 
 export default {
@@ -49,8 +48,7 @@ export default {
 		Profile,
 		Formation,
 		WorkedAt,
-		TechStack,
-		Test
+		TechStack
 	},
 	data() {
 		return {
@@ -58,7 +56,6 @@ export default {
 			Triggers,
 			Components,
 			Animations,
-			Test: Test,
 			Profile: Profile,
 			Formation: Formation,
 			WorkedAt: WorkedAt,
