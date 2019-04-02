@@ -5,7 +5,7 @@
 			<transition name="grow-shrink">
 				<div class="content" v-if="showUfv">
 					<div class="logo">
-						<img alt="UFV Logo" src="../../assets/ufv.png">
+						<img alt="UFV Logo" src="../../assets/imgs/ufv.png">
 					</div>
 					<div class="info">
 						<div class="course">Computer Science</div>
@@ -20,7 +20,7 @@
 			<transition name="grow-shrink">
 				<div class="content" v-if="showUp">
 					<div class="logo">
-						<img alt="U Porto Logo" src="../../assets/uporto.jpg">
+						<img alt="U Porto Logo" src="../../assets/imgs/uporto.jpg">
 					</div>
 					<div class="info">
 						<div class="course">Masters in Computer Engineering</div>

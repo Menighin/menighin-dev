@@ -1,7 +1,7 @@
 <template>
 	<div class="profile">
 		<div class="profile-picture">
-			<img alt="Joao Menighin profile picture" src="../../assets/menighin.jpg">
+			<img alt="Joao Menighin profile picture" src="../../assets/imgs/menighin.jpg">
 		</div>
 		<div class="profile-info">
 			<transition name="slide-right" mode="out-in">

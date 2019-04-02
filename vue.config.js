@@ -1,18 +1,14 @@
 const path = require('path')
 
 module.exports = {
-  chainWebpack: config => {
-    const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
-    types.forEach(type => addStyleResource(config.module.rule('scss').oneOf(type)))
-  },
-}
-
-function addStyleResource (rule) {
-  rule.use('style-resource')
-    .loader('style-resources-loader')
-    .options({
-      patterns: [
-        path.resolve(__dirname, './src/scss/main.scss'),
-      ],
-    })
+	css: {
+		loaderOptions: {
+			// pass options to sass-loader
+			sass: {
+				// @/ is an alias to src/
+				// so this assumes you have a file named `src/variables.scss`
+				data: `@import "@/scss/main.scss";`
+			}
+		}
+	}
 }

@@ -5,7 +5,7 @@
 			<transition name="grow-shrink">
 				<div class="content" v-if="showGapso">
 					<div class="logo">
-						<img alt="Gapso Logo" src="../../assets/gapso.png">
+						<img alt="Gapso Logo" src="../../assets/imgs/gapso.png">
 					</div>
 					<div class="info">
 						<div class="course">Software Developer</div>
@@ -20,7 +20,7 @@
 			<transition name="grow-shrink">
 				<div class="content" v-if="showAccenture">
 					<div class="logo">
-						<img alt="Accenture Logo" src="../../assets/accenture.png">
+						<img alt="Accenture Logo" src="../../assets/imgs/accenture.png">
 					</div>
 					<div class="info">
 						<div class="course">IT Consultant</div>
