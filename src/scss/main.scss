@@ -1,10 +1,18 @@
-// @font-face {
-//     font-family: "Montserrat Regular";
-//     src: url("../assets/fonts/Montserrat-Regular.ttf") format("ttf");
-// }
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('~@/assets/fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('~@/assets/fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-// @import url('https://fonts.googleapis.com/css?family=Montserrat');
+}
 
-h1 {
-    font-size: 102px;
+// Variables
+$highlight-color: #8fb942;
+
+
+// Globals defaults
+a {
+    color: $highlight-color;
+    text-decoration: none;
 }

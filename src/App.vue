@@ -17,10 +17,13 @@
 	* {
 		padding: 0;
 		margin: 0;
+		body {
+			background:#fafafa;
+		}
 	}
 
 	.app {
-		font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+		font-family: 'Montserrat Regular', Helvetica, Arial, sans-serif;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		color: #2c3e50;
@@ -28,8 +31,10 @@
 		margin: 0;
 
 		.nav {
-			background-color: #ccc;
 			padding: 10px 0;
+			background: #fff;
+			border-bottom: 1px solid #ddd;
+			box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
 			ul {
 				list-style: none;
 				max-width: 1200px;
@@ -37,11 +42,15 @@
 				li {
 					display: inline-block;
 					padding: 5px 10px;
+					font-size: 18px;
 					a {
 						font-weight: bold;
 						color: #2c3e50;
+						text-decoration: none;
+
 						&.router-link-exact-active {
-							color: #42b983;
+							color: $highlight-color;
+							text-decoration: none;
 						}
 					}
 				}
@@ -55,6 +64,6 @@
 
 	}
 
-	@import url('https://fonts.googleapis.com/css?family=Montserrat');
+	// @import url('https://fonts.googleapis.com/css?family=Montserrat');
 	
 </style>
