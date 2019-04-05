@@ -1,10 +1,11 @@
 <template>
 	<div class="home">
-		<ul class="articles">
-			<li v-for="(a, i) in articles" :key="`a-${i}`"> 
-				<article-preview :article="a" />
-			</li>
-		</ul>
+		<div class="articles">
+			<article-preview v-for="(a, i) in articles" :key="`a-${i}`" :article="a" />
+		</div>
+		<div class="right-pane">
+
+		</div>
 	</div>
 </template>
 
@@ -20,7 +21,7 @@ export default {
 	},
 	data() {
 		return {
-			articles: [CSharpAsync]
+			articles: [CSharpAsync, CSharpAsync]
 		}
 	},
 	created() {
@@ -30,5 +31,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+	.home {
+		display: grid;
+  		grid-gap: 10px;
+		grid-template-columns: auto 280px;
+
+		.articles {
+			background: tomato;
+		}
+
+		.right-pane {
+			background: deepskyblue;
+			padding: 10px;
+		}
+	}
 
 </style>

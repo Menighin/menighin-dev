@@ -1,12 +1,13 @@
 <template>
-    <div class="root">
+    <div class="article-preview">
         <div class="card">
-            <ul class="tags">
-                <li v-for="t in tags" :key="t">{{ t }}</li>
-            </ul>
-            <div class="img"></div>
-            <div class="title">{{ title }}</div>
-            <div class="description">{{ previewText }}</div>
+            <div class="img" :style="`background-image: url(${previewImg})`">
+                <ul class="tags">
+                    <li v-for="t in tags" :key="t"><span>{{ t }}</span></li>
+                </ul>
+                <div class="title">{{ titleLocalized }}</div>
+            </div>
+            <div class="description">{{ previewTextLocalized }}</div>
         </div>
     </div>
 </template>
@@ -28,6 +29,14 @@ export default {
             publish: '',
             author: ''
         };
+    },
+    computed: {
+        titleLocalized() {
+            return this.title['pt'];
+        },
+        previewTextLocalized() {
+            return this.previewText['pt'];
+        }
     },
     created() {
         let d = this.article.data();
@@ -51,5 +60,55 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+    .article-preview {
+        max-width: 400px;
+        min-width: 300px;
+        padding: 10px;
+
+        .card {
+            border: 1px solid #ccc;
+            width: 100%;
+
+            .img {
+                height: 200px;
+                background-size: cover;
+                background-position: center;
+
+                .tags {
+                    list-style: none;
+                    padding: 5px 0 0 2px;
+
+                    > li {
+                        display: inline-block;
+                        cursor: pointer;
+
+                        > span {
+                            font-family: monospace;
+                            font-weight: bold;
+                            font-size: 12px;
+                            padding: 3px 5px;
+                            margin: 0 3px;
+                            background: rgba(255, 255, 255, 0.4);
+                            transition: background .5s;
+                        }
+
+                        &:hover {
+                            > span {
+                                background: rgba(255, 255, 255, 0.7);
+                                transition: background .5s;
+                            }
+                        }
+                    }
+                }
+
+                .title {
+                    color: white;
+                }
+
+            }
+
+        }
+    }
 
 </style>

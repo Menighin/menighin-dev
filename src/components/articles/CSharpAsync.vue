@@ -10,10 +10,10 @@ export default {
     data() {
         return {
             title: {
-                pt: 'Guia definitivo: Async',
-                en: 'Definitive guide: Async',
+                pt: 'Guia definitivo: Async / Await',
+                en: 'Definitive guide: Async / Await',
             },
-            previewImg: 'csharpsyncasync/preview.jpg',
+            previewImg: '/imgs/csharpsyncasync/preview.png',
             previewText: {
                 pt: 'O que são métodos async? Eles rodam em outra thread? Como async pode fazer meu código ficar mais performático? Vamos responder essas e outras perguntas com exemplos.',
                 en: 'What are async methods? Do they run in another thread? How can async make my code run faster? Let\'s answer these and another questions with examples.'

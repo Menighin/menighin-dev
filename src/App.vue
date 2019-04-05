@@ -7,7 +7,7 @@
 			</ul>
 		</div>
 		<div class="content">
-			<router-view/>
+			<router-view />
 		</div>
 	</div>
 </template>
@@ -60,6 +60,7 @@
 		.content {
 			max-width: 1200px;
 			margin: 0 auto;
+			padding-top: 20px;
 		}
 
 	}
