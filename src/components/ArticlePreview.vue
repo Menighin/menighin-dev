@@ -1,13 +1,16 @@
 <template>
     <div class="article-preview">
         <div class="card">
-            <div class="img" :style="`background-image: url(${previewImg})`">
+            <div class="img-container">
+                <div class="img" :style="`background-image: url(${previewImg})`"></div>
                 <ul class="tags">
                     <li v-for="t in tags" :key="t"><span>{{ t }}</span></li>
                 </ul>
                 <div class="title">{{ titleLocalized }}</div>
             </div>
-            <div class="description">{{ previewTextLocalized }}</div>
+            <div class="info">
+                <div class="description">{{ previewTextLocalized }}</div>
+            </div>
         </div>
     </div>
 </template>
@@ -61,51 +64,91 @@ export default {
 
 <style lang="scss" scoped>
 
+    $border-radius: 3px;
+
     .article-preview {
         max-width: 400px;
         min-width: 300px;
         padding: 10px;
 
         .card {
-            border: 1px solid #ccc;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
             width: 100%;
+            border-radius: $border-radius;
+            background-color: white;
 
-            .img {
+
+            .img-container {
                 height: 200px;
-                background-size: cover;
-                background-position: center;
+                position: relative;
+                overflow: hidden;
+
+                &:hover {
+                    .img {
+                        transform: scale(1.3) rotate(3deg);
+                    }
+                    .title {
+                        background-color: $highlight-color;
+                        color: white;
+                    }
+                }
+
+                .img {
+                    height: 100%;
+                    width: 100%;
+                    overflow: hidden;
+                    background-size: cover;
+                    background-position: center;
+                    transition: all 0.5s ease;
+                    cursor: pointer;
+                }
 
                 .tags {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
                     list-style: none;
                     padding: 5px 0 0 2px;
 
                     > li {
                         display: inline-block;
                         cursor: pointer;
-
                         > span {
                             font-family: monospace;
                             font-weight: bold;
                             font-size: 12px;
                             padding: 3px 5px;
                             margin: 0 3px;
-                            background: rgba(255, 255, 255, 0.4);
-                            transition: background .5s;
+                            background: rgba(255, 255, 255, 0.6);
+                            transition: all .5s;
                         }
 
                         &:hover {
                             > span {
-                                background: rgba(255, 255, 255, 0.7);
-                                transition: background .5s;
+                                background: rgba(255, 255, 255, 0.9);
+                                color: $highlight-color;
+                                transition: all .5s;
                             }
                         }
                     }
                 }
 
                 .title {
-                    color: white;
+                    cursor: pointer;
+                    user-select: none;
+                    color: $highlight-color;
+                    font-weight: bold;
+                    position: absolute;
+                    bottom: 5px;
+                    right: 0px;
+                    padding: 5px 10px;
+                    background-color: rgba(255, 255, 255, 0.9);
+                    transition: all 0.5s ease;
                 }
+            }
 
+            .info {
+                padding: 10px;
             }
 
         }

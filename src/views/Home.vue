@@ -21,7 +21,7 @@ export default {
 	},
 	data() {
 		return {
-			articles: [CSharpAsync, CSharpAsync]
+			articles: [CSharpAsync, CSharpAsync, CSharpAsync, CSharpAsync, CSharpAsync, CSharpAsync, CSharpAsync, CSharpAsync, CSharpAsync]
 		}
 	},
 	created() {
@@ -34,11 +34,13 @@ export default {
 
 	.home {
 		display: grid;
-  		grid-gap: 10px;
+		grid-gap: 10px;
 		grid-template-columns: auto 280px;
 
 		.articles {
-			background: tomato;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
 		}
 
 		.right-pane {
