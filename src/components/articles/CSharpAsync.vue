@@ -22,6 +22,12 @@ export default {
             publish: '2019-04-03', 
             tags: ['c-sharp', '.net', 'async', 'thread']
         }
+    },
+    methods: {
+        isVisible(filter, self) {
+            const data = self.data();
+            return data.tags.filter(t => t.includes(filter)).length > 0;
+        }
     }
 }
 </script>

@@ -4,7 +4,7 @@
             <div class="img-container">
                 <div class="img" :style="`background-image: url(${previewImg})`"></div>
                 <ul class="tags">
-                    <li v-for="t in tags" :key="t"><span>{{ t }}</span></li>
+                    <li v-for="t in tags" :key="t" @click="$emit('tag-click', t)"><span>{{ t }}</span></li>
                 </ul>
                 <div class="title">{{ titleLocalized }}</div>
             </div>
@@ -70,28 +70,20 @@ export default {
         max-width: 400px;
         min-width: 300px;
         padding: 10px;
+        display: flex;
 
         .card {
             box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
             width: 100%;
             border-radius: $border-radius;
             background-color: white;
-
+            display: flex;
+            flex-direction: column;
 
             .img-container {
                 height: 200px;
                 position: relative;
                 overflow: hidden;
-
-                &:hover {
-                    .img {
-                        transform: scale(1.3) rotate(3deg);
-                    }
-                    .title {
-                        background-color: $highlight-color;
-                        color: white;
-                    }
-                }
 
                 .img {
                     height: 100%;
@@ -145,10 +137,25 @@ export default {
                     background-color: rgba(255, 255, 255, 0.9);
                     transition: all 0.5s ease;
                 }
+
+                &:hover {
+                    .img {
+                        transform: scale(1.3) rotate(3deg);
+                    }
+                    .title {
+                        background-color: $highlight-color;
+                        color: white;
+                    }
+                }
             }
 
             .info {
+                flex: 1 0 auto;
                 padding: 10px;
+
+                .description {
+                    font-size: 14px;
+                }
             }
 
         }
