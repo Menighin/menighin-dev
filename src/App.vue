@@ -1,14 +1,17 @@
 <template>
 	<div class="app">
-		<div class="nav">
+		<nav>
 			<ul>
 				<li><router-link to="/">Home</router-link></li>
 				<li><router-link to="/about">About</router-link></li>
 			</ul>
-		</div>
+		</nav>
 		<div class="content">
 			<router-view />
 		</div>
+		<footer>
+			2019
+		</footer>
 	</div>
 </template>
 
@@ -17,6 +20,7 @@
 	* {
 		padding: 0;
 		margin: 0;
+		box-sizing: border-box;
 		body {
 			background:#fafafa;
 		}
@@ -30,7 +34,8 @@
 		padding: 0;
 		margin: 0;
 
-		.nav {
+		nav {
+			height: 50px;
 			padding: 10px 0;
 			background: #fff;
 			border-bottom: 1px solid #ddd;
@@ -61,8 +66,15 @@
 			max-width: 1200px;
 			margin: 0 auto;
 			padding-top: 20px;
+			min-height: calc(100vh - 50px - 30px);
 		}
 
+		footer {
+			height: 30px;
+			line-height: 30px;
+			background: $highlight-color;
+			color: white;
+			text-align: center;
+		}
 	}
-
 </style>

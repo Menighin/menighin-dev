@@ -5,9 +5,9 @@
 			<div class="search">
 				<i> <font-awesome-icon icon="search" /></i> <input type="text" v-model="search">
 			</div>
-			<div class="articles">
+			<transition-group name="fade" tag="tbody" class="articles">
 				<article-preview v-for="(a, i) in paginatedArticles" :key="`a-${i}-${a.name}`" :article="a" @tag-click="tagClick"/>
-			</div>
+			</transition-group>
 			<div class="pagination">
 				<ul class="pages">
 					<li v-for="p in pages" :key="p" :class="{active: p == selectedPage}" @click="paginate(p)">{{p}}</li>
@@ -15,7 +15,7 @@
 			</div>
 		</div>
 		<div class="right-pane">
-
+			<img alt="Joao Menighin profile picture" src="../assets/imgs/menighin.jpg">
 		</div>
 	</div>
 </template>
@@ -26,7 +26,7 @@ import ArticlePreview from '@/components/ArticlePreview';
 import CSharpAsync from '@/components/articles/CSharpAsync';
 import DotNetCoreOAuth from '@/components/articles/DotNetCoreOAuth';
 
-const ITEMS_PER_PAGE = 4;
+const ITEMS_PER_PAGE = 6;
 
 export default {
 	name: 'home',
@@ -76,6 +76,7 @@ export default {
 		display: grid;
 		grid-gap: 10px;
 		grid-template-columns: auto 280px;
+		padding-bottom: 20px;
 
 		.articles-container {
 
@@ -148,9 +149,33 @@ export default {
 		}
 
 		.right-pane {
-			background: deepskyblue;
 			padding: 10px;
+			text-align: center;
+			img {
+				border: 3px solid #fff;
+				width: 100%;
+				height: auto;
+				max-width: 160px;
+				border-radius: 50%;
+			}
 		}
+	}
+
+	.fade-enter-active, .fade-leave-active, .fade-move {
+		transition: all 0.5s;
+	}
+
+	.fade-enter, .fade-leave-active {
+		opacity: 0;
+	}
+
+	.fade-enter, .fade-leave-to {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+
+	.fade-leave-active {
+		position: absolute;
 	}
 
 </style>
