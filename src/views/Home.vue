@@ -6,7 +6,12 @@
 				<i> <font-awesome-icon icon="search" /></i> <input type="text" v-model="search">
 			</div>
 			<div class="articles">
-				<article-preview v-for="(a, i) in filteredArticles" :key="`a-${i}-${a.name}`" :article="a" @tag-click="tagClick"/>
+				<article-preview v-for="(a, i) in paginatedArticles" :key="`a-${i}-${a.name}`" :article="a" @tag-click="tagClick"/>
+			</div>
+			<div class="pagination">
+				<ul class="pages">
+					<li v-for="p in pages" :key="p" :class="{active: p == selectedPage}" @click="paginate(p)">{{p}}</li>
+				</ul>
 			</div>
 		</div>
 		<div class="right-pane">
@@ -21,6 +26,8 @@ import ArticlePreview from '@/components/ArticlePreview';
 import CSharpAsync from '@/components/articles/CSharpAsync';
 import DotNetCoreOAuth from '@/components/articles/DotNetCoreOAuth';
 
+const ITEMS_PER_PAGE = 4;
+
 export default {
 	name: 'home',
 	components: {
@@ -29,25 +36,36 @@ export default {
 	data() {
 		return {
 			articles: [CSharpAsync, CSharpAsync, CSharpAsync, DotNetCoreOAuth, CSharpAsync, DotNetCoreOAuth, DotNetCoreOAuth, DotNetCoreOAuth, CSharpAsync],
-			search: ''
+			search: '',
+			selectedPage: 1
 		}
 	},
 	methods: {
 		tagClick(tag) {
 			this.search = tag;
+		},
+		paginate(p) {
+			this.selectedPage = p;
+			this.$router.push({query: {page: p}})
 		}
 	},
 	computed: {
 		filteredArticles() {
-			var self = this;
-			var filterFn = function(a) {
-				return a.methods.isVisible && a.methods.isVisible(self.search, a);
-			}
-			return this.articles.filter(filterFn);
+			return this.articles.filter(a => a.methods.isVisible && a.methods.isVisible(this.search, a));
+		},
+		pages() {
+			const nPages = Math.ceil(this.filteredArticles.length / ITEMS_PER_PAGE);
+			const pages = [];
+			for (let i = 1; i <= nPages; i++)
+				pages.push(i);
+			return pages;
+		},
+		paginatedArticles() {
+			return this.filteredArticles.slice((this.selectedPage - 1) * ITEMS_PER_PAGE, this.selectedPage * ITEMS_PER_PAGE);
 		}
 	},
 	created() {
-		console.log(this.articles[0]);
+		this.selectedPage = this.$route.query.page || 1;
 	}
 }
 </script>
@@ -94,6 +112,37 @@ export default {
 
 				/deep/ .article-preview {
 					flex-grow: 1;
+				}
+			}
+
+			.pagination {
+				margin-top: 10px;
+				text-align: center;
+				ul {
+					list-style: none;
+					li {
+						cursor: pointer;
+						display: inline-block;
+						padding: 8px 14px;
+						border: 1px solid #ccc;
+						margin: 5px;
+						background: white;
+						font-weight: bold;
+						transition: all .3s ease-in-out;
+
+						&:hover {
+							background: $highlight-color;
+							color: white;
+							transition: all .3s ease-in-out;
+						}
+
+						&.active {
+							color: $highlight-color;
+							&:hover {
+								color: white;
+							}
+						}
+					}
 				}
 			}
 		}

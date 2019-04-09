@@ -48,7 +48,7 @@
 						color: #2c3e50;
 						text-decoration: none;
 
-						&.router-link-exact-active {
+						&.router-link-active {
 							color: $highlight-color;
 							text-decoration: none;
 						}
@@ -65,6 +65,4 @@
 
 	}
 
-	// @import url('https://fonts.googleapis.com/css?family=Montserrat');
-	
 </style>
