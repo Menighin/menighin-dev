@@ -35,10 +35,12 @@ export default {
     },
     computed: {
         titleLocalized() {
-            return this.title['pt'];
+            const lang = localStorage.getItem('lang') || 'en';
+            return this.title[lang];
         },
         previewTextLocalized() {
-            return this.previewText['pt'];
+            const lang = localStorage.getItem('lang') || 'en';
+            return this.previewText[lang];
         }
     },
     created() {

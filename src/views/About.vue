@@ -95,7 +95,7 @@ export default {
 <style>
 
 .about {
-	min-height: 800px;
+	min-height: calc(100vh - 100px);
 }
 
 </style>

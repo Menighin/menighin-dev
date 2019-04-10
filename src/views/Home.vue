@@ -3,7 +3,7 @@
 
 		<div class="articles-container">
 			<div class="search">
-				<i> <font-awesome-icon icon="search" /></i> <input type="text" v-model="search">
+				<i><font-awesome-icon icon="search" /></i> <input type="text" v-model="search">
 			</div>
 			<transition-group name="fade" tag="tbody" class="articles">
 				<article-preview v-for="(a, i) in paginatedArticles" :key="`a-${i}-${a.name}`" :article="a" @tag-click="tagClick"/>
@@ -16,6 +16,13 @@
 		</div>
 		<div class="right-pane">
 			<img alt="Joao Menighin profile picture" src="../assets/imgs/menighin.jpg">
+			<span class="quote">{{ quoteComp }}</span>
+			<div class="tags">
+				<h3>Tags</h3>
+				<ul>
+					<li v-for="t in tagsCount" :key="t.tag">{{t.tag}} {{t.count}}</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </template>
@@ -37,7 +44,11 @@ export default {
 		return {
 			articles: [CSharpAsync, CSharpAsync, CSharpAsync, DotNetCoreOAuth, CSharpAsync, DotNetCoreOAuth, DotNetCoreOAuth, DotNetCoreOAuth, CSharpAsync],
 			search: '',
-			selectedPage: 1
+			selectedPage: 1,
+			quote: {
+				pt: 'Sim, ainda tá meio vazio aqui',
+				en: 'Yes, this is still a bit empty',
+			}
 		}
 	},
 	methods: {
@@ -46,7 +57,7 @@ export default {
 		},
 		paginate(p) {
 			this.selectedPage = p;
-			this.$router.push({query: {page: p}})
+			this.$router.push({query: {page: p}, exact: true})
 		}
 	},
 	computed: {
@@ -62,6 +73,28 @@ export default {
 		},
 		paginatedArticles() {
 			return this.filteredArticles.slice((this.selectedPage - 1) * ITEMS_PER_PAGE, this.selectedPage * ITEMS_PER_PAGE);
+		},
+		quoteComp() {
+			const lang = localStorage.getItem('lang') || 'en';
+			return this.quote[lang];
+		},
+		tagsCount() {
+			const articlesCount = this.articles.reduce((pv, cur) => {
+				const data = cur.data();
+				for (let tag of data.tags) {
+					if (!pv.hasOwnProperty(tag))
+						pv[tag] = 0;
+					pv[tag]++;
+				}
+				return pv;
+			}, {});
+			
+			return Object.keys(articlesCount).map(a => {
+				return {
+					tag: a,
+					count: articlesCount[a]
+				}
+			});
 		}
 	},
 	created() {
@@ -99,9 +132,13 @@ export default {
 					text-align: center;
 					width: 150px;
 					color: #444;
+					transition: all .3s;
 
 					&:focus {
 						outline: none;
+						width: 200px;
+						transition: all .3s;
+						border-bottom: 1px solid #888;
 					}
 				}
 			}
@@ -152,11 +189,15 @@ export default {
 			padding: 10px;
 			text-align: center;
 			img {
+				display: inline-block;
 				border: 3px solid #fff;
 				width: 100%;
 				height: auto;
 				max-width: 160px;
 				border-radius: 50%;
+			}
+			.quote {
+				display: inline-block;
 			}
 		}
 	}

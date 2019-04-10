@@ -43,7 +43,7 @@ export default {
     },
     data() {
         return {
-			debug: true,
+			debug: false,
             grid: [],
             steps: [],
             gridContent: {},
