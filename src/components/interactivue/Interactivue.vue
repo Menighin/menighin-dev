@@ -20,7 +20,6 @@
 
         </div>
         <slot></slot>
-        <button style="position: absolute; z-index: 99;" @click="currentStep++">NextStep</button>
     </div>
 </template>
 

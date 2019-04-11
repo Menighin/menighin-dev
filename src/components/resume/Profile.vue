@@ -5,15 +5,16 @@
 		</div>
 		<div class="profile-info">
 			<transition name="slide-right" mode="out-in">
-				<h2 v-if="showQuestion" class="name" key="question">Who am I?</h2>
+				<h2 v-if="showPhrase1" class="name" key="question">Passionate about technology</h2>
 				<h2 v-else-if="showName" class="name" key="name">João Menighin, {{ age }}</h2>
 			</transition>
 			<transition name="slide-right">
 				<ul v-if="showInfo" class="info">
-					<li><font-awesome-icon icon="map-marker" /> Belo Horizonte, Brasil</li>
-					<li>
+					<li><font-awesome-icon icon="map-marker" /> Belo Horizonte, Brazil</li>
+					<li class="contact">
 						<a href="mailto:joao.menighin@gmail.com"><font-awesome-icon icon="envelope" /></a> 
 						<a href="https://github.com/Menighin"><font-awesome-icon :icon="['fab', 'github']" /></a>
+						<a href="https://www.linkedin.com/in/joao-menighin/"><font-awesome-icon :icon="['fab', 'linkedin']" /></a>
 					</li>
 				</ul>
 			</transition>
@@ -27,16 +28,16 @@ export default {
 		return {
 			showName: false,
 			showInfo: false,
-			showQuestion: false
+			showPhrase1: false
 		}
 	},
 	methods: {
-		toggleShowQuestion(callback) { 
-			this.showQuestion = !this.showQuestion;
+		toggleshowPhrase1(callback) { 
+			this.showPhrase1 = !this.showPhrase1;
 			setTimeout(callback, 2000);
 		},
 		toggleShowName(callback) {
-			this.showQuestion = false;
+			this.showPhrase1 = false;
 			this.showName = !this.showName;
 			setTimeout(callback, 2000);
 		},
@@ -78,6 +79,7 @@ export default {
 			position: absolute;
 			width: 100%;
 			text-align: center;
+			padding-top: 5px;
 
 			.name {
 				display: inline-block;
@@ -87,6 +89,14 @@ export default {
 			.info {
 				list-style: none;
 				padding: 0;
+
+				li {
+					padding: 3px 0;
+					&.contact a {
+						font-size: 18px;
+						padding: 2px 5px;
+					}
+				}
 			}
 		}
 	}

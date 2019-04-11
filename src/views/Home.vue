@@ -20,7 +20,9 @@
 			<div class="tags">
 				<h3>Tags</h3>
 				<ul>
-					<li v-for="t in tagsCount" :key="t.tag">{{t.tag}} {{t.count}}</li>
+					<li v-for="t in tagsCount" :key="t.tag" @click="tagClick(t.tag)">
+						<span>{{t.tag}}</span> <span>[{{t.count}}]</span>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -89,7 +91,7 @@ export default {
 				return pv;
 			}, {});
 			
-			return Object.keys(articlesCount).map(a => {
+			return Object.keys(articlesCount).sort((a, b) => a > b ? 1 : -1).map(a => {
 				return {
 					tag: a,
 					count: articlesCount[a]
@@ -198,6 +200,29 @@ export default {
 			}
 			.quote {
 				display: inline-block;
+			}
+			.tags {
+				padding: 10px;
+				margin-top: 10px;
+				text-align: left; 
+				h3 {
+					border-bottom: 2px solid #aaa;
+					padding: 10px 0;
+					margin-bottom: 10px;
+				}
+				ul {
+					list-style: none;
+					li {
+						display: flex;
+						justify-content: space-between;
+						padding: 3px 0;
+						cursor: pointer;
+						&:hover {
+							text-decoration: underline;
+							color: $highlight-color;
+						}
+					}
+				}
 			}
 		}
 	}

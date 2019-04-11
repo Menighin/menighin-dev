@@ -5,7 +5,7 @@
 			<change-grid :layout="layout" />
 
 			<step :component="Profile" :action="Actions.SHOW" :target="1" :trigger="Triggers.AFTER_PREVIOUS"/>
-			<step method="toggleShowQuestion" :action="Actions.METHOD" :target="1" :trigger="Triggers.AFTER_PREVIOUS" />
+			<step method="toggleshowPhrase1" :action="Actions.METHOD" :target="1" :trigger="Triggers.AFTER_PREVIOUS" />
 			<step method="toggleShowName" :action="Actions.METHOD" :target="1" :trigger="Triggers.AFTER_PREVIOUS" />
 			<step method="toggleShowInfo" :action="Actions.METHOD" :target="1" :trigger="Triggers.AFTER_PREVIOUS" />
 

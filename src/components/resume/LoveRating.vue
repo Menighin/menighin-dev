@@ -25,7 +25,7 @@ export default {
 	props: {
 		size: {
 			type: Number,
-			default: 24
+			default: 32
 		},
 		maxRating: {
 			type: Number,

@@ -95,7 +95,7 @@ export default {
 					text-align: left;
 					
 					.course {
-						font-size: 24px;
+						font-size: 22px;
 					}
 
 					.issuer {

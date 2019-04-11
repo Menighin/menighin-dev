@@ -6,7 +6,6 @@
 				<option v-for="(o, i) in filterOptions" :key="`o-${i}`" :value="o.value">{{ o.name }}</option>
 			</select>
 		</div>
-		<div style="clear: both;"></div>
 		<table ref="tech-stack-table">
 			<transition-group name="fade" tag="tbody">
 				<tr v-for="t in techStackFiltered" :key="t.name">
@@ -220,22 +219,24 @@ export default {
 	.tech-stack {
 		padding: 20px 0 20px 20px;
 		overflow: hidden;
+		height: 97%;
 
 		.header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
 			h2 {
-				float: left;
 				padding: 0;
 				margin: 0;
 			}
 			select {
-				float: right;
 				padding: 5px;
 			}
 		}
 
 		table {
 
-			height: 300px;
+			// height: 300px;
 			display: block;
 			overflow-y: scroll;
 			margin-top: 15px;
