@@ -64,7 +64,9 @@ export default {
 	},
 	computed: {
 		filteredArticles() {
-			return this.articles.filter(a => a.methods.isVisible && a.methods.isVisible(this.search, a));
+			return this.articles.filter(a => {
+            	return a.data().tags.filter(t => t.includes(this.search)).length > 0;
+			});
 		},
 		pages() {
 			const nPages = Math.ceil(this.filteredArticles.length / ITEMS_PER_PAGE);

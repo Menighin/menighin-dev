@@ -5,14 +5,19 @@
 </template>
 
 <script>
+
+import { ArticlesMixin } from './ArticlesMixin.js';
+
 export default {
     name: 'CSharpAsync',
+    mixins: [ArticlesMixin],
     data() {
         return {
             title: {
                 pt: 'Guia definitivo: Async / Await',
                 en: 'Definitive guide: Async / Await',
             },
+            route: 'c-sharp-async',
             previewImg: '/imgs/csharpsyncasync/preview.png',
             previewText: {
                 pt: 'O que são métodos async? Eles rodam em outra thread? Como async pode fazer meu código ficar mais performático? Vamos responder essas e outras perguntas com exemplos.',
@@ -21,12 +26,6 @@ export default {
             author: 'Joao Menighin',
             publish: '2019-04-03', 
             tags: ['c-sharp', '.net', 'async', 'thread']
-        }
-    },
-    methods: {
-        isVisible(filter, self) {
-            const data = self.data();
-            return data.tags.filter(t => t.includes(filter)).length > 0;
         }
     }
 }

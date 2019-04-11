@@ -1,7 +1,7 @@
 <template>
     <div class="article-preview">
         <div class="card">
-            <div class="img-container">
+            <div class="img-container"  @click="goTo">
                 <div class="img" :style="`background-image: url(${previewImg})`"></div>
                 <ul class="tags">
                     <li v-for="t in tags" :key="t" @click="$emit('tag-click', t)"><span>{{ t }}</span></li>
@@ -30,8 +30,14 @@ export default {
             previewText: '',
             previewImg: '',
             publish: '',
-            author: ''
+            author: '',
+            route: ''
         };
+    },
+    methods: {
+        goTo() {
+            this.$router.push(this.route);
+        }
     },
     computed: {
         titleLocalized() {
@@ -46,20 +52,20 @@ export default {
     created() {
         let d = this.article.data();
 
+        const requiredProps = ['title', 'previewImg', 'previewText', 'author', 'tags', 'publish', 'route'];
         let missingProperties = [];
 
-        if (!d.title) missingProperties.push('title');
-        if (!d.previewImg) missingProperties.push('previewImg');
-        if (!d.previewText) missingProperties.push('previewText');
-        if (!d.author) missingProperties.push('author');
-        if (!d.tags) missingProperties.push('tags');
-        if (!d.publish) missingProperties.push('publish');
+        for (let prop of requiredProps) {
+            if (!d[prop])
+                missingProperties.push(prop);
+        }
 
         if (missingProperties.length > 0)
             throw `One or more required property is not defined in the article: ${missingProperties.join(',')}`;
             
         for (let [k, v] of Object.entries(d))
-            this.$set(this, k, v);
+            if (requiredProps.includes(k))
+                this.$set(this, k, v);
     }
 }
 </script>

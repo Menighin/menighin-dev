@@ -20,13 +20,8 @@ export default {
             },
             author: 'Joao Menighin',
             publish: '2019-04-03', 
+            route: 'oauth-core',
             tags: ['c-sharp', '.net-core', 'oauth', 'asp-net-core']
-        }
-    },
-    methods: {
-        isVisible(filter, self) {
-            const data = self.data();
-            return data.tags.filter(t => t.includes(filter)).length > 0;
         }
     }
 }
