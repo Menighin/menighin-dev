@@ -1,12 +1,14 @@
 <template>
     <div class="article-preview">
         <div class="card">
-            <div class="img-container"  @click="goTo">
-                <div class="img" :style="`background-image: url(${previewImg})`"></div>
-                <ul class="tags">
-                    <li v-for="t in tags" :key="t" @click="$emit('tag-click', t)"><span>{{ t }}</span></li>
-                </ul>
-                <div class="title">{{ titleLocalized }}</div>
+            <div class="img-container">
+                <router-link :to="route">
+                    <div class="img" :style="`background-image: url(${previewImg})`"></div>
+                    <ul class="tags">
+                        <li v-for="t in tags" :key="t" @click="$emit('tag-click', t)"><span>{{ t }}</span></li>
+                    </ul>
+                    <div class="title">{{ titleLocalized }}</div>
+                </router-link>
             </div>
             <div class="info">
                 <div class="description">{{ previewTextLocalized }}</div>
@@ -113,6 +115,8 @@ export default {
                     > li {
                         display: inline-block;
                         cursor: pointer;
+                        color: #444;
+
                         > span {
                             font-family: monospace;
                             font-weight: bold;

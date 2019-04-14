@@ -51,6 +51,7 @@ export default {
 		box-sizing: border-box;
 		body {
 			background:#fafafa;
+			overflow-y: scroll;
 		}
 		min-height: auto;
 	}

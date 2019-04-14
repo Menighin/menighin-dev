@@ -1,0 +1,24 @@
+.article-root {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto 280px;
+    box-sizing: border-box;
+    min-height: 100%;
+
+    .article-content {
+        padding: 20px;
+    }
+
+    .article-index {
+        background: deepskyblue;
+        padding: 10px;
+
+        .index-content {
+            &.fixed {
+                position: fixed;
+                top: 10px;
+            }
+        }
+    }
+
+}
