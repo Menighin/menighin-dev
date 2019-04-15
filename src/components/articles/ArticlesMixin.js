@@ -12,5 +12,17 @@ export const ArticlesMixin = {
     },
     mounted() {
         prism.highlightAll();
+    },
+    methods: {
+        onScroll() {
+            const y = this.$refs.index.getBoundingClientRect().y;
+            this.fixIndex = y <= 0;
+        }
+    },
+    created() {
+        window.addEventListener('scroll', this.onScroll);
+    },
+    beforeDestroy() {
+        window.removeEventListener('scroll', this.onScroll);
     }
 };

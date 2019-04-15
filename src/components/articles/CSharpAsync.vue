@@ -60,20 +60,7 @@ export default {
             fixIndex: false
         }
     },
-    methods: {
-        scrolling(wat, wet) {
-            console.log("SCROLL");
-            console.log(wat);
-            console.log(wet);
 
-        }
-    },
-    created() {
-        window.onscroll = () => {
-            const y = this.$refs.index.getBoundingClientRect().y;
-            this.fixIndex = y <= 0;
-        }
-    }
     
 }
 </script>
