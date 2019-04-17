@@ -10,12 +10,38 @@ export const ArticlesMixin = {
     components: {
         Prism
     },
+    data() {
+        return {
+            articleIndex: []
+        }
+    },
     mounted() {
         prism.highlightAll();
+
+        const contentDiv = this.$refs.content;
+
+        const headings = contentDiv.querySelectorAll('h2, h3');
+
+        let currentMaster = null;
+        for (const h of headings) {
+            if (h.tagName === 'H2') {
+                currentMaster = {
+                    title: h.innerHTML,
+                    el: h,
+                    sub: []
+                };
+                this.articleIndex.push(currentMaster);
+            } else if (h.tagName === 'H3') {
+                currentMaster.sub.push({
+                    title: h.innerHTML,
+                    el: h
+                });
+            }
+        }
     },
     methods: {
         onScroll() {
-            const y = this.$refs.index.getBoundingClientRect().y;
+            const y = this.$refs.index.$el.getBoundingClientRect().y;
             this.fixIndex = y <= 0;
         }
     },
