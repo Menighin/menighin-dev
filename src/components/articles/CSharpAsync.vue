@@ -2,32 +2,14 @@
     <div class="article-root">
 
         <div class="article-content" ref="content">
-            <h1>CSHARP ASYNC SYNC</h1>
-            <prism class="line-numbers" language="csharp">{{ code }}</prism>
-
-            <h2>Big huge test Title One</h2>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et maximus augue. Proin libero justo, venenatis vestibulum lectus eget, sagittis convallis erat. Vivamus rhoncus erat in tempor accumsan. Aliquam eget erat at magna eleifend maximus vitae id elit. Integer varius turpis non massa dignissim auctor. Etiam et diam sit amet metus posuere maximus non vitae quam. Cras urna mi, accumsan at sodales nec, malesuada sed tellus. Ut vulputate mi quis est consectetur, in scelerisque urna semper. Suspendisse posuere justo nec consectetur fermentum. Donec ipsum augue, sodales nec elit et, vehicula auctor nunc. Nunc hendrerit velit at placerat lacinia. Mauris nec venenatis metus. Quisque et ipsum diam. In eu turpis eu tortor mollis viverra eget vel sem. Proin mauris lectus, fringilla ut eleifend in, dignissim in nulla. Praesent et ligula at eros eleifend ullamcorper ac eu lectus.
-            <br><br>
-            Aliquam erat volutpat. Aliquam erat volutpat. Proin a neque ligula. Nam tincidunt leo condimentum, suscipit nisl ut, sagittis tellus. Nunc sit amet bibendum est. Aenean viverra congue lacus, pulvinar egestas nisl condimentum ut. Quisque ligula ex, eleifend eu rhoncus eget, efficitur elementum elit. Ut a rhoncus purus, nec commodo orci. Donec nisi mauris, venenatis ac accumsan sit amet, iaculis eu ante. Mauris in eleifend magna. In a congue purus. Etiam et venenatis arcu, quis ultrices ante.
-            <br><br>
-            <h3>One - Subtitle One</h3>
-            Nullam non dolor lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam ornare neque nibh, a venenatis ipsum consectetur quis. Ut luctus dolor quis odio rhoncus malesuada. Pellentesque in pretium magna. Quisque mattis pulvinar ante facilisis sollicitudin. Mauris eget pharetra sem. Cras quis accumsan neque. Sed non est quis eros tempus luctus a at dolor. Aenean bibendum congue quam, a commodo ipsum pharetra vel. Quisque vel massa a nunc eleifend sodales ac quis enim. Aenean tempus et urna sed faucibus. Nulla facilisi. Integer a ullamcorper sapien.
-            <br><br>
-            Nam a sodales quam, nec suscipit justo. Nam vitae dui malesuada, pellentesque sem nec, sagittis lorem. Ut rutrum non tellus sed placerat. Nullam pellentesque, lorem quis finibus lobortis, nisl odio pretium tellus, non molestie magna nibh a est. Aenean mollis neque et urna suscipit sagittis. Phasellus euismod libero sit amet finibus vulputate. Fusce ac sem et metus viverra pellentesque nec at lorem. Aliquam eget tellus vitae nisi ornare luctus ac ut lacus.
-            <br><br>
-            <h3>One - Big huge lot of words Subtitle Two</h3>
-            Suspendisse finibus felis odio, vitae venenatis mauris hendrerit ac. Suspendisse tincidunt posuere nisl, eget blandit urna mattis ac. Praesent vestibulum aliquam nibh vitae aliquet. Integer in dignissim metus. Proin blandit congue nisl, eu cursus lacus commodo non. Suspendisse dapibus risus at interdum imperdiet. In felis sapien, sollicitudin in velit non, viverra venenatis felis. Vestibulum sed dolor ullamcorper, molestie risus sed, interdum velit. Cras ultrices egestas facilisis. Nullam ligula arcu, tempor et dolor in, mollis viverra lorem. Nunc sollicitudin efficitur neque dapibus imperdiet.
-            <br><br>
-            Aliquam erat volutpat. Aliquam erat volutpat. Proin a neque ligula. Nam tincidunt leo condimentum, suscipit nisl ut, sagittis tellus. Nunc sit amet bibendum est. Aenean viverra congue lacus, pulvinar egestas nisl condimentum ut. Quisque ligula ex, eleifend eu rhoncus eget, efficitur elementum elit. Ut a rhoncus purus, nec commodo orci. Donec nisi mauris, venenatis ac accumsan sit amet, iaculis eu ante. Mauris in eleifend magna. In a congue purus. Etiam et venenatis arcu, quis ultrices ante.
-            <br><br>
-            <h2>Title Two</h2>
-            <H3>Two - Subtitle One</H3>
-            Nullam non dolor lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam ornare neque nibh, a venenatis ipsum consectetur quis. Ut luctus dolor quis odio rhoncus malesuada. Pellentesque in pretium magna. Quisque mattis pulvinar ante facilisis sollicitudin. Mauris eget pharetra sem. Cras quis accumsan neque. Sed non est quis eros tempus luctus a at dolor. Aenean bibendum congue quam, a commodo ipsum pharetra vel. Quisque vel massa a nunc eleifend sodales ac quis enim. Aenean tempus et urna sed faucibus. Nulla facilisi. Integer a ullamcorper sapien.
-            <br><br>
-            Nam a sodales quam, nec suscipit justo. Nam vitae dui malesuada, pellentesque sem nec, sagittis lorem. Ut rutrum non tellus sed placerat. Nullam pellentesque, lorem quis finibus lobortis, nisl odio pretium tellus, non molestie magna nibh a est. Aenean mollis neque et urna suscipit sagittis. Phasellus euismod libero sit amet finibus vulputate. Fusce ac sem et metus viverra pellentesque nec at lorem. Aliquam eget tellus vitae nisi ornare luctus ac ut lacus.
-            <br><br>    
-            Suspendisse finibus felis odio, vitae venenatis mauris hendrerit ac. Suspendisse tincidunt posuere nisl, eget blandit urna mattis ac. Praesent vestibulum aliquam nibh vitae aliquet. Integer in dignissim metus. Proin blandit congue nisl, eu cursus lacus commodo non. Suspendisse dapibus risus at interdum imperdiet. In felis sapien, sollicitudin in velit non, viverra venenatis felis. Vestibulum sed dolor ullamcorper, molestie risus sed, interdum velit. Cras ultrices egestas facilisis. Nullam ligula arcu, tempor et dolor in, mollis viverra lorem. Nunc sollicitudin efficitur neque dapibus imperdiet.
-
+            <h1>{{ titleLocalized }}</h1>
+            <template v-for="(c, i) in content">
+                <p v-html="$t(c.text)" v-if="c.type === 'p'" :key="`c-${i}`"></p>
+                <prism v-if="c.type === 'code'" :key="`c-${i}`" :class="c.class" :language="c.language">{{ c.code }}</prism>
+                <h2 v-html="$t(c.text)" v-if="c.type === 'h2'" :key="`c-${i}`"></h2>
+                <h3 v-html="$t(c.text)" v-if="c.type === 'h3'" :key="`c-${i}`"></h3>
+            </template>
+        
         </div>
 
         <article-index :index="articleIndex" :fixIndex="fixIndex" ref="index" />
@@ -63,7 +45,85 @@ export default {
             author: 'Joao Menighin',
             publish: '2019-04-03', 
             tags: ['c-sharp', '.net', 'async', 'thread'],
-            fixIndex: false
+            fixIndex: false,
+            content: [
+            {
+                type: 'p',
+                text: {
+                    pt: `Esse vai ser um artigo rápido e simples sobre como <strong>usar o Async</strong> pra fazer o seu método rodar em outra thread e mais rápido.
+                    Vamos lá, mãos à obra com o primeiro exemplo: `
+                }
+            },
+            {
+                type: 'code',
+                language: 'csharp',
+                class: 'line-numbers',
+                code: `class Program
+{
+    static void Main()
+    {
+        Console.WriteLine($"[T{Thread.CurrentThread.ManagedThreadId}] Started main");
+        var task = HeavyWorkAsync();
+        Console.WriteLine($"[T{Thread.CurrentThread.ManagedThreadId}] Ended main");
+    }
+
+    public static async Task HeavyWorkAsync()
+    {
+        Console.WriteLine($"[T{Thread.CurrentThread.ManagedThreadId}] Starting heavy work");
+        Task.Delay(2000);
+        Console.WriteLine($"[T{Thread.CurrentThread.ManagedThreadId}] Heavy work finished");
+    }
+}`
+            },
+            {
+                type: 'p',
+                text: {
+                    pt: `No exemplo acima, temos o método <code>Main</code> chamando o método assíncrono <code>HeavyWorkAsync</code> que simula uma função
+                        que executa algum trabalho pesado e demora 2 segundos. Além disso, printamos no início da linha em qual thread o método está rodando e
+                        no final da função Main, printamos ainda por quanto tempo a função rodou.
+                        Ao executar o código acima, o resultado é:`
+                }
+            },
+            {
+                type: 'code',
+                language: 'javascript',
+                class: '',
+                code: `[T1] Started main
+[T1] Starting heavy work
+[T1] Heavy work finished
+[T1] Ended main after 10ms`
+            },
+            {
+                type: 'p',
+                text: {
+                    pt: `Conforme esperado, o método assíncrono foi executado em outra thr... Espera um pouco... Algo está errado. Aparantemente o método 
+                    assíncrono foi executado na mesma thread...? E pior, como o código rodou em 10ms se eu explicitei que o método assíncrono deveria demorar 2s...?`
+                }
+            },
+            {
+                type: 'h2',
+                text: {
+                    pt: `Conceitos`,
+                    en: `Concepts`
+                }
+            },
+            {
+                type: 'p',
+                text: {
+                    pt: `Pois é, tenho certeza que não fui o primeiro e nem terei sido o último que, ao ver a palavra <code>Async</code> na declaração
+                         da função, assumiu que a mesma seria executada assíncrona e (não me xinguem) em outra thread. É uma confusão muito comum entre
+                         desenvolvedores. Os conceitos de <strong>Multithreading</strong> e <strong>Asynchronous</strong> são muitas vezes misturados e usados
+                         um no lugar do outro. Vamos acabar de vez com essa confusão.`
+                }
+            },
+            {
+                type: 'h3',
+                text: {
+                    pt: `Assíncronismo X Multithreading`,
+                    en: `Asynchronous X Multithreading`
+                }
+            },
+            ]
         }
     }
 }

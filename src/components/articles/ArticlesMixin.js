@@ -43,6 +43,16 @@ export const ArticlesMixin = {
         onScroll() {
             const y = this.$refs.index.$el.getBoundingClientRect().y;
             this.fixIndex = y <= 0;
+        },
+        $t(data) {
+            const lang = localStorage.getItem('lang') || 'en';
+            return data[lang];
+        }
+    },
+    computed: {
+        titleLocalized() {
+            const lang = localStorage.getItem('lang') || 'en';
+            return this.title[lang];
         }
     },
     created() {

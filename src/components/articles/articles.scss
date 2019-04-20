@@ -1,7 +1,7 @@
 .article-root {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: auto 280px;
+    grid-template-columns: minmax(0, 1fr) 280px;
     box-sizing: border-box;
     min-height: 100%;
 
