@@ -8,6 +8,7 @@
                 <prism v-if="c.type === 'code'" :key="`c-${i}`" :class="c.class" :language="c.language">{{ c.code }}</prism>
                 <h2 v-html="$t(c.text)" v-if="c.type === 'h2'" :key="`c-${i}`"></h2>
                 <h3 v-html="$t(c.text)" v-if="c.type === 'h3'" :key="`c-${i}`"></h3>
+                <div v-if="c.type === 'quote'" :key="`c-${i}`" class="quote"><h4 v-html="$t(c.text)"></h4></div>
             </template>
         
         </div>
@@ -121,6 +122,97 @@ export default {
                 text: {
                     pt: `Assíncronismo X Multithreading`,
                     en: `Asynchronous X Multithreading`
+                }
+            },
+            {
+                type: 'p',
+                text: {
+                    pt: `Para melhor entender a diferença entre assíncronismo e multithreading vamos utilizar um exemplo. Você acorda pela manhã e precisa preparar o seu café
+                        da manhã que consiste de café e torrada. Para o nosso estudo, essa atividade pode ser feita de 3 maneiras:
+                        <ul>
+                            <li>
+                                <strong>Síncrona:</strong> Você coloca os igredientes do café na cafeteira e espera até que o café esteja pronto para colocá-lo em uma caneca.
+                                Em seguida, pega o pão de forma, coloca na torradeira e espera até que a torrada esteja pronto, encarando a torradeira. Quando pronta, você pega a caneca de café
+                                e vai pra sala comer enquanto vê um pedaço do jornal da manhã na televisão.
+                            </li>
+                            <li>
+                                <strong>Assíncrona com thread única:</strong> Você coloca os igredientes do café na cafeteira e a liga. Em seguida, você pega o pão de forma e
+                                coloca na torradeira. Enquanto o café a torrada estão sendo preparados, você vai na sala assistir um pedaço do jornal. Quando escuta os sons indicando
+                                que ambos estão prontos, você serve o café, pega a torrada e senta-se na sala novamente para comer e terminar o jornal.
+                            </li>
+                            <li>
+                                <strong>Assíncrona multithreading:</strong> Você acorda seus pais, pede pra sua mãe preparar o café e pro seu pai preparar a torrada. Enquanto isso,
+                                você senta-se na sala e assiste as notícias dos jornais (enquanto seus pais provavelmente reclamam na cozinha, sonhando com o dia que você vai sair de casa
+                                e ir pra faculdade).
+                            </li>
+                        </ul>
+                        Do exemplo acima, podemos tirar duas conclusões muito importantes. A primeira é que multithreading é um "tipo" de assíncronismo. A segunda, muito importante e que
+                        você deve levar pra sua vida de agora em diante pra nunca mais confundir multithreading com assíncronismo:`
+                }
+            },
+            {
+                type: 'quote',
+                text: {
+                    pt: `<strong>Threading</strong> está relacionado com <strong>Workers</strong>. <strong>Assíncronismo</strong> esta relacionado à <strong>Tasks</strong>.`
+                }
+            },
+            {
+                type: 'p',
+                text: {
+                    pt: `No nosso exemplo, tasks são as diferentes tarefas (preparar o café, preparar o pão, assistir a TV) e workers são as pessoas envolvidas (nossos pais e nós mesmos).`
+                }
+            },
+            {
+                type: 'h3',
+                text: {
+                    pt: `Mesma thread, tasks diferentes?`,
+                    en: `Same thread, different tasks?`
+                }
+            },
+            {
+                type: 'p',
+                text: {
+                    pt: `Para o leitor menos acostumado com os conceitos acima tudo pode parecer meio estranho. Afinal, aprendemos na faculdade que um método executa de forma sequencial,
+                    linha após linha. Então como é possível uma única thread executar diferentes tasks ao mesmo tempo?`
+                }
+            },
+            {
+                type: 'p',
+                text: {
+                    pt: `A realidade é que uma mesma thread não consegue executar diferentes tasks ao mesmo tempo (ênfase no executar). Basicamente, tasks processor-bound (que dependendem do
+                    processador) são executadas de forma sequencial enquanto tasks que não são processor-bound podem ser executadas de forma assíncrona. Ok, isso ficou um pouco confuso.
+                    Vamos trazer esses conceitos para o nosso exemplo assíncrono de thread única. Temos várias tasks (preparar café, preparar torrada e assistir TV) e um só worker / thread (nós mesmos).
+                    Dessas tasks, preparar o café e as torradas não dependem de nós. Não é necessário que fiquemos encarando a torradeira para que a torrada fique pronta. Portanto elas não são processor-bound.
+                    Assistir TV por outro lado, depende totalmente de nós. Se no nosso exemplo tivéssemos duas tasks processor-bound, assitir TV e ouvir o radio por exemplo, não conseguiriámos
+                    executá-las de forma assíncrona. Ou estaríamos assitindo a TV ou estaríamos ouvindo o rádio (não! Humanos não são multi-tasking, não importa o quanto você acredite ser!)`
+                }
+            },
+            {
+                type: 'p',
+                text: {
+                    pt: `Trazendo o nosso café da manhã de volta para o mundo da programação, fazer o café e as torradas seriam tarefas que não dependem do nosso processador,
+                    por exemplo, uma requisição web ou uma operação de input. Por outro lado, assistir TV seria uma operação que depende do nosso processador, como por exemplo algum
+                    cálculo ou lógica de negócio.`
+                }
+            },
+            {
+                type: 'h2',
+                text: {
+                    pt: `Async / Await no C#`,
+                    en: `Async / Await in C#`
+                }
+            },
+            {
+                type: 'p',
+                text: {
+                    pt: `As keywords async e await foram introduzidas no C# 5.0 e mudaram a forma como programação assíncrona é feita na linguagem. Vamos detalhar como utilizá-las nos próximos tópicos.`
+                }
+            },
+            {
+                type: 'h3',
+                text: {
+                    pt: `Async`,
+                    en: `Async`
                 }
             },
             ]
