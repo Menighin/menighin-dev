@@ -215,6 +215,90 @@ export default {
                     en: `Async`
                 }
             },
+            {
+                type: 'p',
+                text: {
+                    pt: `A palavra reservada <code>async</code> é utilizada para marcar um método e indicar que o mesmo é assíncrono. o uso do <code>async</code> no método habilita
+                    a possibilidade de se utilizar o <code>await</code> no seu corpo e é basicamente tudo o que ele faz. Marcar um método como <code>async</code> simplesmente <strong>não</strong>
+                    irá fazê-lo executar automaticamente de forma assíncrona.`
+                }
+            },
+            {
+                type: 'p',
+                text: {
+                    pt: `Um método marcado como <code>async</code> deve ter um dos seguintes tipos de retorno:
+                    <ul>
+                        <li><code>Task</code></li>
+                        <li><code>Task&ltTResult&gt</code></li>
+                        <li><code>void</code></li>
+                    </ul>
+                    Para um método <code>async</code> que não retorne nada, deve-se preferir retornar <code>Task</code> ao invés de <code>void</code>.
+                    Retornar <code>void</code> deve ser usado especificamente quando lidando com eventos. Para uma leitura mais aprofundada sobre as diferenças
+                    de retornar <code>void</code> ou <code>Task</code>, recomendo <a href="https://jaylee.org/archive/2012/07/08/c-sharp-async-tips-and-tricks-part-2-async-void.html">este artigo</a>.
+                    <br/>Vamos ver um exemplo:`
+                }
+            },
+            {
+                type: 'code',
+                language: 'csharp',
+                class: 'line-numbers',
+                code: `public async Task<int> GetNumberOfFriendsAsync()
+{
+    // Do an HTTP request to fetch the friends
+    int friends = await FetchNumberOfFriendsFromRemoteHttpServiceAsync();
+    return friends;
+}`
+            },
+            {
+                type: 'p',
+                text: {
+                    pt: `Um detalhe importante de se notar é que apesar do tipo de retorno ser <code>Task&ltint&gt</code> estamos retornando um <code>int</code> diretamente.
+                    Se o retorno fosse do tipo <code>Task</code> somente, não precisaríamos retornar nada (como se o método fosse <code>void</code>. Essa é uma das mágicas
+                    do <code>async</code>. O compilador trata de encapsular os retornos em Tasks de forma eficiente.`
+                }
+            },
+            {
+                type: 'h3',
+                text: {
+                    pt: `Await`,
+                    en: `Await`
+                }
+            },
+            {
+                type: 'p',
+                text: {
+                    pt: `A palavra reservada <code>await</code> atua como um operador unário recebendo um parâmetro - um <code>awaitable</code>. Um <code>awaitable</code> é qualquer
+                    operação assíncrona, uma task por exemplo. O <code>await</code> checa se a operação assíncrona já terminou e é aqui que as coisas ficam menos... sequenciais:
+                    <ul>
+                        <li> Se a operação assíncrona já terminou, o <code>await</code> não muda em nada o fluxo e a execução segue normalmente;</li>
+                        <li> Se a operação assíncrona não terminou, o <code>await</code> captura o contexto, para a execução e retorna o controle para a função chamante. A função chamante continua sua execução normalmente.
+                        Quando o <code>awaitable</code> é resolvido na função assíncrona, o contexto do método assíncrono é retornado e o fluxo de execução continua após o <code>await</code>.
+                    </ul>`
+                }
+            },
+            {
+                type: 'h3',
+                text: {
+                    pt: `Contexto Async`,
+                    en: `Async Context`
+                }
+            },
+            {
+                type: 'p',
+                text: {
+                    pt: `Quando um <code>await</code> é executado em um <code>awaitable</code> que não terminou, o <code>awaitable</code> captura o contexto e, após a operação assíncrona
+                        terminar, restaura esse contexto. Basicamente isso quer dizer que se uma operação assíncrona foi iniciada no contexto de uma requisição ASP.Net por exemplo, ela também
+                        será resumida nesse mesmo contexto. E tudo isso é feito de forma transparente para o desenvolvedor (que ótimo, não?).`
+                }
+            },
+            {
+                type: 'p',
+                text: {
+                    pt: `Entendendo como o contexto é manuseado fica claro que assíncronismo é diferente de multi-threading. Todo o método assíncrono é executado no mesmo contexto por default e, portanto,
+                        na mesma thread. Em alguns tipos de aplicação, Console Application por exemplo, não existe um <code>SynchronizationContext</code>. Nesses cenários, o contexto padrão adotado é <code>Thread Pool</code>.
+                        Assim sendo, os métodos assíncronos podem rodar em threads diferentes neste cenário. Além disso, podemos explicitamente dizer para o nosso <code>awaitable</code> não `
+                }
+            },
             ]
         }
     }
