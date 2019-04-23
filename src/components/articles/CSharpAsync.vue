@@ -296,8 +296,25 @@ export default {
                 text: {
                     pt: `Entendendo como o contexto é manuseado fica claro que assíncronismo é diferente de multi-threading. Todo o método assíncrono é executado no mesmo contexto por default e, portanto,
                         na mesma thread. Em alguns tipos de aplicação, Console Application por exemplo, não existe um <code>SynchronizationContext</code>. Nesses cenários, o contexto padrão adotado é <code>Thread Pool</code>.
-                        Assim sendo, os métodos assíncronos podem rodar em threads diferentes neste cenário. Além disso, podemos explicitamente dizer para o nosso <code>awaitable</code> não `
+                        Assim sendo, os métodos assíncronos podem rodar em threads diferentes neste cenário. Além disso, podemos explicitamente dizer para o nosso <code>awaitable</code> não restaurar o contexto ao esperar uma task
+                        através do <code>ConfigureAwait()</code>:`
                 }
+            },
+            {
+                type: 'code',
+                language: 'csharp',
+                class: 'line-numbers',
+                code: `public async Task DoSomething()
+{
+    // Do something here...
+    await LogOnFileAsync().ConfigureAwait(false);
+}
+
+public async Task LogOnFileAsync()
+{
+    await WriteToFileAsync(...);
+    // From here on, is another context
+}`
             },
             ]
         }

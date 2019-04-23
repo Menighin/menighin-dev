@@ -1,8 +1,10 @@
 import prism from "prismjs/prism";
-import "prismjs/themes/prism-okaidia.css";
+import "prismjs/themes/prism-tomorrow.css";
 import "prismjs/components/prism-csharp.js";
 import "prismjs/plugins/line-numbers/prism-line-numbers.js";
 import "prismjs/plugins/line-numbers/prism-line-numbers.css";
+import "prismjs/plugins/line-highlight/prism-line-highlight.js";
+import "prismjs/plugins/line-highlight/prism-line-highlight.css";
 import Prism from 'vue-prism-component';
 
 
