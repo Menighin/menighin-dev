@@ -10,6 +10,14 @@
                 <h3 v-html="$t(c.text)" v-if="c.type === 'h3'" :key="`c-${i}`"></h3>
                 <div v-if="c.type === 'quote'" :key="`c-${i}`" class="quote"><h4 v-html="$t(c.text)"></h4></div>
             </template>
+
+            <br>
+            <br>
+            <br>
+            <code-explain
+                :code="code"
+                language="csharp"
+                :explanation="[{text: 'What the actual fuck', line: '2'}, { text: 'Really?', line: '1'}]" />
         
         </div>
 
@@ -23,11 +31,13 @@ import './articles.scss';
 
 import { ArticlesMixin } from './ArticlesMixin.js';
 import ArticleIndex from './ArticleIndex';
+import CodeExplain from '../CodeExplain';
 
 export default {
     name: 'CSharpAsync',
     components: {
-        ArticleIndex
+        ArticleIndex,
+        CodeExplain
     },
     mixins: [ArticlesMixin],
     data() {
