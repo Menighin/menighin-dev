@@ -1,38 +1,8 @@
-<template>
-    <div class="article-root">
-
-        <div class="article-content" ref="content">
-            <h1>{{ titleLocalized }}</h1>
-            <template v-for="(c, i) in content">
-                <p v-html="$t(c.text)" v-if="c.type === 'p'" :key="`c-${i}`"></p>
-                <prism v-if="c.type === 'code'" :key="`c-${i}`" :class="c.class" :language="c.language">{{ c.code }}</prism>
-                <h2 v-html="$t(c.text)" v-if="c.type === 'h2'" :key="`c-${i}`"></h2>
-                <h3 v-html="$t(c.text)" v-if="c.type === 'h3'" :key="`c-${i}`"></h3>
-                <div v-if="c.type === 'quote'" :key="`c-${i}`" class="quote"><h4 v-html="$t(c.text)"></h4></div>
-                <code-explain v-if="c.type === 'code-explain'" :key="`c-${i}`" :code="c.code" :language="c.language" :explanation="$tCodeExplain(c.explanation)" />
-            </template>
-
-            <br>
-            <br>
-            <br>
-            <code-explain
-                :code="code"
-                language="csharp"
-                :explanation="[{text: 'What the actual fuck SAÇKJDLI SAJD  i saljdhasj sajd lajsl jsaljd lsjali oeopr o8y7trw98 ep0okdfl sgjfd m.,dal jliwyriy rofdaj hjyewt7i rlsjfksdg usl jfi suilfjlhdasjd a lakd ksaid jsaiory yo9er iw87 audças kkast dta7s udsaij uatdt a7ydsoai jdilah i7tdas ydasj ask uys7 sa7i uhaslj as d kalsjdl sahkudha ksjd kajs ldjaslj dlasj ilsaji ldjali jsalij lisaj liasjlidjalsj lasjd lajslidjsal jlaj dlsjald jasld jaslijd lasj lisjald jlasj ldsaj dliasj liasjd liajsl djasl jdasljd asjd laisjd atasy hasd uasydiau hdas uiasyu s jsu hdaks hudsah ldjsai lhsadk jlsah kdash ljdsai hdsakj saçh kduhas dhasku gdaksh lasdh hsajhdusah kjdsahuk hdask hdkusah dksah kudhsak dhaskhd uashk jdhasuk dhksa dhasuk hdjksa', line: '2'}, { text: 'Really? lsahdl jasijd lasj iljsailj ildsaj ljdsalij dlsal idjasl jdlasj dsjal idjasil jdlasj ildasjlk djsali jdlasj dliasj dlasjli djasl jdlaisj dlasjdli sajld jaslij dsaj lj ljljljl jlasj ldasjl djsald jaslijd lasjli jdsa s', line: '1'}]" />
-        
-        </div>
-
-        <article-index :index="articleIndex" :fixIndex="fixIndex" ref="index" />
-        
-    </div>
-</template>
-
 <script>
-import './articles.scss';
 
-import { ArticlesMixin } from './ArticlesMixin.js';
 import ArticleIndex from './ArticleIndex';
 import CodeExplain from '../CodeExplain';
+import ArticleBase from './ArticleBase';
 
 export default {
     name: 'CSharpAsync',
@@ -40,7 +10,8 @@ export default {
         ArticleIndex,
         CodeExplain
     },
-    mixins: [ArticlesMixin],
+    extends: ArticleBase,
+    // mixins: [ArticlesMixin],
     data() {
         return {
             code: 'var i = new List<string>();\n\n// Now lets do this\npublic void Main(string[] args]\n{\n}',
@@ -337,11 +308,21 @@ public async Task LogOnFileAsync()
             {
                 type: 'p',
                 text: {
-                    pt: `Entendendo como o contexto é manuseado fica claro que assíncronismo é diferente de multi-threading. Todo o método assíncrono é executado no mesmo contexto por default e, portanto,
-                        na mesma thread. Em alguns tipos de aplicação, Console Application por exemplo, não existe um <code>SynchronizationContext</code>. Nesses cenários, o contexto padrão adotado é <code>Thread Pool</code>.
-                        Assim sendo, os métodos assíncronos podem rodar em threads diferentes neste cenário. Além disso, podemos explicitamente dizer para o nosso <code>awaitable</code> não restaurar o contexto ao esperar uma task
-                        através do <code>ConfigureAwait()</code>:`
+                    pt: `Muito bem, vamos fazer finalmente o nosso café da manhã assíncrono. No exemplo abaixo, utilize as setas abaixo para seguir com a explicação passo a passo.`
                 }
+            },
+            {
+                type: 'code-explain',
+                code: `var i = new List<string>();
+                var j = new HashSet<string>();`,
+                language: 'csharp',
+                explanation: [
+                    {
+                        pt: `isso é um teste`,
+                        en: 'test',
+                        line: 1
+                    }
+                ]
             },
             ]
         }

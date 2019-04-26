@@ -1,8 +1,6 @@
 <template>
     <div class="code-explain">
-        <prism class="line-numbers" :language="language" :data-line="highlightLine">
-            {{ code }}
-        </prism>
+        <prism class="line-numbers" :language="language" :data-line="highlightLine">{{ code }}</prism>
         <div class="explanation">
             <div class="control">
                 <div @click="moveTo('previous')" v-if="step > 0">
