@@ -49,6 +49,10 @@ export const ArticlesMixin = {
         $t(data) {
             const lang = localStorage.getItem('lang') || 'en';
             return data[lang];
+        },
+        $tCodeExplain(array) {
+            const lang = localStorage.getItem('lang') || 'en';
+            return array.map(i => ({text: i[lang]}));
         }
     },
     computed: {

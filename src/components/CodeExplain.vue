@@ -9,7 +9,16 @@
                     <font-awesome-icon icon="angle-left" />
                 </div>
             </div>
-            <div class="text">{{ explanationComp }}</div>
+            <div class="content">
+                <div class="text">
+                    <transition :name="animation" mode="out-in">
+                        <div :key="explanationComp">{{ explanationComp }}</div>
+                    </transition>
+                </div>
+                <div class="steps">
+                    {{ step + 1 }} / {{ explanation.length }}
+                </div>
+            </div>
             <div class="control">
                 <div @click="moveTo('next')" v-if="step < explanation.length - 1">
                     <font-awesome-icon icon="angle-right" />
@@ -50,7 +59,8 @@ export default {
     },
     data() {
         return {
-            step: 0
+            step: 0,
+            animation: 'slide-right'
         }
     },
     computed: {
@@ -65,10 +75,14 @@ export default {
     },
     methods: {
         moveTo(which) {
-            if (which === 'next')
+            if (which === 'next') {
+                this.animation = 'slide-right';
                 this.step++;
-            else
+            }
+            else {
+                this.animation = 'slide-left';
                 this.step--;
+            }
                 
             this.$nextTick(() => {
                 prism.highlightAll();
@@ -83,15 +97,18 @@ export default {
 
 <style lang="scss" scoped>
 
+    $explanation-height: 120px;
+
     .code-explain {
         pre {
             margin-bottom: 0 !important;
         }
         .explanation {
-            border-top: 1px dashed #2d2d2d;
+            border-top: 1px dashed #6d6d6d;
             display: grid;
             grid-template-columns: 30px minmax(0, 1fr) 30px;
-            height: 100px;
+            height: $explanation-height;
+            background: #2d2d2d;
 
             .control {
                 font-family: Arial, Helvetica, sans-serif;
@@ -99,7 +116,7 @@ export default {
                 display: flex;
                 align-content: center;
                 justify-content: center;
-                line-height: 100px;
+                line-height: $explanation-height;
 
                 div {
                     width: 100%;
@@ -114,17 +131,84 @@ export default {
                         background: #3d3d3d;
                     }
                 }
-
-                
             }
 
-            .text {
+            .content {
                 background: #2d2d2d;
                 box-sizing: border-box;
                 padding: 10px 10px;
+                color: #ccc;
+
+                display: grid;
+                grid-template-rows: minmax(0, 1fr) 15px;
+                height: $explanation-height;
+
+                .text {
+                    overflow-y: auto;
+                    overflow-x: hidden;
+                    &::-webkit-scrollbar {
+                        width: 5px;
+                    }
+
+                    &::-webkit-scrollbar-track {
+                        background: #2d2d2d; 
+                    }
+                    
+                    &::-webkit-scrollbar-thumb {
+                        background: #4d4d4d; 
+                    }
+
+                    &::-webkit-scrollbar-thumb:hover {
+                        background: #555; 
+                    }
+                }
+
+                .steps {
+                    background: #2d2d2d;
+                    text-align: center;
+                    color: white;
+                    padding-top: 5px;
+                }
             }
 
         }
+
+    }
+
+    .slide-right-enter-active, .slide-right-leave-active {
+        transition: all .3s;
+    }
+    .slide-right-enter {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+
+    .slide-right-enter-to, .slide-right-leave {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .slide-right-leave-to {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+
+    .slide-left-enter-active, .slide-left-leave-active {
+	transition: all .3s;
+    }
+    .slide-left-enter {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+
+    .slide-left-enter-to, .slide-left-leave {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .slide-left-leave-to {
+        transform: translateX(-300px);
+        opacity: 0;
     }
 
 </style>

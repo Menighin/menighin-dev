@@ -9,6 +9,7 @@
                 <h2 v-html="$t(c.text)" v-if="c.type === 'h2'" :key="`c-${i}`"></h2>
                 <h3 v-html="$t(c.text)" v-if="c.type === 'h3'" :key="`c-${i}`"></h3>
                 <div v-if="c.type === 'quote'" :key="`c-${i}`" class="quote"><h4 v-html="$t(c.text)"></h4></div>
+                <code-explain v-if="c.type === 'code-explain'" :key="`c-${i}`" :code="c.code" :language="c.language" :explanation="$tCodeExplain(c.explanation)" />
             </template>
 
             <br>
@@ -17,7 +18,7 @@
             <code-explain
                 :code="code"
                 language="csharp"
-                :explanation="[{text: 'What the actual fuck', line: '2'}, { text: 'Really?', line: '1'}]" />
+                :explanation="[{text: 'What the actual fuck SAÇKJDLI SAJD  i saljdhasj sajd lajsl jsaljd lsjali oeopr o8y7trw98 ep0okdfl sgjfd m.,dal jliwyriy rofdaj hjyewt7i rlsjfksdg usl jfi suilfjlhdasjd a lakd ksaid jsaiory yo9er iw87 audças kkast dta7s udsaij uatdt a7ydsoai jdilah i7tdas ydasj ask uys7 sa7i uhaslj as d kalsjdl sahkudha ksjd kajs ldjaslj dlasj ilsaji ldjali jsalij lisaj liasjlidjalsj lasjd lajslidjsal jlaj dlsjald jasld jaslijd lasj lisjald jlasj ldsaj dliasj liasjd liajsl djasl jdasljd asjd laisjd atasy hasd uasydiau hdas uiasyu s jsu hdaks hudsah ldjsai lhsadk jlsah kdash ljdsai hdsakj saçh kduhas dhasku gdaksh lasdh hsajhdusah kjdsahuk hdask hdkusah dksah kudhsak dhaskhd uashk jdhasuk dhksa dhasuk hdjksa', line: '2'}, { text: 'Really? lsahdl jasijd lasj iljsailj ildsaj ljdsalij dlsal idjasl jdlasj dsjal idjasil jdlasj ildasjlk djsali jdlasj dliasj dlasjli djasl jdlaisj dlasjdli sajld jaslij dsaj lj ljljljl jlasj ldasjl djsald jaslijd lasjli jdsa s', line: '1'}]" />
         
         </div>
 
@@ -325,6 +326,22 @@ public async Task LogOnFileAsync()
     await WriteToFileAsync(...);
     // From here on, is another context
 }`
+            },
+            {
+                type: 'h2',
+                text: {
+                    pt: `Mãos à obra`,
+                    en: `Hands on`
+                }
+            },
+            {
+                type: 'p',
+                text: {
+                    pt: `Entendendo como o contexto é manuseado fica claro que assíncronismo é diferente de multi-threading. Todo o método assíncrono é executado no mesmo contexto por default e, portanto,
+                        na mesma thread. Em alguns tipos de aplicação, Console Application por exemplo, não existe um <code>SynchronizationContext</code>. Nesses cenários, o contexto padrão adotado é <code>Thread Pool</code>.
+                        Assim sendo, os métodos assíncronos podem rodar em threads diferentes neste cenário. Além disso, podemos explicitamente dizer para o nosso <code>awaitable</code> não restaurar o contexto ao esperar uma task
+                        através do <code>ConfigureAwait()</code>:`
+                }
             },
             ]
         }
