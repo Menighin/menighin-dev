@@ -1,6 +1,6 @@
 <template>
     <div class="code-explain">
-        <prism class="line-numbers" :language="language" :data-line="highlightLine">{{ code }}</prism>
+        <prism ref="code" class="line-numbers" :language="language" :data-line="highlightLine">{{ code }}</prism>
         <div class="explanation">
             <div class="control">
                 <div @click="moveTo('previous')" v-if="step > 0">
@@ -10,7 +10,7 @@
             <div class="content">
                 <div class="text">
                     <transition :name="animation" mode="out-in">
-                        <div :key="explanationComp">{{ explanationComp }}</div>
+                        <div :key="explanationComp" v-html="explanationComp"></div>
                     </transition>
                 </div>
                 <div class="steps">
@@ -85,6 +85,19 @@ export default {
             this.$nextTick(() => {
                 prism.highlightAll();
             });
+
+            let line = this.explanation[this.step].line;
+
+            if (line) {
+                let code = this.$refs.code;
+                const spans = code.querySelectorAll('.line-numbers-rows span');
+
+                let lineToScroll = Math.max(0, line - 6);
+
+                spans[lineToScroll].scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
         }
     },
     mounted() {
@@ -98,8 +111,26 @@ export default {
     $explanation-height: 120px;
 
     .code-explain {
+
+        ::-webkit-scrollbar {
+            width: 7px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #2d2d2d; 
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #4d4d4d; 
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+        }
+
         pre {
             margin-bottom: 0 !important;
+            max-height: 500px;
         }
         .explanation {
             border-top: 1px dashed #6d6d6d;
@@ -144,21 +175,7 @@ export default {
                 .text {
                     overflow-y: auto;
                     overflow-x: hidden;
-                    &::-webkit-scrollbar {
-                        width: 5px;
-                    }
 
-                    &::-webkit-scrollbar-track {
-                        background: #2d2d2d; 
-                    }
-                    
-                    &::-webkit-scrollbar-thumb {
-                        background: #4d4d4d; 
-                    }
-
-                    &::-webkit-scrollbar-thumb:hover {
-                        background: #555; 
-                    }
                 }
 
                 .steps {

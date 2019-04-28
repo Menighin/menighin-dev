@@ -313,15 +313,93 @@ public async Task LogOnFileAsync()
             },
             {
                 type: 'code-explain',
-                code: `var i = new List<string>();
-                var j = new HashSet<string>();`,
+                code: `class Program
+{
+    static async Task Main(string[] args)
+    {
+        Console.WriteLine("Wake up and go to the kitchen!");
+
+        // Start the coffee
+        var coffeeTask = PrepareCoffeeAsync();
+
+        // Start the toast
+        var toastTask = PrepareToastAsync();
+
+        // Then let's watch some TV
+        Console.WriteLine("Let's watch some TV meanwhile.");
+
+        // Await for the tasks
+        Task.WhenAll(coffeeTask, toastTask);
+
+        Console.WriteLine("Everything is ready. Let's eat!");
+    }
+
+    static async Task PrepareCoffeeAsync()
+    {
+        Console.WriteLine("Put the ingredients into the coffee machine and turn it on");
+        await Task.Delay(2000);
+        Console.WriteLine("Coffee is ready!");
+    }
+
+    static async Task PrepareToastAsync()
+    {
+        Console.WriteLine("Put the toast into the toaster and turn it on");
+        await Task.Delay(2000);
+        Console.WriteLine("Toast is ready!");
+    }
+}`,
                 language: 'csharp',
                 explanation: [
                     {
-                        pt: `isso é um teste`,
+                        pt: `Acordamos e vamos até a cozinha preparar o nosso café.`,
                         en: 'test',
-                        line: 1
-                    }
+                        line: 5
+                    },
+                    {
+                        pt: `Chamamos o método assíncrono para iniciar o preparo do café`,
+                        en: 'test 2',
+                        line: 8
+                    },
+                    {
+                        pt: `O método assíncrono é iniciado imediatamente. Colocamos os igredientes na cafeteira e ligamos.`,
+                        en: 'test 2',
+                        line: 24
+                    },
+                    {
+                        pt: `Aqui o nosso primeiro <code>await</code> é executado. Fazemos um <code>delay</code> na task para simular a cafeteira. 
+                            O método será suspenso e o controle retornará para a função <code>Main</code>.`,
+                        en: 'test 2',
+                        line: 25
+                    },
+                    {
+                        pt: `Continuando no fluxo de execução, iniciamos a task da torradeira`,
+                        en: 'test 2',
+                        line: 11
+                    },
+                    {
+                        pt: `Assim como a cafeteira, o método inicia imediatamente, executando o nosso <code>Console.WriteLine</code> e...`,
+                        en: 'test 2',
+                        line: 31
+                    },
+                    {
+                        pt: `... é suspenso ao encontrar novamente um await. Novamente, o fluxo retorna para a <code>Main</code>`,
+                        en: 'test 2',
+                        line: 32
+                    },
+                    {
+                        pt: `De volta à <code>Main</code> vamos assistir TV enquanto o café é preparado.`,
+                        en: 'test 2',
+                        line: 14
+                    },
+                    {
+                        pt: `Enquanto assistimos TV, fazemos o <code>await</code> para esperar até que as torradas e o café estejam prontos.
+                            Como esse é o método principal de uma aplicação de console, não há método para devolver o controle. Então o nosso programa vai simplesmente
+                            esperar até que as tasks terminem. Se essa fosse uma aplicação ASP.Net, por exemplo, ao executar o <code>await</code> em uma requisição
+                            a thread em que a requisição está sendo executada seria liberada para atender outras requisições enquanto o <code>await</code> não fosse resolvido,
+                            aumentando a velocidade de resposta da aplicação web.`,
+                        en: 'test 2',
+                        line: 14
+                    },
                 ]
             },
             ]
