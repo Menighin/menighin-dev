@@ -128,8 +128,8 @@ export default {
                                 e ir pra faculdade).
                             </li>
                         </ul>
-                        Do exemplo acima, podemos tirar duas conclusões muito importantes. A primeira é que multithreading é um "tipo" de assíncronismo. A segunda, muito importante e que
-                        você deve levar pra sua vida de agora em diante pra nunca mais confundir multithreading com assíncronismo:`
+                        <p>Do exemplo acima, podemos tirar duas conclusões muito importantes. A primeira é que multithreading é um "tipo" de assíncronismo. A segunda, muito importante e que
+                        você deve levar pra sua vida de agora em diante pra nunca mais confundir multithreading com assíncronismo:</p>`
                 }
             },
             {
@@ -344,7 +344,7 @@ public async Task LogOnFileAsync()
     static async Task PrepareToastAsync()
     {
         Console.WriteLine("Put the toast into the toaster and turn it on");
-        await Task.Delay(2000);
+        await Task.Delay(3000);
         Console.WriteLine("Toast is ready!");
     }
 }`,
@@ -398,7 +398,31 @@ public async Task LogOnFileAsync()
                             a thread em que a requisição está sendo executada seria liberada para atender outras requisições enquanto o <code>await</code> não fosse resolvido,
                             aumentando a velocidade de resposta da aplicação web.`,
                         en: 'test 2',
-                        line: 14
+                        line: 17
+                    },
+                    {
+                        pt: `Ao resolver um <code>await</code>, o fluxo de execução continua de onde havia parado. Aqui é onde o contexto é restaurado, lembrando que um Console Application
+                        não possui <code>SynchronizationContext</code> e o seu contexto padrão é o <code>ThreadPool</code>. Falaremos mais disso numa segunda parte. Nosso café está pronto entao!`,
+                        en: 'test 2',
+                        line: 26
+                    },
+                    {
+                        pt: `O controle volta novamente para a <code>Main</code>. Aqui, a execução continua esperando pois o <code>Task.WhenAll()</code> só é resolvido quando todos os seus 
+                        <code>awaitable</code>s são resolvidos.`,
+                        en: 'test 2',
+                        line: 17
+                    },
+                    {
+                        pt: `Novamente, ao resolver o <code>await</code> da torradeira, o método termina de executar.`,
+                        en: 'test 2',
+                        line: 33
+                    },
+                    {
+                        pt: `Finalmente, nosso café está pronto e podemos comer tranquilamente. Conseguimos prepará-lo de forma assíncrona e de forma mais rápida, gastando cerca de
+                        3 segundos para fazê-lo (cafeteira boa essa). Se fosse síncrono, gastaríamos aproximadamente 5 segundos, pois fariamos o café primeiro encarando a cafeteira
+                        e depois a torradeira. E ainda estaráimos desinformados, pois não teríamos assistido o jornal na TV.`,
+                        en: 'test 2',
+                        line: 19
                     },
                 ]
             },

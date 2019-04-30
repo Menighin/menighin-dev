@@ -26,7 +26,6 @@ import "prismjs/plugins/line-numbers/prism-line-numbers.css";
 import "prismjs/plugins/line-highlight/prism-line-highlight.js";
 import "prismjs/plugins/line-highlight/prism-line-highlight.css";
 import Prism from 'vue-prism-component';
-// import './articles.scss';
 
 export default {
     components: {
@@ -98,6 +97,39 @@ export default {
     grid-template-columns: minmax(0, 1fr) 280px;
     box-sizing: border-box;
     min-height: 100%;
+    background: #fff;
+
+    h1, h2, h3 {
+        padding: 20px 0 10px;
+    }
+
+    p {
+        padding: 5px 0;
+        text-indent: 30px;
+        code {
+            font-size: 14px;
+            background: #f1f1f1;
+            padding: 0 3px;
+        }
+    }
+
+    ul {
+        list-style-position: inside;
+        li {
+            padding: 5px 0;
+            text-indent: 30px;
+        }
+    }
+
+    .quote {
+        box-sizing: border-box;
+        padding: 15px 15px;
+        text-align: center;
+        font-style: italic;
+        background: rgb(255, 252, 215);
+    }
+
+
 
     .article-content {
         padding: 20px;
