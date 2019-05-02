@@ -11,7 +11,6 @@ export default {
         CodeExplain
     },
     extends: ArticleBase,
-    // mixins: [ArticlesMixin],
     data() {
         return {
             title: {
@@ -201,7 +200,14 @@ export default {
                     Vamos trazer esses conceitos para o nosso exemplo assíncrono de thread única. Temos várias tasks (preparar café, preparar torrada e assistir TV) e um só worker / thread (nós mesmos).
                     Dessas tasks, preparar o café e as torradas não dependem de nós. Não é necessário que fiquemos encarando a torradeira para que a torrada fique pronta. Portanto elas não são processor-bound.
                     Assistir TV por outro lado, depende totalmente de nós. Se no nosso exemplo tivéssemos duas tasks processor-bound, assitir TV e ouvir o radio por exemplo, não conseguiriámos
-                    executá-las de forma assíncrona. Ou estaríamos assitindo a TV ou estaríamos ouvindo o rádio (não! Humanos não são multi-tasking, não importa o quanto você acredite ser!)`
+                    executá-las de forma assíncrona. Ou estaríamos assitindo a TV ou estaríamos ouvindo o rádio (não! Humanos não são multi-tasking, não importa o quanto você acredite ser!)`,
+                    en: `The truth is a thread cannot execute different tasks at the same time (emphasis on "execute"). Basically, tasks processor-bound (that depend on the processor) are executed
+                    in sequentially while tasks that are not processor-bound can be executed asynchronously. Ok, that's a bit confusing. Let's bring these concepts to our single-thread asynchronous
+                    example. We have several tasks - prepare the coffee, the toast and watch TV -  and just one worker / thread - ourselves. From these tasks, prepare the coffee
+                    and the toast do not depend on us. It is not necessary for us to be staring at the toaster for the toast to get done. Therefore, they are not processor-bound.
+                    Watch the TV, on the other hand, depends totally on us. We need to pay attention on it, so it as a processor-boynd task. If in our example we had two processor-bound tasks,
+                    watch the TV and listen to a radio for example, we wouldn't be able to do them in an asynchronous way. Either we would be watching the TV or we would be listening to the radio 
+                    (no! Humans cannot multi-task!).`
                 }
             },
             {
@@ -209,7 +215,9 @@ export default {
                 text: {
                     pt: `Trazendo o nosso café da manhã de volta para o mundo da programação, fazer o café e as torradas seriam tarefas que não dependem do nosso processador,
                     por exemplo, uma requisição web ou uma operação de input. Por outro lado, assistir TV seria uma operação que depende do nosso processador, como por exemplo algum
-                    cálculo ou lógica de negócio.`
+                    cálculo ou lógica de negócio.`,
+                    en: `Bringing our breakfast back to the programming world, preparing the coffee and the toast would be non processor-bound tasks, for example, a web request or an
+                    input operation. On the other hand, watch the TV would be a processor-bound task, like some math operation or business logic.`
                 }
             },
             {
