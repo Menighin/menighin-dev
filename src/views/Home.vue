@@ -1,6 +1,5 @@
 <template>
 	<div class="home">
-
 		<div class="articles-container">
 			<div class="search">
 				<i><font-awesome-icon icon="search" /></i> <input type="text" v-model="search">
@@ -114,6 +113,7 @@ export default {
 		grid-gap: 10px;
 		grid-template-columns: auto 280px;
 		padding-bottom: 20px;
+		padding-top: 20px;
 
 		.articles-container {
 

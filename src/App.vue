@@ -50,7 +50,7 @@ export default {
 		margin: 0;
 		box-sizing: border-box;
 		body {
-			background:#fafafa;
+			background:#f2f2f2;
 			overflow-y: scroll;
 		}
 		min-height: auto;
@@ -70,6 +70,8 @@ export default {
 			background: #fff;
 			border-bottom: 1px solid #ddd;
 			box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
+			position: relative;
+			z-index: 100;
 			
 			.container {
 				max-width: 1200px;
@@ -111,7 +113,6 @@ export default {
 		> .content {
 			max-width: 1200px;
 			margin: 0 auto;
-			padding-top: 20px;
 			min-height: calc(100vh - 50px - 30px);
 		}
 

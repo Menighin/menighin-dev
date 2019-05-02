@@ -14,10 +14,9 @@ export default {
     // mixins: [ArticlesMixin],
     data() {
         return {
-            code: 'var i = new List<string>();\n\n// Now lets do this\npublic void Main(string[] args]\n{\n}',
             title: {
-                pt: 'Guia definitivo: Async / Await',
-                en: 'Definitive guide: Async / Await',
+                pt: 'Async / Await: Primeiros passos',
+                en: 'Async / Await: Primeiros passos',
             },
             route: 'c-sharp-async',
             previewImg: '/imgs/csharpsyncasync/preview.png',
@@ -33,8 +32,10 @@ export default {
             {
                 type: 'p',
                 text: {
-                    pt: `Esse vai ser um artigo rápido e simples sobre como <strong>usar o Async</strong> pra fazer o seu método rodar em outra thread e mais rápido.
-                    Vamos lá, mãos à obra com o primeiro exemplo: `
+                    pt: `Esse vai ser um artigo rápido e simples sobre como usar o <code>async</code> pra fazer o seu método rodar em outra thread e mais rápido.
+                    Vamos lá, mãos à obra com o primeiro exemplo: `,
+                    en: `This is going to be a quick and simple article on how to use <code>async</code> to make your method run in another thread and faster. Let's 
+                    start with our first example then: `
                 }
             },
             {
@@ -64,7 +65,11 @@ export default {
                     pt: `No exemplo acima, temos o método <code>Main</code> chamando o método assíncrono <code>HeavyWorkAsync</code> que simula uma função
                         que executa algum trabalho pesado e demora 2 segundos. Além disso, printamos no início da linha em qual thread o método está rodando e
                         no final da função Main, printamos ainda por quanto tempo a função rodou.
-                        Ao executar o código acima, o resultado é:`
+                        Ao executar o código acima, o resultado é:`,
+                    en: `In the above example, we have the <code>Main</code> method calling the asynchronous <code>HeavyWorkAsync</code> that simulates the execution of 
+                    some heavy task and take 2 seconds to be done. We are also printing, at the begining of the line, in which thread the method is running and, at the end of 
+                    the <code>Main</code>, we print for how long the method has ran.
+                    Executing the above code we get the following output:`
                 }
             },
             {
@@ -80,7 +85,9 @@ export default {
                 type: 'p',
                 text: {
                     pt: `Conforme esperado, o método assíncrono foi executado em outra thr... Espera um pouco... Algo está errado. Aparantemente o método 
-                    assíncrono foi executado na mesma thread...? E pior, como o código rodou em 10ms se eu explicitei que o método assíncrono deveria demorar 2s...?`
+                    assíncrono foi executado na mesma thread...? E pior, como o código rodou em 10ms se eu explicitei que o método assíncrono deveria demorar 2s...?`,
+                    en: `As expected, the asynchronous method was executed in anot... Wait a sec... Something is wrong. Apparently the method was executed on the same thread...? 
+                    And worse, how did the code ran in 10ms if I had explicitly told it to run in 2s...?`
                 }
             },
             {
@@ -93,10 +100,13 @@ export default {
             {
                 type: 'p',
                 text: {
-                    pt: `Pois é, tenho certeza que não fui o primeiro e nem terei sido o último que, ao ver a palavra <code>Async</code> na declaração
-                         da função, assumiu que a mesma seria executada assíncrona e (não me xinguem) em outra thread. É uma confusão muito comum entre
+                    pt: `Pois é, tenho certeza que não fui o primeiro e nem terei sido o último que, ao ver a palavra <code>async</code> na declaração
+                         da função, assumiu que a mesma seria executada assíncronamente e (não me xinguem) em outra thread. É uma confusão muito comum entre
                          desenvolvedores. Os conceitos de <strong>Multithreading</strong> e <strong>Asynchronous</strong> são muitas vezes misturados e usados
-                         um no lugar do outro. Vamos acabar de vez com essa confusão.`
+                         um no lugar do outro. Vamos acabar de vez com essa confusão.`,
+                    en: `Yes, I'm sure I wasn't the first nor will be the last that, seeing the <code>async</code> word in a method's signature, assumed it would be executed 
+                        asynchronously and (don't kill me) in another thread. It is a very commom mistake among developers. The concepts of <strong>Multithreading</strong> and
+                        <strong>Asynchronous</strong> are a lot of times confused and used as if they were interchangeable. Let's end this confusion.`
                 }
             },
             {
@@ -125,23 +135,46 @@ export default {
                             <li>
                                 <strong>Assíncrona multithreading:</strong> Você acorda seus pais, pede pra sua mãe preparar o café e pro seu pai preparar a torrada. Enquanto isso,
                                 você senta-se na sala e assiste as notícias dos jornais (enquanto seus pais provavelmente reclamam na cozinha, sonhando com o dia que você vai sair de casa
-                                e ir pra faculdade).
+                                e ir pra faculdade). Quando o café e a torrada estão prontos, seus pais trazem até você na sala para que você possa comer.
                             </li>
                         </ul>
                         <p>Do exemplo acima, podemos tirar duas conclusões muito importantes. A primeira é que multithreading é um "tipo" de assíncronismo. A segunda, muito importante e que
-                        você deve levar pra sua vida de agora em diante pra nunca mais confundir multithreading com assíncronismo:</p>`
+                        você deve levar pra sua vida de agora em diante pra nunca mais confundir multithreading com assíncronismo:</p>`,
+                    en: `To better understand the differences between asynchronous and multithreading let's use an example. You wake up in the morning and need to prepare your
+                    breakfast consisting of coffee and toast. For our study, this activity can be done in 3 different ways:
+                        <ul>
+                            <li>
+                                <strong>Synchronous:</strong> You put the ingredients of the coffee in the coffee machine, turn it on and wait until it is ready to put it in a mug.
+                                Then you get the bread, put it in the toaster, turn it on and wait until the toast is ready, staring at the toaster. When ready, you take both the
+                                mug and the toast and head to the living room to watch some morning news on TV, while eating your breakfast.
+                            </li>
+                            <li>
+                                <strong>Single-thread Asynchronous:</strong> You put the ingredients on the coffee machine and turn it on. Next, you take the bread and put it in
+                                the toaster. While the coffee and the toast are being prepared, you head to the living room to watch the morning news. When you hear the sounds indicating
+                                both are ready, you pour the coffee, take the toast and seat back on the living room to eat the breakfast.
+                            </li>
+                            <li>
+                                <strong>Multi-thread Asynchronous:</strong> You wake up your parents, ask your mom to prepare the coffee and your dad to prepare the toast. Meanwhile, you
+                                sit on the living room to watch the morning news (while your parents are probably complaining in the kitchen, dreaming of the day you will leave for college).
+                                When the breakfast is ready, your parents bring it to you on the living room where you can eat it.
+                            </li>
+                        </ul>
+                        <p>From the above example, we can take two very important conclusions. The first one is that multithreading is a "type" of asynchronism. The second one will help you to
+                        never mix these concepts again: `
                 }
             },
             {
                 type: 'quote',
                 text: {
-                    pt: `<strong>Threading</strong> está relacionado com <strong>Workers</strong>. <strong>Assíncronismo</strong> esta relacionado à <strong>Tasks</strong>.`
+                    pt: `<strong>Multithreading</strong> está relacionado com <strong>Workers</strong>. <strong>Assíncronismo</strong> esta relacionado à <strong>Tasks</strong>.`,
+                    en: `<strong>Multithreading</strong> is related to <strong>Workers</strong>. <strong>Asynchronism</strong> is related to <strong>Tasks</strong>.`,
                 }
             },
             {
                 type: 'p',
                 text: {
-                    pt: `No nosso exemplo, tasks são as diferentes tarefas (preparar o café, preparar o pão, assistir a TV) e workers são as pessoas envolvidas (nossos pais e nós mesmos).`
+                    pt: `No nosso exemplo, tasks são as diferentes tarefas (preparar o café, preparar o pão, assistir a TV) e workers são as pessoas envolvidas (nossos pais e nós mesmos).`,
+                    en: `In our example, we have different tasks (prepare the coffee, prepare the toast, watch tv) and workers are the people involved (our parents and ourselves).`
                 }
             },
             {
@@ -155,7 +188,9 @@ export default {
                 type: 'p',
                 text: {
                     pt: `Para o leitor menos acostumado com os conceitos acima tudo pode parecer meio estranho. Afinal, aprendemos na faculdade que um método executa de forma sequencial,
-                    linha após linha. Então como é possível uma única thread executar diferentes tasks ao mesmo tempo?`
+                    linha após linha. Então como é possível uma única thread executar diferentes tasks ao mesmo tempo?`,
+                    en: `To the reader less used to the above concepts, it all can seem a bit odd. After all, we usually learn that a method runs sequentially, line after line.
+                    So how is it possible that only one thread execute different tasks at the same time?`
                 }
             },
             {
@@ -308,7 +343,7 @@ public async Task LogOnFileAsync()
             {
                 type: 'p',
                 text: {
-                    pt: `Muito bem, vamos fazer finalmente o nosso café da manhã assíncrono. No exemplo abaixo, utilize as setas abaixo para seguir com a explicação passo a passo.`
+                    pt: `Muito bem, vamos fazer finalmente o nosso café da manhã assíncrono. No exemplo abaixo, utilize as setas para seguir com a explicação passo a passo.`
                 }
             },
             {
