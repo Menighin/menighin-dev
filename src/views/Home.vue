@@ -43,7 +43,7 @@ export default {
 	},
 	data() {
 		return {
-			articles: [CSharpAsync, CSharpAsync, CSharpAsync, DotNetCoreOAuth, CSharpAsync, DotNetCoreOAuth, DotNetCoreOAuth, DotNetCoreOAuth, CSharpAsync],
+			articles: [CSharpAsync],
 			search: '',
 			selectedPage: 1,
 			quote: {
@@ -64,7 +64,7 @@ export default {
 	computed: {
 		filteredArticles() {
 			return this.articles.filter(a => {
-            	return a.data().tags.filter(t => t.includes(this.search)).length > 0;
+				return a.data().tags.filter(t => t.includes(this.search)).length > 0;
 			});
 		},
 		pages() {

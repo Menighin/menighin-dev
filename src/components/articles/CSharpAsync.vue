@@ -230,7 +230,8 @@ export default {
             {
                 type: 'p',
                 text: {
-                    pt: `As keywords async e await foram introduzidas no C# 5.0 e mudaram a forma como programação assíncrona é feita na linguagem. Vamos detalhar como utilizá-las nos próximos tópicos.`
+                    pt: `As keywords <code>async</code> e <code>await</code> foram introduzidas no C# 5.0 e mudaram a forma como programação assíncrona é feita na linguagem. Vamos detalhar como utilizá-las nos próximos tópicos.`,
+                    en: `The keywords <code>async</code> and <code>await</code> were introduced in C# 5.0 and changed the way we do asynchronous programming. Let's detail a bit how to use them on the next topics.`
                 }
             },
             {
@@ -243,9 +244,11 @@ export default {
             {
                 type: 'p',
                 text: {
-                    pt: `A palavra reservada <code>async</code> é utilizada para marcar um método e indicar que o mesmo é assíncrono. o uso do <code>async</code> no método habilita
+                    pt: `A palavra reservada <code>async</code> é utilizada para marcar um método e indicar que o mesmo é assíncrono (retorna um <code>awaitable</code>). O uso do <code>async</code> no método habilita
                     a possibilidade de se utilizar o <code>await</code> no seu corpo e é basicamente tudo o que ele faz. Marcar um método como <code>async</code> simplesmente <strong>não</strong>
-                    irá fazê-lo executar automaticamente de forma assíncrona.`
+                    irá fazê-lo executar automaticamente de forma assíncrona.`,
+                    en: `The keyword <code>async</code> is used to mark a method and indicate that the method is asynchronous (returns an <code>awaitable</code>). The use of <code>async<code> in the signature enables
+                    the possibility to use the <code>await</code> keyword in the method body and that's pretty much all it does. Mark a method as <code>async</code> will not automatically make it run asynchronously.`
                 }
             },
             {
@@ -260,7 +263,17 @@ export default {
                     Para um método <code>async</code> que não retorne nada, deve-se preferir retornar <code>Task</code> ao invés de <code>void</code>.
                     Retornar <code>void</code> deve ser usado especificamente quando lidando com eventos. Para uma leitura mais aprofundada sobre as diferenças
                     de retornar <code>void</code> ou <code>Task</code>, recomendo <a href="https://jaylee.org/archive/2012/07/08/c-sharp-async-tips-and-tricks-part-2-async-void.html">este artigo</a>.
-                    <br/>Vamos ver um exemplo:`
+                    <br/>Vamos ver um exemplo:`,
+                    en: `A method marked as <code>async</code> should have one of the following return types:
+                    <ul>
+                        <li><code>Task</code></li>
+                        <li><code>Task&ltTResult&gt</code></li>
+                        <li><code>void</code></li>
+                    </ul>
+                    For an <code>async</code> method that does not return anything, one should return <code>Task</code> instead of <code>void</code>.
+                    Returning <code>void</code> should be used specifically when dealing with events. For a deeper reading on the differences between returning
+                    <code>void</code> or <code>Task</code>, I recommend <a href="https://jaylee.org/archive/2012/07/08/c-sharp-async-tips-and-tricks-part-2-async-void.html">this great article</a>.<br />
+                    Let's see and example:`
                 }
             },
             {
@@ -277,9 +290,12 @@ export default {
             {
                 type: 'p',
                 text: {
-                    pt: `Um detalhe importante de se notar é que apesar do tipo de retorno ser <code>Task&ltint&gt</code> estamos retornando um <code>int</code> diretamente.
+                    pt: `Um detalhe importante de se notar é que apesar do tipo de retorno ser <code>Task&lt;int&gt;</code> estamos retornando um <code>int</code> diretamente.
                     Se o retorno fosse do tipo <code>Task</code> somente, não precisaríamos retornar nada (como se o método fosse <code>void</code>. Essa é uma das mágicas
-                    do <code>async</code>. O compilador trata de encapsular os retornos em Tasks de forma eficiente.`
+                    do <code>async</code>. O compilador trata de encapsular os retornos em Tasks de forma eficiente.`,
+                    en: `An important detail to notice is, although the return type is <code>Task&lt;int&gt;</code>, we are returning an <code>int</code> explicitly. If
+                    the return type were <code>Task</code>, we wouldn't need to return anything (just like <code>void</code>). This is one of the magics of the <code>async</code>.
+                    It already unboxes the generic value from a <code>Task</code> when resolved.`
                 }
             },
             {
@@ -297,7 +313,15 @@ export default {
                     <ul>
                         <li> Se a operação assíncrona já terminou, o <code>await</code> não muda em nada o fluxo e a execução segue normalmente;</li>
                         <li> Se a operação assíncrona não terminou, o <code>await</code> captura o contexto, para a execução e retorna o controle para a função chamante. A função chamante continua sua execução normalmente.
-                        Quando o <code>awaitable</code> é resolvido na função assíncrona, o contexto do método assíncrono é retornado e o fluxo de execução continua após o <code>await</code>.
+                        Quando o <code>awaitable</code> é resolvido na função assíncrona, o contexto do método assíncrono é retornado e o fluxo de execução continua após o <code>await</code>.</li>
+                    </ul>`,
+                    en: `The keyword <code>await</code> acts as a unary operator. It receives a parameter - an <code>awaitable</code>. An <code>awaitable</code> is any asynchronous
+                    operation, like a task. The <code>await</code> checks if the asynchronous operation is finished and here is where things get a little less... sequential:
+                    <ul>
+                        <li> If the async operation has finished, the <code>await</code> doesn't change in any way the flow of the code. It executes just like a "normal" method;</li>
+                        <li> If the async operation hasn't finished, the <code>await</code> captures the context, stops the execution and returns the control to the caller function. 
+                        The caller function continues its execution as if nothing happened (because it actually hasn't... yet).
+                        When the <code>awaitable</code> is resolved in the async function, the context in the async method is restored and the execution flow continues after the <code>await</code>.</li>
                     </ul>`
                 }
             },
@@ -313,7 +337,10 @@ export default {
                 text: {
                     pt: `Quando um <code>await</code> é executado em um <code>awaitable</code> que não terminou, o <code>awaitable</code> captura o contexto e, após a operação assíncrona
                         terminar, restaura esse contexto. Basicamente isso quer dizer que se uma operação assíncrona foi iniciada no contexto de uma requisição ASP.Net por exemplo, ela também
-                        será resumida nesse mesmo contexto. E tudo isso é feito de forma transparente para o desenvolvedor (que ótimo, não?).`
+                        será resumida nesse mesmo contexto. E tudo isso é feito de forma transparente para o desenvolvedor (que ótimo, não?).`,
+                    en: `When an <code>await</code> is executed in an <code>awaitable</code> that has not finished yet, the <code>awaitble</code> saves the context and, after resolving the async
+                        operation, restores it. Basically, this means that an async operation started in the context of an ASP.Net request, for example, will have the same context when resumed.
+                        And all of this is managed behind the scenes for you!`
                 }
             },
             {
@@ -321,8 +348,11 @@ export default {
                 text: {
                     pt: `Entendendo como o contexto é manuseado fica claro que assíncronismo é diferente de multi-threading. Todo o método assíncrono é executado no mesmo contexto por default e, portanto,
                         na mesma thread. Em alguns tipos de aplicação, Console Application por exemplo, não existe um <code>SynchronizationContext</code>. Nesses cenários, o contexto padrão adotado é <code>Thread Pool</code>.
-                        Assim sendo, os métodos assíncronos podem rodar em threads diferentes neste cenário. Além disso, podemos explicitamente dizer para o nosso <code>awaitable</code> não restaurar o contexto ao esperar uma task
-                        através do <code>ConfigureAwait()</code>:`
+                        Assim sendo, os métodos assíncronos podem rodar em threads diferentes neste cenário. Além disso, podemos explicitamente dizer para o nosso <code>await</code> não restaurar o contexto ao esperar uma task
+                        através do <code>ConfigureAwait()</code>:`,
+                    en: `By understanding how the context is managed it also makes clear that asynchronism is different from multi-threading. Every async method is executed, by default, on the same context and therefore
+                        on the same thread. In some types of application, Console Application for example, there is no <code>SynchronizationContext</code>. In these scemarios, the default context is the Thread Pool context,
+                        meaning that an async method CAN run in another thread. Furthermore, we can explicitly tell <code>await</code> to not restore the context when resolving the task with <code>ConfigureAwait()</code>:`
                 }
             },
             {
@@ -338,7 +368,7 @@ export default {
 public async Task LogOnFileAsync()
 {
     await WriteToFileAsync(...);
-    // From here on, is another context
+    // From here on, we are in a different context
 }`
             },
             {
@@ -351,7 +381,8 @@ public async Task LogOnFileAsync()
             {
                 type: 'p',
                 text: {
-                    pt: `Muito bem, vamos fazer finalmente o nosso café da manhã assíncrono. No exemplo abaixo, utilize as setas para seguir com a explicação passo a passo.`
+                    pt: `Muito bem, vamos fazer finalmente o nosso café da manhã assíncrono. No exemplo abaixo, utilize as setas para seguir com a explicação passo a passo.`,
+                    en: `Ok, so let's finally prepare our async coffee. In the below example, make use of the arrows to navigate through the code explanation.`
                 }
             },
             {
@@ -395,43 +426,44 @@ public async Task LogOnFileAsync()
                 explanation: [
                     {
                         pt: `Acordamos e vamos até a cozinha preparar o nosso café.`,
-                        en: 'test',
+                        en: 'We wake up and head up to the kitchen to prepare our breakfast.',
                         line: 5
                     },
                     {
                         pt: `Chamamos o método assíncrono para iniciar o preparo do café`,
-                        en: 'test 2',
+                        en: 'We call the async method to start preparing the coffee',
                         line: 8
                     },
                     {
                         pt: `O método assíncrono é iniciado imediatamente. Colocamos os igredientes na cafeteira e ligamos.`,
-                        en: 'test 2',
+                        en: 'The async method starts executing right away. We put the ingredients in the coffee machine and turn it on.',
                         line: 24
                     },
                     {
                         pt: `Aqui o nosso primeiro <code>await</code> é executado. Fazemos um <code>delay</code> na task para simular a cafeteira. 
                             O método será suspenso e o controle retornará para a função <code>Main</code>.`,
-                        en: 'test 2',
+                        en: `Here our first <code>await</code> is executed. We execute a <code>delay</code> in the task to simulate the coffee machine.
+                            The method is suspended and the control is returned to the <code>Main</code> function.`,
                         line: 25
                     },
                     {
-                        pt: `Continuando no fluxo de execução, iniciamos a task da torradeira`,
-                        en: 'test 2',
+                        pt: `Continuando no fluxo de execução, iniciamos a task da torradeira.`,
+                        en: 'Moving on the execution, we start the toaster task.',
                         line: 11
                     },
                     {
                         pt: `Assim como a cafeteira, o método inicia imediatamente, executando o nosso <code>Console.WriteLine</code> e...`,
-                        en: 'test 2',
+                        en: 'Just like the coffee machine, the method starts right away, executing the <code>Console.WriteLine</code> and...',
                         line: 31
                     },
                     {
-                        pt: `... é suspenso ao encontrar novamente um await. Novamente, o fluxo retorna para a <code>Main</code>`,
-                        en: 'test 2',
+                        pt: `... é suspenso ao encontrar novamente um <code>await</code>. Novamente, o fluxo retorna para a <code>Main</code>`,
+                        en: '... gets suspended upon hitting the <code>await</code>. Again, the control is returned to the <code>Main</code>',
                         line: 32
                     },
                     {
                         pt: `De volta à <code>Main</code> vamos assistir TV enquanto o café é preparado.`,
-                        en: 'test 2',
+                        en: 'Back in the <code>Main</code> we head to the living room to watch some TV while the coffee is being prepared.',
                         line: 14
                     },
                     {
@@ -440,31 +472,39 @@ public async Task LogOnFileAsync()
                             esperar até que as tasks terminem. Se essa fosse uma aplicação ASP.Net, por exemplo, ao executar o <code>await</code> em uma requisição
                             a thread em que a requisição está sendo executada seria liberada para atender outras requisições enquanto o <code>await</code> não fosse resolvido,
                             aumentando a velocidade de resposta da aplicação web.`,
-                        en: 'test 2',
+                        en: `While we are watching the TV, we make an <code>await</code> to wait until the toasts and the coffee are ready.
+                            This is the main method of our application, so there is no calleer to return the control to. So our program simply waits until the tasks finish.
+                            If this were an ASP.Net application, for example, upon executing the <code>await</code> in a request, the thread in which the request is being executed
+                            would be freed to deal with another requests while the <code>await</code> is not resolved, improving the response time of the web application.`,
                         line: 17
                     },
                     {
                         pt: `Ao resolver um <code>await</code>, o fluxo de execução continua de onde havia parado. Aqui é onde o contexto é restaurado, lembrando que um Console Application
                         não possui <code>SynchronizationContext</code> e o seu contexto padrão é o <code>ThreadPool</code>. Falaremos mais disso numa segunda parte. Nosso café está pronto entao!`,
-                        en: 'test 2',
+                        en: `Upon resolving one <code>await</code>, the execution flow continues from where it was halted. Here is where the context is restored. Just remember that this is a
+                             Console Application that doesn't have a <code>SynchronizationContext</code> and its default context is the Thread Pool. We will talk more about this in a second
+                             article. But hey, the coffee is already ready!`,
                         line: 26
                     },
                     {
                         pt: `O controle volta novamente para a <code>Main</code>. Aqui, a execução continua esperando pois o <code>Task.WhenAll()</code> só é resolvido quando todos os seus 
                         <code>awaitable</code>s são resolvidos.`,
-                        en: 'test 2',
+                        en: `The control is handed back to the <code>Main</code>. Here, the execution keeps waiting because <code>Task.WhenAll()</code> is only fully resolved when all of its
+                        <code>awaitables</code> are resolved.`,
                         line: 17
                     },
                     {
                         pt: `Novamente, ao resolver o <code>await</code> da torradeira, o método termina de executar.`,
-                        en: 'test 2',
+                        en: `Again, upon resolved the <code>await</code> of the toaster, the method finishes executing.`,
                         line: 33
                     },
                     {
                         pt: `Finalmente, nosso café está pronto e podemos comer tranquilamente. Conseguimos prepará-lo de forma assíncrona e de forma mais rápida, gastando cerca de
                         3 segundos para fazê-lo (cafeteira boa essa). Se fosse síncrono, gastaríamos aproximadamente 5 segundos, pois fariamos o café primeiro encarando a cafeteira
                         e depois a torradeira. E ainda estaráimos desinformados, pois não teríamos assistido o jornal na TV.`,
-                        en: 'test 2',
+                        en: `Finally, our breakfast is ready to eat! We were able to prepare it in an asynchronous and faster way, spending about 3 seconds to do so (that's some good coffee machine).
+                        If this were done synchronously, we would spend about 5 seconds, because we would need to be staring without blinking to our coffee machine and then do the same thing with the toaster.
+                        And to make it worse, we would have lost some good news on the morning jornal.`,
                         line: 19
                     },
                 ]
