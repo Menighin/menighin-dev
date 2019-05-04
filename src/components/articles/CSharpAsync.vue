@@ -15,7 +15,7 @@ export default {
         return {
             title: {
                 pt: 'Async / Await: Primeiros passos',
-                en: 'Async / Await: Primeiros passos',
+                en: 'Async / Await: First steps',
             },
             route: 'c-sharp-async',
             previewImg: '/imgs/csharpsyncasync/preview.png',

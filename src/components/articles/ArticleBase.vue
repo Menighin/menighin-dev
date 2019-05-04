@@ -129,49 +129,13 @@ export default {
         background: rgb(255, 252, 215);
     }
 
-
-
     .article-content {
         padding: 20px;
+        font-family: 'Montserrat Regular', Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: justify;
     }
-
-    .article-index {
-        padding: 10px;
-
-        .index-content {
-            &.fixed {
-                position: fixed;
-                top: 10px;
-                width: 260px;
-            }
-
-            ul {
-                list-style: none;
-                > li {
-                    padding: 7px 0;
-                    font-weight: bold;
-                    cursor: pointer;
-                    > ul {
-                        list-style: circle inside;
-                        padding-left: 23px;
-
-                        > li {
-                            padding: 5px 0;
-                            font-weight: normal;
-
-                            &:hover {
-                                text-decoration: underline;
-                            }
-                        }
-                    }
-                    span:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
-        }
-    }
-
 }
 
 </style>

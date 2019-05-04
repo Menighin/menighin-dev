@@ -35,6 +35,44 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+    .article-index {
+        padding: 10px;
+        font-size: 14px;
+        line-height: 16px;
 
+        .index-content {
+            &.fixed {
+                position: fixed;
+                top: 10px;
+                width: 260px;
+            }
+
+            ul {
+                list-style: none;
+                > li {
+                    padding: 7px 0;
+                    font-weight: bold;
+                    cursor: pointer;
+                    > ul {
+                        list-style: circle inside;
+                        padding-left: 20px;
+
+                        > li {
+                            padding: 5px 0 5px 30px;
+                            text-indent: -18px;
+                            font-weight: normal;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    span:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
 </style>
