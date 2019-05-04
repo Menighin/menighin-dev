@@ -115,6 +115,10 @@ export default {
 		padding-bottom: 20px;
 		padding-top: 20px;
 
+		@media only screen and (max-width: $large-device-width) {
+			grid-template-columns: auto;
+		}
+
 		.articles-container {
 
 			.search {
@@ -190,6 +194,11 @@ export default {
 		}
 
 		.right-pane {
+
+			@media only screen and (max-width: $large-device-width) {
+            	display: none;
+        	}
+
 			padding: 10px;
 			text-align: center;
 			img {

@@ -41,6 +41,10 @@ export default {
         font-size: 14px;
         line-height: 16px;
 
+        @media only screen and (max-width: $large-device-width) {
+            display: none;
+        }
+
         .index-content {
             &.fixed {
                 position: fixed;

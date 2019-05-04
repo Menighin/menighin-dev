@@ -99,6 +99,10 @@ export default {
     min-height: 100%;
     background: #fff;
 
+    @media only screen and (max-width: $large-device-width) {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
     h1, h2, h3 {
         padding: 20px 0 10px;
     }
