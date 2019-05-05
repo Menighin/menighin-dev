@@ -105,6 +105,7 @@ export default {
 
     h1, h2, h3 {
         padding: 20px 0 10px;
+        line-height: 36px;
     }
 
     p {
