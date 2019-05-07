@@ -4,7 +4,7 @@
 			<div class="container">
 				<ul>
 					<li><router-link to="/">Home</router-link></li>
-					<li><router-link to="/about">About</router-link></li>
+					<li><router-link to="/en-us/about">About</router-link></li>
 				</ul>
 				<div class="languages">
 					<img :class="{active: language == 'pt'}" @click="setLanguage('pt')" src="./assets/imgs/brazil.png" />
