@@ -68,7 +68,7 @@ export default {
         for (let [k, v] of Object.entries(d))
             if (requiredProps.includes(k))
                 this.$set(this, k, v);
-    }
+    },
 }
 </script>
 

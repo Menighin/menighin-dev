@@ -3,12 +3,12 @@
 		<nav>
 			<div class="container">
 				<ul>
-					<li><router-link to="/">Home</router-link></li>
-					<li><router-link to="/en-us/about">About</router-link></li>
+					<li><router-link :to="`/${$route.params.lang}`">Home</router-link></li>
+					<li><router-link :to="`/${$route.params.lang}/about`">About</router-link></li>
 				</ul>
 				<div class="languages">
-					<img :class="{active: language == 'pt'}" @click="setLanguage('pt')" src="./assets/imgs/brazil.png" />
-					<img :class="{active: language == 'en'}" @click="setLanguage('en')" src="./assets/imgs/usa.png" />
+					<img :class="{active: language == 'pt-br'}" @click="setLanguage('pt-br')" src="./assets/imgs/brazil.png" />
+					<img :class="{active: language == 'en-us'}" @click="setLanguage('en-us')" src="./assets/imgs/usa.png" />
 				</div>
 			</div>
 		</nav>
@@ -36,8 +36,10 @@ export default {
 	methods: {
 		setLanguage(lang) {
 			this.language = lang;
-			location.reload();
+			this.$router.push({name: this.$route.name, params: {lang: lang}})
 		}
+	},
+	mounted() {
 	}
 }
 </script>

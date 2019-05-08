@@ -10,17 +10,23 @@ export default new Router({
   // base: process.env.BASE_URL,
   routes: [
     {
+      path: '',
+      name: 'index',
+      redirect: '/en-us'
+    },
+    {
       path: '/:lang',
       component: I18nWrapper,
+      name: 'home',
       children: [
         {
           path: '',
-          // name: 'home',
+          name: 'home',
           component: Home
         },
         {
           path: 'about',
-          // name: 'about',
+          name: 'about',
           component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
         },
         // {
