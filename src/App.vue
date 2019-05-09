@@ -24,9 +24,10 @@
 <script>
 export default {
 	data() {
+		const self = this;
 		return {
 			get language() {
-				return localStorage.getItem('lang') || 'en';
+				return self.$route.params.lang || localStorage.getItem('lang') || 'en-us';
 			},
 			set language(value) {
 				localStorage.setItem('lang', value);
@@ -36,7 +37,7 @@ export default {
 	methods: {
 		setLanguage(lang) {
 			this.language = lang;
-			this.$router.push({name: this.$route.name, params: {lang: lang}})
+			this.$router.push({name: this.$route.name, params: {lang: lang}});
 		}
 	},
 	mounted() {

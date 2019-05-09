@@ -66,17 +66,17 @@ export default {
             this.fixIndex = y <= 0;
         },
         $t(data) {
-            const lang = localStorage.getItem('lang') || 'en';
+            const lang = this.$route.params.lang;
             return data[lang];
         },
         $tCodeExplain(array) {
-            const lang = localStorage.getItem('lang') || 'en';
+            const lang = this.$route.params.lang;
             return array.map(i => ({text: i[lang], line: i.line}));
         }
     },
     computed: {
         titleLocalized() {
-            const lang = localStorage.getItem('lang') || 'en';
+            const lang = this.$route.params.lang;
             return this.title[lang];
         }
     },

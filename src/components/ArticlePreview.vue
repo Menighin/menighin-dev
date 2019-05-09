@@ -2,7 +2,7 @@
     <div class="article-preview">
         <div class="card">
             <div class="img-container">
-                <router-link :to="route">
+                <router-link :to="`/${$route.params.lang}/${route}`">
                     <div class="img" :style="`background-image: url(${previewImg})`"></div>
                     <ul class="tags">
                         <li v-for="t in tags" :key="t" @click="$emit('tag-click', t)"><span>{{ t }}</span></li>
@@ -37,17 +37,14 @@ export default {
         };
     },
     methods: {
-        goTo() {
-            this.$router.push(this.route);
-        }
     },
     computed: {
         titleLocalized() {
-            const lang = localStorage.getItem('lang') || 'en';
+            const lang = this.$route.params.lang;
             return this.title[lang];
         },
         previewTextLocalized() {
-            const lang = localStorage.getItem('lang') || 'en';
+            const lang = this.$route.params.lang;
             return this.previewText[lang];
         }
     },

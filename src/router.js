@@ -7,17 +7,17 @@ Vue.use(Router)
 
 export default new Router({
   mode: 'history',
-  // base: process.env.BASE_URL,
   routes: [
     {
       path: '',
       name: 'index',
-      redirect: '/en-us'
+      redirect: () => {
+        return localStorage.getItem('lang') || 'en-us';
+      }
     },
     {
       path: '/:lang',
       component: I18nWrapper,
-      name: 'home',
       children: [
         {
           path: '',
@@ -27,13 +27,13 @@ export default new Router({
         {
           path: 'about',
           name: 'about',
-          component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+          component: () => import('./views/About.vue')
         },
-        // {
-        //   path: '/c-sharp-async',
-        //   name: 'c-sharp-async',
-        //   component: () => import(/* webpackChunkName: "about" */ './components/articles/CSharpAsync.vue')
-        // }
+        {
+          path: 'c-sharp-async',
+          name: 'c-sharp-async',
+          component: () => import('./components/articles/CSharpAsync.vue')
+        }
       ]
     },
   ]
