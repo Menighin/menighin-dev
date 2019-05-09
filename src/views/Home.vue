@@ -52,6 +52,17 @@ export default {
 			}
 		}
 	},
+	head: {
+		title: {
+			inner: 'Home'
+		},
+		meta: [
+			{ name: 'description', content: 'Mais um blog técnico com artigos e tutoriais sobre várias tecnologias e ferramentas.', lang: 'pt' },
+			{ name: 'description', content: 'Yet another tech blog with articles and tutorials about several technologies and tools.', lang: 'en' },
+			{ name: 'author', content: 'João Menighin' },
+			{ name: 'keywords', content: 'blog, dev, menighin, programming, desenvolvimento, development, csharp, javascript' },
+		]
+	},
 	methods: {
 		tagClick(tag) {
 			this.search = tag;

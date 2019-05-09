@@ -88,7 +88,18 @@ export default {
 				[1, 4, 4, 5, 5],
 			],
 		};
-	}
+	},
+	head: {
+		title: {
+			inner: 'About'
+		},
+		meta: [
+			{ name: 'description', content: 'Formação acadêmica, carreira e interesses.', lang: 'pt' },
+			{ name: 'description', content: 'Schooling, working and interests', lang: 'en' },
+			{ name: 'author', content: 'João Menighin' },
+			{ name: 'keywords', content: 'blog, dev, menighin, programming, desenvolvimento, development, csharp, javascript' },
+		]
+	},
 }
 </script>
 

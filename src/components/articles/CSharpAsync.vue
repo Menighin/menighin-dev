@@ -11,6 +11,17 @@ export default {
         CodeExplain
     },
     extends: ArticleBase,
+    head: {
+		title: {
+			inner: 'C# - Async / Await'
+		},
+		meta: [
+			{ name: 'description', content: 'O que são métodos async? Eles rodam em outra thread? Como async pode fazer meu código ficar mais performático? Vamos responder essas e outras perguntas com exemplos.', lang: 'pt' },
+			{ name: 'description', content: 'What are async methods? Do they run in another thread? How can async make my code run faster? Let\'s answer these and another questions with examples.', lang: 'en' },
+			{ name: 'author', content: 'João Menighin' },
+			{ name: 'keywords', content: 'chsarp, async, await, .net, .net-core' },
+		]
+	},
     data() {
         return {
             title: {
