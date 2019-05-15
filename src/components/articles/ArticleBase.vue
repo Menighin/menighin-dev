@@ -2,6 +2,7 @@
     <div class="article-root">
 
         <div class="article-content" ref="content">
+            <img v-if="headerImg && headerImg !== null" :src="headerImg" />
             <h1>{{ titleLocalized }}</h1>
             <template v-for="(c, i) in content">
                 <p v-html="$t(c.text)" v-if="c.type === 'p'" :key="`c-${i}`"></p>
