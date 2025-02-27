@@ -1,37 +1,16 @@
 {
   "name": "menighin-dev",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "heroku-postbuild": "vue-cli-service build",
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
   },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.17",
-    "@fortawesome/free-brands-svg-icons": "^5.8.1",
-    "@fortawesome/free-solid-svg-icons": "^5.8.1",
-    "@fortawesome/vue-fontawesome": "^0.1.6",
-    "express": "^4.16.4",
-    "prismjs": "^1.16.0",
-    "vue": "^2.6.6",
-    "vue-head": "^2.1.1",
-    "vue-prism-component": "^1.1.1",
-    "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
-  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.4.0",
-    "@vue/cli-plugin-eslint": "^3.4.0",
-    "@vue/cli-service": "^3.7.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.12.0",
-    "sass-loader": "^7.1.0",
-    "style-resources-loader": "^1.2.1",
-    "vue-template-compiler": "^2.5.21"
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
   }
 }
