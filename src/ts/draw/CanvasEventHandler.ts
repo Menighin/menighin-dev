@@ -13,7 +13,7 @@ enum EventInput {
 }
 
 const DRAG_THRESHOLD = 10;
-const SEQUENTIAL_CLICK_THRESHOLD = 150;
+const SEQUENTIAL_CLICK_THRESHOLD = 200;
 const HOLD_THRESHOLD = 500;
 const HOLD_BEAT = 100;
 
@@ -69,6 +69,25 @@ class EventStateMachine {
     }
 }
 
+export class CanvasEventHandlerOptions {
+    public singleClickCallback: ((e: MouseEvent) => void) | null;
+    public doubleClickCallback: ((e: MouseEvent) => void) | null;
+    public holdCallback: ((e: MouseEvent) => void) | null;
+    public dragCallback: ((e: MouseEvent) => void) | null;
+
+    public constructor({
+        singleClickCallback = null,
+        doubleClickCallback = null,
+        holdCallback = null,
+        dragCallback = null,
+    }) {
+        this.singleClickCallback = singleClickCallback;
+        this.doubleClickCallback = doubleClickCallback;
+        this.holdCallback = holdCallback;
+        this.dragCallback = dragCallback;
+    }
+}
+
 export default class CanvasEventHandler {
     private canvas: HTMLCanvasElement;
     private stateMachine: EventStateMachine;
@@ -77,11 +96,15 @@ export default class CanvasEventHandler {
     private holdBeatInterval: number | undefined;
     private clickCount: number = 0;
 
-    public clickCallback: ((clickQnt: number, e: MouseEvent) => void) | null = null;
+    public singleClickCallback: ((e: MouseEvent) => void) | null = null;
+    public doubleClickCallback: ((e: MouseEvent) => void) | null = null;
     public holdCallback: ((e: MouseEvent) => void) | null = null;
     public dragCallback: ((e: MouseEvent) => void) | null = null;
 
-    public constructor(canvas: HTMLCanvasElement) {
+    public constructor(
+        canvas: HTMLCanvasElement,
+        options: CanvasEventHandlerOptions = new CanvasEventHandlerOptions({})
+    ) {
         this.canvas = canvas;
         this.stateMachine = new EventStateMachine();
         this.attachEventListeners();
@@ -95,44 +118,67 @@ export default class CanvasEventHandler {
 
     private onMouseDown(e: MouseEvent) {
         this.stateMachine.handleInput(EventInput.DOWN, e);
-        this.holdTimeout = window.setTimeout(() => {
-            this.stateMachine.handleInput(EventInput.HOLD, e);
-            this.holdBeatInterval = window.setInterval(() => {
+        if (this.holdCallback) {
+            this.holdTimeout = window.setTimeout(() => {
                 this.stateMachine.handleInput(EventInput.HOLD, e);
-                this.holdCallback && this.holdCallback(e);
-                console.log('Holding');
-            }, HOLD_BEAT);
-        }, HOLD_THRESHOLD);
+                this.holdBeatInterval = window.setInterval(() => {
+                    this.stateMachine.handleInput(EventInput.HOLD, e);
+                    this.holdCallback && this.holdCallback(e);
+                    console.log('Holding');
+                }, HOLD_BEAT);
+            }, HOLD_THRESHOLD);
+        }
     }
 
     private onMouseMove(e: MouseEvent) {
-        this.stateMachine.handleInput(EventInput.MOVE, e);
-        switch (this.stateMachine.state) {
-            case EventState.DRAGGING:
-                console.log('Dragging');
-                this.dragCallback && this.dragCallback(e);
-                clearInterval(this.holdBeatInterval);
-                clearTimeout(this.holdTimeout);
-                clearTimeout(this.clickTimeout);
-                this.clickCount = 0;
-                break;
+        if (this.dragCallback) {
+            this.stateMachine.handleInput(EventInput.MOVE, e);
+            switch (this.stateMachine.state) {
+                case EventState.DRAGGING:
+                    console.log('Dragging');
+                    this.dragCallback && this.dragCallback(e);
+                    clearInterval(this.holdBeatInterval);
+                    clearTimeout(this.holdTimeout);
+                    clearTimeout(this.clickTimeout);
+                    this.clickCount = 0;
+                    break;
+            }
         }
     }
 
     private onMouseUp(e: MouseEvent) {
         if (this.stateMachine.state === EventState.DOWN) {
-            this.clickCount++;
-            if (this.clickTimeout) clearTimeout(this.clickTimeout);
-            this.clickTimeout = window.setTimeout(() => {
-                console.log(`Clicked ${this.clickCount} times`);
-                this.clickCallback && this.clickCallback(this.clickCount, e);
-                this.clickCount = 0;
-                clearTimeout(this.clickTimeout);
-            }, SEQUENTIAL_CLICK_THRESHOLD);
+            if (this.doubleClickCallback === null && this.singleClickCallback) {
+                this.singleClickCallback(e);
+            } else if (this.doubleClickCallback) {
+                this.clickCount++;
+
+                if (this.clickCount === 2) {
+                    this.handleClickCount(e);
+                } else {
+                    this.clickTimeout = window.setTimeout(() => {
+                        console.log(`Clicked ${this.clickCount} times`);
+                        this.handleClickCount(e);
+                    }, SEQUENTIAL_CLICK_THRESHOLD);
+                }
+            }
         }
 
         this.stateMachine.handleInput(EventInput.UP, e);
         clearInterval(this.holdBeatInterval);
         clearTimeout(this.holdTimeout);
+    }
+
+    private handleClickCount(e: MouseEvent) {
+        switch (this.clickCount) {
+            case 1:
+                this.singleClickCallback && this.singleClickCallback(e);
+                break;
+            default:
+                this.doubleClickCallback && this.doubleClickCallback(e);
+                break;
+        }
+        this.clickCount = 0;
+        if (this.clickTimeout) clearTimeout(this.clickTimeout);
     }
 }

@@ -1,4 +1,4 @@
-import CanvasEventHandler from './CanvasEventHandler';
+import CanvasEventHandler, { CanvasEventHandlerOptions } from './CanvasEventHandler';
 import PaintBrush from './PaintBrush';
 
 export enum DrawType {
@@ -45,27 +45,53 @@ export class ShapeBufferKey {
     }
 }
 
+export class DrawingCanvasOptions {
+    public width: number;
+    public height: number;
+    public backgroundColor: string | null;
+    public canvasEventHandlerOptions: CanvasEventHandlerOptions;
+
+    public constructor({
+        width = null,
+        height = null,
+        backgroundColor = null,
+        canvasEventHandlerOptions = new CanvasEventHandlerOptions({}),
+    }) {
+        this.width = width || document.documentElement.clientWidth;
+        this.height = height || document.documentElement.clientHeight;
+        this.backgroundColor = backgroundColor;
+        this.canvasEventHandlerOptions = canvasEventHandlerOptions;
+    }
+}
+
 class DrawingCanvas {
     private canvasId: string;
     private ctx: CanvasRenderingContext2D;
     private canvas: HTMLCanvasElement;
     private buffer: Map<string, ((paintBrush: PaintBrush) => void)[]> = new Map();
     private paintBrush: PaintBrush;
-    private backgroundColor: string | null;
     private canvasEventHandler: CanvasEventHandler;
+    private options: DrawingCanvasOptions;
 
-    constructor(canvasId: string, backgroundColor: string | null = null) {
+    constructor(canvasId: string, options: DrawingCanvasOptions = new DrawingCanvasOptions({})) {
         this.canvasId = canvasId;
         this.canvas = document.getElementById(this.canvasId) as HTMLCanvasElement;
-        this.canvasEventHandler = new CanvasEventHandler(this.canvas);
+        this.options = options;
+        this.canvasEventHandler = new CanvasEventHandler(this.canvas, this.options.canvasEventHandlerOptions);
         if (!this.canvas) throw new Error(`Canvas element with id ${this.canvasId} not found`);
         this.ctx = this.canvas.getContext('2d')!!;
         this.paintBrush = new PaintBrush(this.ctx!!);
-        this.backgroundColor = backgroundColor;
+        this.initOptions();
         this.clear();
     }
 
+    private initOptions() {
+        this.resizeCanvas(this.options.width, this.options.height);
+    }
+
     public resizeCanvas(width: number, height: number): void {
+        this.options.width = width;
+        this.options.height = height;
         if (this.canvas) {
             this.canvas.width = width;
             this.canvas.height = height;
@@ -74,8 +100,14 @@ class DrawingCanvas {
         }
     }
 
-    public onClick(callback: (clickCount: number, event: MouseEvent) => void) {
-        this.canvasEventHandler.clickCallback = callback;
+    public onClick(callback: (event: MouseEvent) => void) {
+        this.options.canvasEventHandlerOptions.singleClickCallback = callback;
+        this.canvasEventHandler.singleClickCallback = callback;
+    }
+
+    public onDoubleClick(callback: (event: MouseEvent) => void) {
+        this.options.canvasEventHandlerOptions.doubleClickCallback = callback;
+        this.canvasEventHandler.doubleClickCallback = callback;
     }
 
     public bufferShape(style: ShapeBufferKey, callback: (paintBrush: PaintBrush) => void) {
@@ -121,8 +153,8 @@ class DrawingCanvas {
 
     public clear() {
         if (this.ctx) {
-            if (this.backgroundColor) {
-                this.ctx.fillStyle = this.backgroundColor;
+            if (this.options.backgroundColor) {
+                this.ctx.fillStyle = this.options.backgroundColor;
                 this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
             } else {
                 this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);

@@ -22,13 +22,13 @@ function draw() {
 // Start the drawing loop
 draw();
 
-canvas.onClick((qnt, e) => {
+canvas.onClick((e) => {
     qt.insert({ x: e.clientX, y: e.clientY, mass: 10 });
-
-    // for (const node of qt.dfsIterator()) {
-    //     console.log(node);
-    // }
 });
+
+// canvas.onDoubleClick((e) => {
+//     console.log('Double click at: ', e.clientX, e.clientY);
+// });
 
 canvas.resizeCanvas(canvasArea.width, canvasArea.height);
 window.addEventListener('resize', () => {
