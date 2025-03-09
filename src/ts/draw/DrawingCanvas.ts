@@ -102,12 +102,10 @@ class DrawingCanvas {
 
     public onClick(callback: (event: MouseEvent) => void) {
         this.options.canvasEventHandlerOptions.singleClickCallback = callback;
-        this.canvasEventHandler.singleClickCallback = callback;
     }
 
     public onDoubleClick(callback: (event: MouseEvent) => void) {
         this.options.canvasEventHandlerOptions.doubleClickCallback = callback;
-        this.canvasEventHandler.doubleClickCallback = callback;
     }
 
     public bufferShape(style: ShapeBufferKey, callback: (paintBrush: PaintBrush) => void) {

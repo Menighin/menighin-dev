@@ -95,11 +95,12 @@ export default class CanvasEventHandler {
     private clickTimeout: number | undefined;
     private holdBeatInterval: number | undefined;
     private clickCount: number = 0;
+    private options: CanvasEventHandlerOptions;
 
-    public singleClickCallback: ((e: MouseEvent) => void) | null = null;
-    public doubleClickCallback: ((e: MouseEvent) => void) | null = null;
-    public holdCallback: ((e: MouseEvent) => void) | null = null;
-    public dragCallback: ((e: MouseEvent) => void) | null = null;
+    // public singleClickCallback: ((e: MouseEvent) => void) | null = null;
+    // public doubleClickCallback: ((e: MouseEvent) => void) | null = null;
+    // public holdCallback: ((e: MouseEvent) => void) | null = null;
+    // public dragCallback: ((e: MouseEvent) => void) | null = null;
 
     public constructor(
         canvas: HTMLCanvasElement,
@@ -107,6 +108,7 @@ export default class CanvasEventHandler {
     ) {
         this.canvas = canvas;
         this.stateMachine = new EventStateMachine();
+        this.options = options;
         this.attachEventListeners();
     }
 
@@ -118,12 +120,12 @@ export default class CanvasEventHandler {
 
     private onMouseDown(e: MouseEvent) {
         this.stateMachine.handleInput(EventInput.DOWN, e);
-        if (this.holdCallback) {
+        if (this.options.holdCallback) {
             this.holdTimeout = window.setTimeout(() => {
                 this.stateMachine.handleInput(EventInput.HOLD, e);
                 this.holdBeatInterval = window.setInterval(() => {
                     this.stateMachine.handleInput(EventInput.HOLD, e);
-                    this.holdCallback && this.holdCallback(e);
+                    this.options.holdCallback && this.options.holdCallback(e);
                     console.log('Holding');
                 }, HOLD_BEAT);
             }, HOLD_THRESHOLD);
@@ -131,12 +133,12 @@ export default class CanvasEventHandler {
     }
 
     private onMouseMove(e: MouseEvent) {
-        if (this.dragCallback) {
+        if (this.options.dragCallback) {
             this.stateMachine.handleInput(EventInput.MOVE, e);
             switch (this.stateMachine.state) {
                 case EventState.DRAGGING:
                     console.log('Dragging');
-                    this.dragCallback && this.dragCallback(e);
+                    this.options.dragCallback && this.options.dragCallback(e);
                     clearInterval(this.holdBeatInterval);
                     clearTimeout(this.holdTimeout);
                     clearTimeout(this.clickTimeout);
@@ -148,9 +150,9 @@ export default class CanvasEventHandler {
 
     private onMouseUp(e: MouseEvent) {
         if (this.stateMachine.state === EventState.DOWN) {
-            if (this.doubleClickCallback === null && this.singleClickCallback) {
-                this.singleClickCallback(e);
-            } else if (this.doubleClickCallback) {
+            if (this.options.doubleClickCallback === null && this.options.singleClickCallback) {
+                this.options.singleClickCallback(e);
+            } else if (this.options.doubleClickCallback) {
                 this.clickCount++;
 
                 if (this.clickCount === 2) {
@@ -172,10 +174,10 @@ export default class CanvasEventHandler {
     private handleClickCount(e: MouseEvent) {
         switch (this.clickCount) {
             case 1:
-                this.singleClickCallback && this.singleClickCallback(e);
+                this.options.singleClickCallback && this.options.singleClickCallback(e);
                 break;
             default:
-                this.doubleClickCallback && this.doubleClickCallback(e);
+                this.options.doubleClickCallback && this.options.doubleClickCallback(e);
                 break;
         }
         this.clickCount = 0;

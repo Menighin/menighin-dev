@@ -1,6 +1,6 @@
 import Rectangle from '../commons/Rectangle';
-import Point from './IPoint';
-import Body from './IBody';
+import Point from './Point';
+import Body from './Body';
 import IDrawable from '../draw/IDrawable';
 import DrawingCanvas, { DrawType, ShapeBufferKey } from '../draw/DrawingCanvas';
 
@@ -24,6 +24,10 @@ export default class QuadTree implements IDrawable {
     }
 
     public insert(newBody: Body): void {
+        if (this.isRoot) {
+            // checkMinimumDistance(newBody);
+        }
+
         // If it is an empty leaf, just set it and move on
         if (this.isLeaf && this.body === null) {
             this.body = newBody;
@@ -76,22 +80,26 @@ export default class QuadTree implements IDrawable {
         }
     }
 
+    private get isRoot(): boolean {
+        return this.level === 0;
+    }
+
     private subdivide(): void {
         const x = this.boundary.topLeftCorner.x;
         const y = this.boundary.topLeftCorner.y;
         const w = this.boundary.width / 2;
         const h = this.boundary.height / 2;
 
-        const nw = new Rectangle({ x: x, y: y }, w, h);
+        const nw = new Rectangle(new Point({ x: x, y: y }), w, h);
         this.nw = new QuadTree(nw, this.level + 1);
 
-        const ne = new Rectangle({ x: x + w, y: y }, w, h);
+        const ne = new Rectangle(new Point({ x: x + w, y: y }), w, h);
         this.ne = new QuadTree(ne, this.level + 1);
 
-        const sw = new Rectangle({ x: x, y: y + h }, w, h);
+        const sw = new Rectangle(new Point({ x: x, y: y + h }), w, h);
         this.sw = new QuadTree(sw, this.level + 1);
 
-        const se = new Rectangle({ x: x + w, y: y + h }, w, h);
+        const se = new Rectangle(new Point({ x: x + w, y: y + h }), w, h);
         this.se = new QuadTree(se, this.level + 1);
 
         this.isLeaf = false;
@@ -101,11 +109,11 @@ export default class QuadTree implements IDrawable {
         const totalMass = this.mass + newBody.mass;
 
         if (this.centerOfMass === null) {
-            this.centerOfMass = { x: newBody.x, y: newBody.y };
+            this.centerOfMass = new Point({ x: newBody.x, y: newBody.y });
         } else {
             const x = (this.centerOfMass.x * this.mass + newBody.x * newBody.mass) / totalMass;
             const y = (this.centerOfMass.y * this.mass + newBody.y * newBody.mass) / totalMass;
-            this.centerOfMass = { x, y };
+            this.centerOfMass = new Point({ x, y });
         }
         this.mass = totalMass;
     }
@@ -137,12 +145,12 @@ export default class QuadTree implements IDrawable {
             priority: 0,
             drawType: DrawType.STROKE,
             strokeStyle: '#ccc',
-            lineWidth: 2,
+            lineWidth: 1,
         });
         const particleStyle = new ShapeBufferKey({
             priority: 1,
             drawType: DrawType.FILL,
-            fillStyle: 'blue',
+            fillStyle: '#777',
         });
 
         canvas.bufferShape(gridStyle, (paintBrush) => {
