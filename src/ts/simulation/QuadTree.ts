@@ -4,6 +4,8 @@ import Body from './Body';
 import IDrawable from '../draw/IDrawable';
 import DrawingCanvas, { DrawType, ShapeBufferKey } from '../draw/DrawingCanvas';
 
+const MINIMUM_DISTANCE = 3;
+
 export default class QuadTree implements IDrawable {
     private boundary: Rectangle;
     private mass: number;
@@ -24,10 +26,6 @@ export default class QuadTree implements IDrawable {
     }
 
     public insert(newBody: Body): void {
-        if (this.isRoot) {
-            // checkMinimumDistance(newBody);
-        }
-
         // If it is an empty leaf, just set it and move on
         if (this.isLeaf && this.body === null) {
             this.body = newBody;
@@ -35,6 +33,7 @@ export default class QuadTree implements IDrawable {
         }
         // If its a leaf with a body, subdivide and insert recursively
         else if (this.isLeaf && this.body !== null) {
+            this.checkMinimumDistance(newBody);
             this.subdivide();
             const oldBody = this.body;
             this.emptyNode();
@@ -122,6 +121,17 @@ export default class QuadTree implements IDrawable {
         this.mass = 0;
         this.centerOfMass = null;
         this.body = null;
+    }
+
+    private checkMinimumDistance(body: Body): void {
+        for (const node of this.dfsIterator()) {
+            if (node.body && node.body !== body) {
+                const distance = body.distanceTo(node.body);
+                if (distance < MINIMUM_DISTANCE) {
+                    throw new Error(`Body is too close to another body in the QuadTree. Distance: ${distance}`);
+                }
+            }
+        }
     }
 
     public print(lvl = 0, label = 'root'): void {
