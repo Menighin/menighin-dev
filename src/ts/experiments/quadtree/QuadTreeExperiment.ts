@@ -1,9 +1,9 @@
-import Rectangle from '../commons/Rectangle';
-import DrawingCanvas from '../draw/DrawingCanvas';
-import Body from '../simulation/Body';
-import Point from '../simulation/Point';
-import QuadTree from '../simulation/QuadTree';
-import IExperiment from './IExperiment';
+import Rectangle from '../../commons/Rectangle';
+import DrawingCanvas from '../../draw/DrawingCanvas';
+import Body from '../../simulation/Body';
+import Point from '../../simulation/Point';
+import IExperiment from '../IExperiment';
+import DrawableQuadTree from './DrawableQuadTree';
 
 export default class QuadTreeExperiment implements IExperiment {
     public get title(): string {
@@ -26,7 +26,7 @@ export default class QuadTreeExperiment implements IExperiment {
             document.documentElement.clientHeight
         );
 
-        const qt = new QuadTree(canvasArea);
+        const qt = new DrawableQuadTree(canvasArea);
         qt.insert(new Body({ x: 100, y: 100, mass: 10 }));
 
         function draw() {

@@ -1,9 +1,17 @@
 import IExperiment from './experiments/IExperiment';
-import * as Experiments from './experiments/index';
+import Experiments from './experiments/index';
 
-const experiments = Object.values(Experiments);
-const randomExperiment = experiments[Math.floor(Math.random() * experiments.length)] as IExperiment;
+const urlParams = new URLSearchParams(window.location.search);
+const queryParam = urlParams.get('experiment') ?? null;
+let chosenExperiment: IExperiment;
 
-console.log(`Running experiment: ${randomExperiment.title}`);
+if (queryParam !== null && Experiments.hasOwnProperty(queryParam)) {
+    chosenExperiment = Experiments[queryParam] as IExperiment;
+} else {
+    const experiments = Object.values(Experiments);
+    chosenExperiment = experiments[Math.floor(Math.random() * experiments.length)] as IExperiment;
+}
 
-randomExperiment.render();
+console.log(`Running experiment: ${chosenExperiment.title}`);
+
+chosenExperiment.render();

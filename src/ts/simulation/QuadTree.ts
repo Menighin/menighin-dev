@@ -1,22 +1,20 @@
 import Rectangle from '../commons/Rectangle';
 import Point from './Point';
 import Body from './Body';
-import IDrawable from '../draw/IDrawable';
-import DrawingCanvas, { DrawType, ShapeBufferKey } from '../draw/DrawingCanvas';
 
 const MINIMUM_DISTANCE = 3;
 
-export default class QuadTree implements IDrawable {
-    private boundary: Rectangle;
-    private mass: number;
-    private centerOfMass: Point | null = null;
-    private isLeaf: boolean;
-    private body: Body | null = null;
-    private nw: QuadTree | null = null;
-    private ne: QuadTree | null = null;
-    private sw: QuadTree | null = null;
-    private se: QuadTree | null = null;
-    private level: number;
+export default class QuadTree {
+    public boundary: Rectangle;
+    public mass: number;
+    public centerOfMass: Point | null = null;
+    public body: Body | null = null;
+    protected isLeaf: boolean;
+    protected nw: QuadTree | null = null;
+    protected ne: QuadTree | null = null;
+    protected sw: QuadTree | null = null;
+    protected se: QuadTree | null = null;
+    protected level: number;
 
     public constructor(boundary: Rectangle, level = 0) {
         this.boundary = boundary;
@@ -148,34 +146,5 @@ export default class QuadTree implements IDrawable {
         if (this.se) {
             this.se.print(lvl + 1, 'se');
         }
-    }
-
-    public draw(canvas: DrawingCanvas): void {
-        const gridStyle = new ShapeBufferKey({
-            priority: 0,
-            drawType: DrawType.STROKE,
-            strokeStyle: '#ccc',
-            lineWidth: 1,
-        });
-        const particleStyle = new ShapeBufferKey({
-            priority: 1,
-            drawType: DrawType.FILL,
-            fillStyle: '#777',
-        });
-
-        canvas.bufferShape(gridStyle, (paintBrush) => {
-            paintBrush.drawRectangle(this.boundary);
-        });
-
-        canvas.bufferShape(particleStyle, (paintBrush) => {
-            if (this.body) {
-                paintBrush.drawPoint(this.body.x, this.body.y, this.body.mass);
-            }
-        });
-
-        this.nw?.draw(canvas);
-        this.ne?.draw(canvas);
-        this.sw?.draw(canvas);
-        this.se?.draw(canvas);
     }
 }
