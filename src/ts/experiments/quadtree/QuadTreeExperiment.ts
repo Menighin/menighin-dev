@@ -27,7 +27,6 @@ export default class QuadTreeExperiment implements IExperiment {
         );
 
         const qt = new DrawableQuadTree(canvasArea);
-        qt.insert(new Body({ x: 100, y: 100, mass: 10 }));
 
         function draw() {
             canvas.clear(); // Clear the canvas before drawing

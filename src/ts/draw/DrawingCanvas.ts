@@ -66,8 +66,8 @@ export class DrawingCanvasOptions {
 
 class DrawingCanvas {
     private canvasId: string;
-    private ctx: CanvasRenderingContext2D;
-    private canvas: HTMLCanvasElement;
+    public ctx: CanvasRenderingContext2D;
+    public canvas: HTMLCanvasElement;
     private buffer: Map<string, ((paintBrush: PaintBrush) => void)[]> = new Map();
     private paintBrush: PaintBrush;
     private canvasEventHandler: CanvasEventHandler;
