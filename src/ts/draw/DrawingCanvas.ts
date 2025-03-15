@@ -67,11 +67,19 @@ export class DrawingCanvasOptions {
 class DrawingCanvas {
     private canvasId: string;
     public ctx: CanvasRenderingContext2D;
-    public canvas: HTMLCanvasElement;
+    private canvas: HTMLCanvasElement;
     private buffer: Map<string, ((paintBrush: PaintBrush) => void)[]> = new Map();
     private paintBrush: PaintBrush;
     private canvasEventHandler: CanvasEventHandler;
     private options: DrawingCanvasOptions;
+
+    public get width(): number {
+        return this.canvas.width;
+    }
+
+    public get height(): number {
+        return this.canvas.height;
+    }
 
     constructor(canvasId: string, options: DrawingCanvasOptions = new DrawingCanvasOptions({})) {
         this.canvasId = canvasId;
@@ -87,6 +95,10 @@ class DrawingCanvas {
 
     private initOptions() {
         this.resizeCanvas(this.options.width, this.options.height);
+    }
+
+    public drawLoop(drawCallback: (ts: number) => void) {
+        requestAnimationFrame((ts: number) => this.drawLoopInternal(ts, drawCallback));
     }
 
     public resizeCanvas(width: number, height: number): void {
@@ -116,7 +128,14 @@ class DrawingCanvas {
         }
     }
 
-    public flushBuffer() {
+    private drawLoopInternal(ts: number, drawCallback: (ts: number) => void) {
+        this.clear();
+        drawCallback(ts);
+        this.flushBuffer();
+        requestAnimationFrame((ts: number) => this.drawLoopInternal(ts, drawCallback));
+    }
+
+    private flushBuffer() {
         const sortedBuffer = Array.from(this.buffer.entries())
             .map(
                 ([key, value]) =>
@@ -149,7 +168,7 @@ class DrawingCanvas {
         this.buffer.clear();
     }
 
-    public clear() {
+    private clear() {
         if (this.ctx) {
             if (this.options.backgroundColor) {
                 this.ctx.fillStyle = this.options.backgroundColor;

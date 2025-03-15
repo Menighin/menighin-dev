@@ -28,23 +28,13 @@ export default class QuadTreeExperiment implements IExperiment {
 
         const qt = new DrawableQuadTree(canvasArea);
 
-        function draw() {
-            canvas.clear(); // Clear the canvas before drawing
-            qt.draw(canvas);
-            canvas.flushBuffer();
-            requestAnimationFrame(draw); // Schedule the next frame
-        }
-
-        // Start the drawing loop
-        draw();
+        canvas.drawLoop((ts) => {
+            qt.draw(ts, canvas);
+        });
 
         canvas.onClick((e) => {
             qt.insert(new Body({ x: e.clientX, y: e.clientY, mass: 3 }));
         });
-
-        // canvas.onDoubleClick((e) => {
-        //     console.log('Double click at: ', e.clientX, e.clientY);
-        // });
 
         canvas.resizeCanvas(canvasArea.width, canvasArea.height);
         window.addEventListener('resize', () => {
