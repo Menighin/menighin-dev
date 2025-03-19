@@ -1,49 +1,6 @@
 import CanvasEventHandler, { CanvasEventHandlerOptions } from './CanvasEventHandler';
+import { DrawType, GradientStyle, ShapeBufferKey } from './DrawingUtils';
 import PaintBrush from './PaintBrush';
-
-export enum DrawType {
-    NONE = 0,
-    STROKE = 1,
-    FILL = 2,
-    STROKE_AND_FILL = 3,
-}
-
-export class ShapeBufferKey {
-    public priority: number;
-    public drawType: DrawType;
-    public strokeStyle: string;
-    public fillStyle: string;
-    public lineWidth: number;
-
-    public constructor({
-        priority = 0,
-        drawType = DrawType.NONE,
-        strokeStyle = 'black',
-        fillStyle = 'black',
-        lineWidth = 1,
-    }) {
-        this.priority = priority;
-        this.drawType = drawType;
-        this.strokeStyle = strokeStyle;
-        this.fillStyle = fillStyle;
-        this.lineWidth = lineWidth;
-    }
-
-    public toString(): string {
-        return `${this.priority}|${this.drawType}|${this.strokeStyle}|${this.fillStyle}|${this.lineWidth}`;
-    }
-
-    public static fromString(str: string): ShapeBufferKey {
-        const [priority, drawType, strokeStyle, fillStyle, lineWidth] = str.split('|');
-        return new ShapeBufferKey({
-            priority: Number(priority),
-            drawType: Number(drawType),
-            strokeStyle,
-            fillStyle,
-            lineWidth: Number(lineWidth),
-        });
-    }
-}
 
 export class DrawingCanvasOptions {
     public width: number;
@@ -66,7 +23,7 @@ export class DrawingCanvasOptions {
 
 class DrawingCanvas {
     private canvasId: string;
-    public ctx: CanvasRenderingContext2D;
+    private ctx: CanvasRenderingContext2D;
     private canvas: HTMLCanvasElement;
     private buffer: Map<string, ((paintBrush: PaintBrush) => void)[]> = new Map();
     private paintBrush: PaintBrush;
@@ -145,8 +102,18 @@ class DrawingCanvas {
 
         sortedBuffer.forEach(([style, callbacks]) => {
             if (this.ctx) {
-                this.ctx.strokeStyle = style.strokeStyle;
-                this.ctx.fillStyle = style.fillStyle;
+                if (style.strokeStyle instanceof GradientStyle) {
+                    this.ctx.strokeStyle = style.strokeStyle.toCanvasGradient(this.ctx);
+                } else {
+                    this.ctx.strokeStyle = style.strokeStyle;
+                }
+
+                if (style.fillStyle instanceof GradientStyle) {
+                    this.ctx.fillStyle = style.fillStyle.toCanvasGradient(this.ctx);
+                } else {
+                    this.ctx.fillStyle = style.fillStyle;
+                }
+
                 this.ctx.lineWidth = style.lineWidth;
 
                 this.ctx.beginPath();

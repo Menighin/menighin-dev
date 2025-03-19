@@ -1,22 +1,24 @@
-import DrawingCanvas, { DrawType, ShapeBufferKey } from '../../draw/DrawingCanvas';
+import DrawingCanvas from '../../draw/DrawingCanvas';
 import IDrawable from '../../draw/IDrawable';
-import Point from '../../simulation/Point';
 import Body from '../../simulation/Body';
 import QuadTree from '../../simulation/QuadTree';
 import Color from '../../utils/Color';
+import { DrawType, GradientStyle, ShapeBufferKey } from '../../draw/DrawingUtils';
+import Point from '../../simulation/Point';
+import Rectangle from '../../commons/Rectangle';
 
 export default class DrawableQuadTree extends QuadTree implements IDrawable {
     private stars: Body[] = [];
 
     private gridStyle = new ShapeBufferKey({
-        priority: 0,
+        priority: 1,
         drawType: DrawType.STROKE,
         strokeStyle: '#ccc',
         lineWidth: 1,
     });
 
     private particleStyle = new ShapeBufferKey({
-        priority: 1,
+        priority: 2,
         drawType: DrawType.FILL,
         fillStyle: 'rgba(255,255,255)',
     });
@@ -52,13 +54,22 @@ export default class DrawableQuadTree extends QuadTree implements IDrawable {
         const interpColor = this.backgroundInterpolateFn(ts).toRgba();
 
         // Create a vertical linear gradient.
-        const gradient = canvas.ctx.createLinearGradient(0, 0, 0, canvas.height);
+        const gradient = new GradientStyle({
+            p1: new Point({ x: 0, y: 0 }),
+            p2: new Point({ x: 0, y: canvas.height }),
+        });
         gradient.addColorStop(0, 'black');
         gradient.addColorStop(0.5, 'black');
         gradient.addColorStop(1, interpColor);
 
-        // Fill the canvas with the gradient.
-        canvas.ctx.fillStyle = gradient;
-        canvas.ctx.fillRect(0, 0, canvas.width, canvas.height);
+        const gradStyle = new ShapeBufferKey({
+            priority: 0,
+            drawType: DrawType.FILL,
+            fillStyle: gradient,
+        });
+
+        canvas.bufferShape(gradStyle, (paintBrush) => {
+            paintBrush.drawRectangle(new Rectangle(new Point({ x: 0, y: 0 }), canvas.width, canvas.height));
+        });
     }
 }
