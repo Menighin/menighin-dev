@@ -1,5 +1,5 @@
 import CanvasEventHandler, { CanvasEventHandlerOptions } from './CanvasEventHandler';
-import { DrawType, GradientStyle, ShapeBufferKey } from './DrawingUtils';
+import { DrawType, GradientStyle, ShapeBuffer, ShapeBufferKey } from './DrawingUtils';
 import PaintBrush from './PaintBrush';
 
 export class DrawingCanvasOptions {
@@ -25,7 +25,7 @@ class DrawingCanvas {
     private canvasId: string;
     private ctx: CanvasRenderingContext2D;
     private canvas: HTMLCanvasElement;
-    private buffer: Map<string, ((paintBrush: PaintBrush) => void)[]> = new Map();
+    private buffer: ShapeBuffer = new ShapeBuffer();
     private paintBrush: PaintBrush;
     private canvasEventHandler: CanvasEventHandler;
     private options: DrawingCanvasOptions;
@@ -78,11 +78,7 @@ class DrawingCanvas {
     }
 
     public bufferShape(style: ShapeBufferKey, callback: (paintBrush: PaintBrush) => void) {
-        if (this.buffer.has(style.toString())) {
-            this.buffer.get(style.toString())?.push(callback);
-        } else {
-            this.buffer.set(style.toString(), [callback]);
-        }
+        this.buffer.push(style, callback);
     }
 
     private drawLoopInternal(ts: number, drawCallback: (ts: number) => void) {
@@ -93,14 +89,7 @@ class DrawingCanvas {
     }
 
     private flushBuffer() {
-        const sortedBuffer = Array.from(this.buffer.entries())
-            .map(
-                ([key, value]) =>
-                    [ShapeBufferKey.fromString(key), value] as [ShapeBufferKey, ((paintBrush: PaintBrush) => void)[]]
-            )
-            .sort(([a], [b]) => a.priority - b.priority);
-
-        sortedBuffer.forEach(([style, callbacks]) => {
+        for (const [style, callbacks] of this.buffer.sortedIterator()) {
             if (this.ctx) {
                 if (style.strokeStyle instanceof GradientStyle) {
                     this.ctx.strokeStyle = style.strokeStyle.toCanvasGradient(this.ctx);
@@ -131,7 +120,7 @@ class DrawingCanvas {
             } else {
                 console.error('Canvas context is not initialized.');
             }
-        });
+        }
         this.buffer.clear();
     }
 

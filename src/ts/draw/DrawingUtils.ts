@@ -1,4 +1,5 @@
 import Point from '../simulation/Point';
+import PaintBrush from './PaintBrush';
 
 export enum DrawType {
     NONE = 0,
@@ -61,36 +62,38 @@ export class ShapeBufferKey {
     }
 
     public static fromString(str: string): ShapeBufferKey {
-        const parsed = JSON.parse(str);
+        return JSON.parse(str);
+    }
+}
 
-        // Check if strokeStyle is an object and reconstruct GradientStyle if necessary
-        if (
-            parsed.strokeStyle &&
-            typeof parsed.strokeStyle === 'object' &&
-            'p1' in parsed.strokeStyle &&
-            'p2' in parsed.strokeStyle
-        ) {
-            parsed.strokeStyle = new GradientStyle({
-                p1: new Point(parsed.strokeStyle.p1),
-                p2: new Point(parsed.strokeStyle.p2),
-                colorStops: parsed.strokeStyle.colorStops,
-            });
+export class ShapeBuffer {
+    private buffer: Map<string, [ShapeBufferKey, ((paintBrush: PaintBrush) => void)[]]>;
+
+    public constructor() {
+        this.buffer = new Map();
+    }
+
+    public has(key: ShapeBufferKey): boolean {
+        return this.buffer.has(key.toString());
+    }
+
+    public push(key: ShapeBufferKey, callback: (paintBrush: PaintBrush) => void): void {
+        if (this.buffer.has(key.toString())) {
+            const entry = this.buffer.get(key.toString());
+            entry?.[1].push(callback);
+        } else {
+            this.buffer.set(key.toString(), [key, [callback]]);
         }
+    }
 
-        // Check if fillStyle is an object and reconstruct GradientStyle if necessary
-        if (
-            parsed.fillStyle &&
-            typeof parsed.fillStyle === 'object' &&
-            'p1' in parsed.fillStyle &&
-            'p2' in parsed.fillStyle
-        ) {
-            parsed.fillStyle = new GradientStyle({
-                p1: new Point(parsed.fillStyle.p1),
-                p2: new Point(parsed.fillStyle.p2),
-                colorStops: parsed.fillStyle.colorStops,
-            });
+    public *sortedIterator(): IterableIterator<[ShapeBufferKey, ((paintBrush: PaintBrush) => void)[]]> {
+        const sortedBuffer = Array.from(this.buffer.values()).sort(([a], [b]) => a.priority - b.priority);
+        for (const entry of sortedBuffer) {
+            yield entry;
         }
+    }
 
-        return new ShapeBufferKey(parsed);
+    public clear(): void {
+        this.buffer.clear();
     }
 }
