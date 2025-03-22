@@ -37,15 +37,36 @@ export default class DrawableQuadTree extends QuadTree implements IDrawable {
 
     public draw(ts: number, canvas: DrawingCanvas): void {
         this.drawBackground(ts, canvas);
-        for (const node of this.dfsIterator()) {
-            canvas.bufferShape(this.gridStyle, (paintBrush) => {
-                paintBrush.drawRectangle(node.boundary);
-            });
-        }
+        this.drawBoundaries(ts, canvas);
 
         for (const star of this.stars) {
             canvas.bufferShape(this.particleStyle, (paintBrush) => {
                 paintBrush.drawPoint(star.x, star.y, star.mass);
+            });
+        }
+    }
+
+    private drawBoundaries(ts: number, canvas: DrawingCanvas): void {
+        const interpColor = this.backgroundInterpolateFn(ts).toRgba();
+
+        // Create a vertical linear gradient.
+        const gradient = new GradientStyle({
+            p1: new Point({ x: 0, y: 0 }),
+            p2: new Point({ x: 0, y: canvas.height }),
+        });
+        gradient.addColorStop(0, interpColor);
+        gradient.addColorStop(0.5, interpColor);
+        gradient.addColorStop(1, '#aaa');
+
+        const gradStyle = new ShapeBufferKey({
+            priority: 0,
+            drawType: DrawType.STROKE,
+            strokeStyle: gradient,
+        });
+
+        for (const node of this.dfsIterator()) {
+            canvas.bufferShape(gradStyle, (paintBrush) => {
+                paintBrush.drawRectangle(node.boundary);
             });
         }
     }
