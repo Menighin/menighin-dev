@@ -1,5 +1,5 @@
-import Rectangle from '../commons/Rectangle';
-import Point from './Point';
+import Rectangle from '../geometry/Rectangle';
+import Point from '../geometry/Point';
 import Body from './Body';
 
 const MINIMUM_DISTANCE = 3;

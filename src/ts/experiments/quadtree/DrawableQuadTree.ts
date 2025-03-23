@@ -4,29 +4,24 @@ import Body from '../../simulation/Body';
 import QuadTree from '../../simulation/QuadTree';
 import Color from '../../utils/Color';
 import { DrawType, GradientStyle, ShapeBufferKey } from '../../draw/DrawingUtils';
-import Point from '../../simulation/Point';
-import Rectangle from '../../commons/Rectangle';
+import Point from '../../geometry/Point';
+import Rectangle from '../../geometry/Rectangle';
 
 export default class DrawableQuadTree extends QuadTree implements IDrawable {
     private stars: Body[] = [];
 
-    private gridStyle = new ShapeBufferKey({
-        priority: 1,
-        drawType: DrawType.STROKE,
-        strokeStyle: '#ccc',
-        lineWidth: 1,
-    });
-
     private particleStyle = new ShapeBufferKey({
         priority: 2,
         drawType: DrawType.FILL,
-        fillStyle: 'rgba(255,255,255)',
+        fillStyle: 'white',
+        shadow: { color: 'white', blur: 10 },
     });
 
     private backgroundInterpolateFn = Color.interpolateFn(
-        3000,
+        5000,
+        new Color(3, 71, 75), // rgb(3, 71, 75)
         new Color(0, 0, 139), // rgb(0, 0, 139)
-        new Color(48, 25, 52), // rgb(48, 25, 52)
+        new Color(58, 7, 81), // rgb(58, 7, 81)
         new Color(139, 0, 0) // rgb(139, 0, 0)
     );
 
@@ -38,7 +33,10 @@ export default class DrawableQuadTree extends QuadTree implements IDrawable {
     public draw(ts: number, canvas: DrawingCanvas): void {
         this.drawBackground(ts, canvas);
         this.drawBoundaries(ts, canvas);
+        this.drawStars(ts, canvas);
+    }
 
+    private drawStars(ts: number, canvas: DrawingCanvas): void {
         for (const star of this.stars) {
             canvas.bufferShape(this.particleStyle, (paintBrush) => {
                 paintBrush.drawPoint(star.x, star.y, star.mass);
@@ -56,7 +54,7 @@ export default class DrawableQuadTree extends QuadTree implements IDrawable {
         });
         gradient.addColorStop(0, interpColor);
         gradient.addColorStop(0.5, interpColor);
-        gradient.addColorStop(1, '#aaa');
+        gradient.addColorStop(1, '#fff');
 
         const gradStyle = new ShapeBufferKey({
             priority: 0,

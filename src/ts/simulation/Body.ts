@@ -1,4 +1,4 @@
-import Point from './Point';
+import Point from '../geometry/Point';
 
 export default class Body extends Point {
     mass: number;

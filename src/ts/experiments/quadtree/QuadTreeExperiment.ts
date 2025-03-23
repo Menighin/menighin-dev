@@ -1,7 +1,7 @@
-import Rectangle from '../../commons/Rectangle';
+import Rectangle from '../../geometry/Rectangle';
 import DrawingCanvas from '../../draw/DrawingCanvas';
 import Body from '../../simulation/Body';
-import Point from '../../simulation/Point';
+import Point from '../../geometry/Point';
 import IExperiment from '../IExperiment';
 import DrawableQuadTree from './DrawableQuadTree';
 
@@ -33,7 +33,8 @@ export default class QuadTreeExperiment implements IExperiment {
         });
 
         canvas.onClick((e) => {
-            qt.insert(new Body({ x: e.clientX, y: e.clientY, mass: 3 }));
+            const randomMass = Math.floor(Math.random() * 4) + 1;
+            qt.insert(new Body({ x: e.clientX, y: e.clientY, mass: randomMass }));
         });
 
         canvas.resizeCanvas(canvasArea.width, canvasArea.height);

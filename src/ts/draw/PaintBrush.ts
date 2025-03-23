@@ -1,4 +1,4 @@
-import Rectangle from '../commons/Rectangle';
+import Rectangle from '../geometry/Rectangle';
 
 export default class PaintBrush {
     public ctx: CanvasRenderingContext2D;

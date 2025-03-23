@@ -1,6 +1,6 @@
 import DrawingCanvas from '../draw/DrawingCanvas';
 import IDrawable from '../draw/IDrawable';
-import Point from '../simulation/Point';
+import Point from './Point';
 
 export default class Rectangle implements IDrawable {
     public constructor(public topLeftCorner: Point, public width: number, public height: number) {}

@@ -1,4 +1,4 @@
-import Point from '../simulation/Point';
+import Point from '../geometry/Point';
 import PaintBrush from './PaintBrush';
 
 export enum DrawType {
@@ -35,25 +35,31 @@ export class ShapeBufferKey {
     public drawType: DrawType;
     public strokeStyle: string | GradientStyle;
     public fillStyle: string | GradientStyle;
+    public shadow: { color: string; blur: number; offsetX: number; offsetY: number };
     public lineWidth: number;
+
+    private static readonly DEFAULT_SHADOW = { color: 'black', blur: 0, offsetX: 0, offsetY: 0 };
 
     public constructor({
         priority = 0,
         drawType = DrawType.NONE,
         strokeStyle = 'black',
         fillStyle = 'black',
+        shadow = {},
         lineWidth = 1,
     }: {
         priority?: number;
         drawType?: DrawType;
         strokeStyle?: string | GradientStyle;
         fillStyle?: string | GradientStyle;
+        shadow?: { color?: string; blur?: number; offsetX?: number; offsetY?: number };
         lineWidth?: number;
     }) {
         this.priority = priority;
         this.drawType = drawType;
         this.strokeStyle = strokeStyle;
         this.fillStyle = fillStyle;
+        this.shadow = { ...ShapeBufferKey.DEFAULT_SHADOW, ...shadow };
         this.lineWidth = lineWidth;
     }
 
