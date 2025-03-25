@@ -37,6 +37,11 @@ export default class QuadTreeExperiment implements IExperiment {
             qt.insert(new Body({ x: e.clientX, y: e.clientY, mass: randomMass }));
         });
 
+        canvas.onDrag((e) => {
+            const randomMass = Math.floor(Math.random() * 4) + 1;
+            qt.insert(new Body({ x: e.clientX, y: e.clientY, mass: randomMass }));
+        });
+
         canvas.resizeCanvas(canvasArea.width, canvasArea.height);
         window.addEventListener('resize', () => {
             canvasArea = new Rectangle(

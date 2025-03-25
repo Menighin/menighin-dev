@@ -77,6 +77,14 @@ class DrawingCanvas {
         this.options.canvasEventHandlerOptions.doubleClickCallback = callback;
     }
 
+    public onHoldClick(callback: (event: MouseEvent) => void) {
+        this.options.canvasEventHandlerOptions.holdCallback = callback;
+    }
+
+    public onDrag(callback: (event: MouseEvent) => void) {
+        this.options.canvasEventHandlerOptions.dragCallback = callback;
+    }
+
     public bufferShape(style: ShapeBufferKey, callback: (paintBrush: PaintBrush) => void) {
         this.buffer.push(style, callback);
     }
