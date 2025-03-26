@@ -7,16 +7,10 @@ import { DrawType, GradientStyle, ShapeBufferKey } from '../../draw/DrawingUtils
 import Point from '../../geometry/Point';
 import Rectangle from '../../geometry/Rectangle';
 import { DrawableQuadTreeBoundaries } from './DrawableQuadTreeBoundaries';
+import { DrawableQuadTreeStar } from './DrawableQuadTreeStar';
 
 export default class DrawableQuadTree extends QuadTree implements IDrawable {
-    private stars: Body[] = [];
-
-    private particleStyle = new ShapeBufferKey({
-        priority: 2,
-        drawType: DrawType.FILL,
-        fillStyle: 'white',
-        shadow: { color: 'white', blur: 10 },
-    });
+    private stars: DrawableQuadTreeStar[] = [];
 
     private backgroundInterpolateFn = Color.interpolateFn(
         5000,
@@ -30,21 +24,16 @@ export default class DrawableQuadTree extends QuadTree implements IDrawable {
 
     public override insert(body: Body): void {
         super.insert(body);
-        this.stars.push(body);
+        this.stars.push(new DrawableQuadTreeStar(body));
         this.drawableQuadTreeBoundaries.tickBoundaries();
     }
 
     public draw(ts: number, canvas: DrawingCanvas): void {
         this.drawBackground(ts, canvas);
         this.drawableQuadTreeBoundaries.draw(ts, canvas);
-        this.drawStars(ts, canvas);
-    }
 
-    private drawStars(ts: number, canvas: DrawingCanvas): void {
         for (const star of this.stars) {
-            canvas.bufferShape(this.particleStyle, (paintBrush) => {
-                paintBrush.drawPoint(star.x, star.y, star.mass);
-            });
+            star.draw(ts, canvas);
         }
     }
 
