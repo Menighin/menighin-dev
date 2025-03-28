@@ -1,24 +1,29 @@
 import DrawingCanvas from '../../draw/DrawingCanvas';
-import { DrawType, GradientStyle, ShapeBufferKey } from '../../draw/DrawingUtils';
+import { DrawType, ShapeBufferKey } from '../../draw/DrawingUtils';
 import IDrawable from '../../draw/IDrawable';
 import Body from '../../simulation/Body';
 import MathUtils from '../../utils/MathUtils';
 
 export class DrawableQuadTreeStar implements IDrawable {
-    private particleStyle = new ShapeBufferKey({
-        priority: 2,
-        drawType: DrawType.FILL,
-        fillStyle: 'white',
-        shadow: { color: 'white' },
-    });
-
     private body: Body;
     private interpolateShadowFn: (ts: number) => number;
+    private possibleStarPulseOffset = [150, 180, 210, 240, 270, 300, 330];
+    private possibleStarColors = ['white', 'rgb(255, 251, 172)', 'rgb(255, 201, 201)', 'rgb(195, 245, 255)'];
+    private particleStyle: ShapeBufferKey;
 
     constructor(body: Body) {
         this.body = body;
-        const randomDuration = Math.random() * (250 - 150) + 150;
-        this.interpolateShadowFn = MathUtils.interpolateCycleFn(randomDuration, 0, 50);
+        const randomDuration =
+            this.possibleStarPulseOffset[Math.floor(Math.random() * this.possibleStarPulseOffset.length)];
+        this.interpolateShadowFn = MathUtils.interpolateCycleFn(randomDuration, 0, 10);
+
+        const randomColor = this.possibleStarColors[Math.floor(Math.random() * this.possibleStarColors.length)];
+        this.particleStyle = new ShapeBufferKey({
+            priority: 2,
+            drawType: DrawType.FILL,
+            fillStyle: randomColor,
+            shadow: { color: randomColor },
+        });
     }
 
     public draw(ts: number, canvas: DrawingCanvas): void {
