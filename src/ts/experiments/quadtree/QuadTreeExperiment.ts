@@ -1,5 +1,5 @@
 import Rectangle from '../../geometry/Rectangle';
-import DrawingCanvas from '../../draw/DrawingCanvas';
+import DrawingCanvas, { DrawingCanvasOptions } from '../../draw/DrawingCanvas';
 import Body from '../../simulation/Body';
 import Point from '../../geometry/Point';
 import IExperiment from '../IExperiment';

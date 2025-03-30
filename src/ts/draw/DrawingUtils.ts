@@ -1,5 +1,5 @@
 import Point from '../geometry/Point';
-import PaintBrush from './PaintBrush';
+import PaintBrush, { DrawingInstruction } from './PaintBrush';
 
 export enum DrawType {
     NONE = 0,
@@ -8,7 +8,16 @@ export enum DrawType {
     STROKE_AND_FILL = 3,
 }
 
+export const resolveStyle = (style: any): string | GradientStyle => {
+    if (style.typeName === 'GradientStyle') {
+        return new GradientStyle(style);
+    } else {
+        return style.toString();
+    }
+};
+
 export class GradientStyle {
+    private typeName = 'GradientStyle';
     private p1: Point;
     private p2: Point;
     private colorStops: [number, string][];
@@ -23,7 +32,7 @@ export class GradientStyle {
         this.colorStops.push([offset, color]);
     }
 
-    public toCanvasGradient(ctx: CanvasRenderingContext2D): CanvasGradient {
+    public toCanvasGradient(ctx: OffscreenCanvasRenderingContext2D): CanvasGradient {
         const gradient = ctx.createLinearGradient(this.p1.x, this.p1.y, this.p2.x, this.p2.y);
         this.colorStops.forEach(([offset, color]) => gradient.addColorStop(offset, color));
         return gradient;
@@ -73,7 +82,7 @@ export class ShapeBufferKey {
 }
 
 export class ShapeBuffer {
-    private buffer: Map<string, [ShapeBufferKey, ((paintBrush: PaintBrush) => void)[]]>;
+    private buffer: Map<string, [ShapeBufferKey, ((paintBrush: PaintBrush) => DrawingInstruction[])[]]>;
 
     public constructor() {
         this.buffer = new Map();
@@ -83,7 +92,7 @@ export class ShapeBuffer {
         return this.buffer.has(key.toString());
     }
 
-    public push(key: ShapeBufferKey, callback: (paintBrush: PaintBrush) => void): void {
+    public push(key: ShapeBufferKey, callback: (paintBrush: PaintBrush) => DrawingInstruction[]): void {
         if (this.buffer.has(key.toString())) {
             const entry = this.buffer.get(key.toString());
             entry?.[1].push(callback);
@@ -92,7 +101,7 @@ export class ShapeBuffer {
         }
     }
 
-    public *sortedIterator(): IterableIterator<[ShapeBufferKey, ((paintBrush: PaintBrush) => void)[]]> {
+    public *sortedIterator(): IterableIterator<[ShapeBufferKey, ((paintBrush: PaintBrush) => DrawingInstruction[])[]]> {
         const sortedBuffer = Array.from(this.buffer.values()).sort(([a], [b]) => a.priority - b.priority);
         for (const entry of sortedBuffer) {
             yield entry;

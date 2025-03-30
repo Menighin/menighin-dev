@@ -56,7 +56,9 @@ export default class DrawableQuadTree extends QuadTree implements IDrawable {
         });
 
         canvas.bufferShape(gradStyle, (paintBrush) => {
-            paintBrush.drawRectangle(new Rectangle(new Point({ x: 0, y: 0 }), canvas.width, canvas.height));
+            return paintBrush
+                .drawRectangle(new Rectangle(new Point({ x: 0, y: 0 }), canvas.width, canvas.height))
+                .flushInstructions();
         });
     }
 }

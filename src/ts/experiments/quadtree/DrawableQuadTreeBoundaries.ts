@@ -45,7 +45,7 @@ export class DrawableQuadTreeBoundaries implements IDrawable {
 
         for (const node of this.quadTree.dfsIterator()) {
             canvas.bufferShape(gradStyle, (paintBrush) => {
-                paintBrush.drawRectangle(node.boundary);
+                return paintBrush.drawRectangle(node.boundary).flushInstructions();
             });
         }
     }

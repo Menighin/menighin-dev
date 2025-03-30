@@ -1,6 +1,6 @@
 import CanvasEventHandler, { CanvasEventHandlerOptions } from './CanvasEventHandler';
 import { DrawType, GradientStyle, ShapeBuffer, ShapeBufferKey } from './DrawingUtils';
-import PaintBrush from './PaintBrush';
+import PaintBrush, { DrawingInstruction } from './PaintBrush';
 
 export class DrawingCanvasOptions {
     public width: number;
@@ -13,6 +13,11 @@ export class DrawingCanvasOptions {
         height = null,
         backgroundColor = null,
         canvasEventHandlerOptions = new CanvasEventHandlerOptions({}),
+    }: {
+        width?: number | null;
+        height?: number | null;
+        backgroundColor?: string | null;
+        canvasEventHandlerOptions?: CanvasEventHandlerOptions;
     }) {
         this.width = width || document.documentElement.clientWidth;
         this.height = height || document.documentElement.clientHeight;
@@ -23,12 +28,12 @@ export class DrawingCanvasOptions {
 
 class DrawingCanvas {
     private canvasId: string;
-    private ctx: CanvasRenderingContext2D;
     private canvas: HTMLCanvasElement;
     private buffer: ShapeBuffer = new ShapeBuffer();
     private paintBrush: PaintBrush;
     private canvasEventHandler: CanvasEventHandler;
     private options: DrawingCanvasOptions;
+    private drawingCanvasWorker: Worker;
 
     public get width(): number {
         return this.canvas.width;
@@ -43,11 +48,15 @@ class DrawingCanvas {
         this.canvas = document.getElementById(this.canvasId) as HTMLCanvasElement;
         this.options = options;
         this.canvasEventHandler = new CanvasEventHandler(this.canvas, this.options.canvasEventHandlerOptions);
-        if (!this.canvas) throw new Error(`Canvas element with id ${this.canvasId} not found`);
-        this.ctx = this.canvas.getContext('2d')!!;
-        this.paintBrush = new PaintBrush(this.ctx!!);
+        // if (!this.canvas) throw new Error(`Canvas element with id ${this.canvasId} not found`);
+        // this.ctx = this.canvas.getContext('2d')!!;
+        this.paintBrush = new PaintBrush();
         this.initOptions();
-        this.clear();
+        // this.clear();
+
+        const offscreen = this.canvas.transferControlToOffscreen();
+        this.drawingCanvasWorker = new Worker(new URL('./DrawingCanvasWorker.ts', import.meta.url), { type: 'module' });
+        this.drawingCanvasWorker.postMessage([{ command: 'init', data: { canvas: offscreen } }], [offscreen]);
     }
 
     private initOptions() {
@@ -85,7 +94,7 @@ class DrawingCanvas {
         this.options.canvasEventHandlerOptions.dragCallback = callback;
     }
 
-    public bufferShape(style: ShapeBufferKey, callback: (paintBrush: PaintBrush) => void) {
+    public bufferShape(style: ShapeBufferKey, callback: (paintBrush: PaintBrush) => DrawingInstruction[]) {
         this.buffer.push(style, callback);
     }
 
@@ -98,56 +107,16 @@ class DrawingCanvas {
 
     private flushBuffer() {
         for (const [style, callbacks] of this.buffer.sortedIterator()) {
-            if (this.ctx) {
-                if (style.strokeStyle instanceof GradientStyle) {
-                    this.ctx.strokeStyle = style.strokeStyle.toCanvasGradient(this.ctx);
-                } else {
-                    this.ctx.strokeStyle = style.strokeStyle;
-                }
-
-                if (style.fillStyle instanceof GradientStyle) {
-                    this.ctx.fillStyle = style.fillStyle.toCanvasGradient(this.ctx);
-                } else {
-                    this.ctx.fillStyle = style.fillStyle;
-                }
-
-                this.ctx.shadowColor = style.shadow.color;
-                this.ctx.shadowBlur = style.shadow.blur;
-                this.ctx.shadowOffsetX = style.shadow.offsetX;
-                this.ctx.shadowOffsetY = style.shadow.offsetY;
-
-                this.ctx.lineWidth = style.lineWidth;
-
-                this.ctx.beginPath();
-                callbacks.forEach((callback) => {
-                    callback(this.paintBrush);
-                });
-                if (style.drawType === DrawType.STROKE) {
-                    this.ctx.stroke();
-                } else if (style.drawType === DrawType.FILL) {
-                    this.ctx.fill();
-                } else if (style.drawType === DrawType.STROKE_AND_FILL) {
-                    this.ctx.stroke();
-                    this.ctx.fill();
-                }
-            } else {
-                console.error('Canvas context is not initialized.');
-            }
+            const drawingInstructions = callbacks.flatMap((callback) => callback(this.paintBrush));
+            this.drawingCanvasWorker.postMessage([{ command: 'draw', data: { drawingInstructions, style } }]);
         }
         this.buffer.clear();
     }
 
     private clear() {
-        if (this.ctx) {
-            if (this.options.backgroundColor) {
-                this.ctx.fillStyle = this.options.backgroundColor;
-                this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
-            } else {
-                this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-            }
-        } else {
-            console.error('Canvas context is not initialized.');
-        }
+        this.drawingCanvasWorker.postMessage([
+            { command: 'clear', data: { backgroundColor: this.options.backgroundColor } },
+        ]);
     }
 }
 
