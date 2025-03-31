@@ -99,7 +99,7 @@ class DrawingCanvas {
     }
 
     private drawLoopInternal(ts: number, drawCallback: (ts: number) => void) {
-        this.clear();
+        // this.clear();
         drawCallback(ts);
         this.flushBuffer();
         requestAnimationFrame((ts: number) => this.drawLoopInternal(ts, drawCallback));
