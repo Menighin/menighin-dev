@@ -56,7 +56,6 @@ class EventStateMachine {
                 }
                 break;
         }
-        console.log('New state: ', EventState[this._state]);
     }
 
     private clickDistance(e: MouseEvent): number {
@@ -97,11 +96,6 @@ export default class CanvasEventHandler {
     private clickCount: number = 0;
     private options: CanvasEventHandlerOptions;
 
-    // public singleClickCallback: ((e: MouseEvent) => void) | null = null;
-    // public doubleClickCallback: ((e: MouseEvent) => void) | null = null;
-    // public holdCallback: ((e: MouseEvent) => void) | null = null;
-    // public dragCallback: ((e: MouseEvent) => void) | null = null;
-
     public constructor(
         canvas: HTMLCanvasElement,
         options: CanvasEventHandlerOptions = new CanvasEventHandlerOptions({})
@@ -126,7 +120,6 @@ export default class CanvasEventHandler {
                 this.holdBeatInterval = window.setInterval(() => {
                     this.stateMachine.handleInput(EventInput.HOLD, e);
                     this.options.holdCallback && this.options.holdCallback(e);
-                    console.log('Holding');
                 }, HOLD_BEAT);
             }, HOLD_THRESHOLD);
         }
@@ -137,7 +130,6 @@ export default class CanvasEventHandler {
             this.stateMachine.handleInput(EventInput.MOVE, e);
             switch (this.stateMachine.state) {
                 case EventState.DRAGGING:
-                    console.log('Dragging');
                     this.options.dragCallback && this.options.dragCallback(e);
                     clearInterval(this.holdBeatInterval);
                     clearTimeout(this.holdTimeout);
@@ -159,7 +151,6 @@ export default class CanvasEventHandler {
                     this.handleClickCount(e);
                 } else {
                     this.clickTimeout = window.setTimeout(() => {
-                        console.log(`Clicked ${this.clickCount} times`);
                         this.handleClickCount(e);
                     }, SEQUENTIAL_CLICK_THRESHOLD);
                 }

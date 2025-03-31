@@ -111,10 +111,12 @@ class DrawingCanvas {
                     this.ctx.fillStyle = style.fillStyle;
                 }
 
-                this.ctx.shadowColor = style.shadow.color;
-                this.ctx.shadowBlur = style.shadow.blur;
-                this.ctx.shadowOffsetX = style.shadow.offsetX;
-                this.ctx.shadowOffsetY = style.shadow.offsetY;
+                if (style.shadow) {
+                    this.ctx.shadowColor = style.shadow.color;
+                    this.ctx.shadowBlur = style.shadow.blur;
+                    this.ctx.shadowOffsetX = style.shadow.offsetX;
+                    this.ctx.shadowOffsetY = style.shadow.offsetY;
+                }
 
                 this.ctx.lineWidth = style.lineWidth;
 

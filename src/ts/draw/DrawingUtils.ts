@@ -35,7 +35,7 @@ export class ShapeBufferKey {
     public drawType: DrawType;
     public strokeStyle: string | GradientStyle;
     public fillStyle: string | GradientStyle;
-    public shadow: { color: string; blur: number; offsetX: number; offsetY: number };
+    public shadow: { color: string; blur: number; offsetX: number; offsetY: number } | undefined;
     public lineWidth: number;
 
     private static readonly DEFAULT_SHADOW = { color: 'black', blur: 0, offsetX: 0, offsetY: 0 };
@@ -59,7 +59,7 @@ export class ShapeBufferKey {
         this.drawType = drawType;
         this.strokeStyle = strokeStyle;
         this.fillStyle = fillStyle;
-        this.shadow = { ...ShapeBufferKey.DEFAULT_SHADOW, ...shadow };
+        if (shadow) this.shadow = { ...ShapeBufferKey.DEFAULT_SHADOW, ...shadow };
         this.lineWidth = lineWidth;
     }
 

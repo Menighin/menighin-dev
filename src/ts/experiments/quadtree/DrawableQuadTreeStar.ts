@@ -27,7 +27,7 @@ export class DrawableQuadTreeStar implements IDrawable {
     }
 
     public draw(ts: number, canvas: DrawingCanvas): void {
-        this.particleStyle.shadow.blur = this.interpolateShadowFn(ts);
+        this.particleStyle.shadow!!.blur = this.interpolateShadowFn(ts);
         canvas.bufferShape(this.particleStyle, (paintBrush) => {
             paintBrush.drawPoint(this.body.x, this.body.y, this.body.mass);
         });

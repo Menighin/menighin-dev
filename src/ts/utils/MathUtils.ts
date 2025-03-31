@@ -45,4 +45,11 @@ export default class MathUtils {
             return startValue + (endValue - startValue) * t;
         };
     }
+
+    public static randomizeAround(value: number, maxDecrease: number, maxIncrease: number): number {
+        const randomOffsetX = Math.floor(Math.random() * (maxIncrease + maxDecrease)) - maxDecrease;
+        const randomizedValue = value + randomOffsetX;
+
+        return randomizedValue;
+    }
 }

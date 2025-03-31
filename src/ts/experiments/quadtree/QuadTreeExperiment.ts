@@ -4,6 +4,8 @@ import Body from '../../simulation/Body';
 import Point from '../../geometry/Point';
 import IExperiment from '../IExperiment';
 import DrawableQuadTree from './DrawableQuadTree';
+import FnUtils from '../../utils/FnUtils';
+import MathUtils from '../../utils/MathUtils';
 
 export default class QuadTreeExperiment implements IExperiment {
     public get title(): string {
@@ -37,10 +39,13 @@ export default class QuadTreeExperiment implements IExperiment {
             qt.insert(new Body({ x: e.clientX, y: e.clientY, mass: randomMass }));
         });
 
-        canvas.onDrag((e) => {
+        const throtledDrag = FnUtils.throttleFn((e) => {
             const randomMass = Math.floor(Math.random() * 4) + 1;
-            qt.insert(new Body({ x: e.clientX, y: e.clientY, mass: randomMass }));
-        });
+            const randomizedX = MathUtils.randomizeAround(e.clientX, 100, 100);
+            const randomizedY = MathUtils.randomizeAround(e.clientY, 100, 100);
+            qt.insert(new Body({ x: randomizedX, y: randomizedY, mass: randomMass }));
+        }, 10);
+        canvas.onDrag(throtledDrag);
 
         canvas.resizeCanvas(canvasArea.width, canvasArea.height);
         window.addEventListener('resize', () => {
