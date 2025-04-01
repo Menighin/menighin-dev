@@ -4,11 +4,12 @@ import IDrawable from '../../draw/IDrawable';
 import Point from '../../geometry/Point';
 import QuadTree from '../../simulation/QuadTree';
 import Color from '../../utils/Color';
+import MathUtils from '../../utils/MathUtils';
 
 export class DrawableQuadTreeBoundaries implements IDrawable {
     private quadTree: QuadTree;
     private colorInterpolateFn: (ts: number) => Color;
-    private lastAddedTs: number = 0;
+    private alphaInterpolateFn: ((ts: number) => number) | undefined;
     private tickFlag: boolean = false;
     private white = new Color(255, 255, 255);
 
@@ -19,11 +20,11 @@ export class DrawableQuadTreeBoundaries implements IDrawable {
 
     public draw(ts: number, canvas: DrawingCanvas): void {
         if (this.tickFlag) {
-            this.lastAddedTs = ts;
+            this.alphaInterpolateFn = MathUtils.interpolateOnceFn(ts, 5000, 1, 1, 1, 0);
             this.tickFlag = false;
         }
         const interpColor = this.colorInterpolateFn(ts);
-        const alpha = this.getAlphaValue(ts);
+        const alpha = this.alphaInterpolateFn ? this.alphaInterpolateFn(ts) : 1;
         interpColor.alpha = alpha;
         this.white.alpha = alpha;
         const interpColorRgba = interpColor.toRgba();
@@ -52,14 +53,5 @@ export class DrawableQuadTreeBoundaries implements IDrawable {
 
     public tickBoundaries(): void {
         this.tickFlag = true;
-    }
-
-    private getAlphaValue(ts: number): number {
-        const elapsed = ts - this.lastAddedTs;
-        const fadeOutDuration = 2000;
-        if (elapsed > fadeOutDuration) {
-            return 0;
-        }
-        return 1 - elapsed / fadeOutDuration;
     }
 }
