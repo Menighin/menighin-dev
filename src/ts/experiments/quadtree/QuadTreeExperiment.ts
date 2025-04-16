@@ -14,8 +14,8 @@ export default class QuadTreeExperiment implements IExperiment {
 
     public get helpHtml(): string {
         return `
-            <p>
-                This experiment shows the QuadTree data structure used in the simulation.
+            <p style="color: purple;">
+                How big of a QuadTree is necessary to simulate the universe?
             </p>
         `;
     }

@@ -15,3 +15,30 @@ if (queryParam !== null && Experiments.hasOwnProperty(queryParam)) {
 console.log(`Running experiment: ${chosenExperiment.title}`);
 
 chosenExperiment.render();
+
+// Help button
+let helpOpened = false;
+const helpButton = document.getElementById('help');
+const helpDialog = document.getElementById('help-dialog');
+const closeButton = document.getElementById('close-button');
+const modalContent = document.getElementById('modal-content');
+
+modalContent!!.innerHTML = chosenExperiment.helpHtml;
+
+const modalOpenListener = () => {
+    if (helpOpened) {
+        helpDialog?.style.setProperty('display', 'none');
+        helpOpened = false;
+    } else {
+        helpDialog?.style.setProperty('display', 'block');
+        helpOpened = true;
+    }
+};
+
+if (helpButton) {
+    helpButton.addEventListener('click', modalOpenListener);
+}
+
+if (closeButton) {
+    closeButton.addEventListener('click', modalOpenListener);
+}

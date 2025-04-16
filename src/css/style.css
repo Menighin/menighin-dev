@@ -7,3 +7,46 @@
 body {
     overflow: hidden;
 }
+
+#help {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10px 15px;
+    font-family: monospace;
+}
+
+#help:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    width: 500px;
+    min-height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    font-family: monospace;
+}
+
+.modal > .modal-close {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#close-button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}
+
+#close-button:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
