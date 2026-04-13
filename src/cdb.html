@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Comida di Buteco 2026 - Belo Horizonte | Menighin</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Mapa interativo com os 127 bares e pratos participantes do concurso Comida di Buteco 2026 em Belo Horizonte. Encontre os melhores botecos perto de você com filtros de horários e dias.">
+    <meta name="keywords" content="Comida di Buteco 2026, Belo Horizonte, BH, Bares BH, Restaurantes BH, Concurso Comida de Boteco, Mapa Comida di Buteco">
+    <meta name="author" content="João Menighin">
+    <link rel="canonical" href="https://www.menighin.dev/comida-di-buteco" />
+
+    <!-- Open Graph (Midias Sociais) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.menighin.dev/comida-di-buteco">
+    <meta property="og:title" content="Mapa Interativo: Comida di Buteco BH 2026">
+    <meta property="og:description" content="Explore e filtre os pratos e bares concorrentes em Belo Horizonte em 2026.">
+    <!-- Link to Leaflet CSS for map styling -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+    
+    <!-- Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/cdb.css">
+</head>
+<body>
+    <!-- Form Container for the Map Filters -->
+    <div class="filters-container">
+        <input type="text" id="filter-search" placeholder="Buscar por bar, prato..." />
+        <select id="filter-day">
+            <option value="">Qualquer dia</option>
+            <option value="Segunda-feira">Segunda-feira</option>
+            <option value="Terça-feira">Terça-feira</option>
+            <option value="Quarta-feira">Quarta-feira</option>
+            <option value="Quinta-feira">Quinta-feira</option>
+            <option value="Sexta-feira">Sexta-feira</option>
+            <option value="Sábado">Sábado</option>
+            <option value="Domingo">Domingo</option>
+        </select>
+        <select id="filter-time">
+            <option value="">Qualquer horário</option>
+            <option value="manha">Manhã (08:00 - 11:59)</option>
+            <option value="tarde">Tarde (12:00 - 17:59)</option>
+            <option value="noite">Noite (18:00 - 00:00)</option>
+        </select>
+        <select id="filter-tag">
+            <option value="">Qualquer tag</option>
+            <!-- Injected via JS -->
+        </select>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast-container"></div>
+
+    <!-- Info Icon Floating -->
+    <div class="info-container" id="info-container">
+        <div class="info-icon" id="info-icon">ℹ</div>
+        <div class="info-tooltip">
+            Todas as informações foram retiradas do site <a href="https://comidadibuteco.com.br/" target="_blank">Comida di Buteco</a> e processadas. Confirme no local se estão corretas.
+        </div>
+    </div>
+
+    <!-- Container for the map -->
+    <div id="map"></div>
+
+    <!-- Leaflet JS library -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    
+    <!-- Map initialization and data rendering script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            const map = L.map('map').setView([-19.9167, -43.9345], 13);
+            
+            // Using CartoDB Voyager BaseMap for a clean, distraction-free UI
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+            }).addTo(map);
+
+            // LayerGroup allows easy clearing of markers without deleting the map itself
+            const markersLayer = L.layerGroup().addTo(map);
+            let activeData = [];
+
+            // DOM Elements
+            const searchInput = document.getElementById('filter-search');
+            const daySelect = document.getElementById('filter-day');
+            const timeSelect = document.getElementById('filter-time');
+            const tagSelect = document.getElementById('filter-tag');
+            const toastElement = document.getElementById('toast');
+            let toastTimeout;
+
+            // Info Icon logic
+            const infoContainer = document.getElementById('info-container');
+            const infoIcon = document.getElementById('info-icon');
+
+            infoIcon.addEventListener('click', (e) => {
+                infoContainer.classList.toggle('active');
+                e.stopPropagation();
+            });
+
+            document.addEventListener('click', (e) => {
+                // Fechar se clicar fora
+                if (!infoContainer.contains(e.target)) {
+                    infoContainer.classList.remove('active');
+                }
+            });
+
+            // Periods mapping
+            const periods = {
+              "manha": { start: 8 * 60, end: 11 * 60 + 59 },   // 480 - 719
+              "tarde": { start: 12 * 60, end: 17 * 60 + 59 },  // 720 - 1079
+              "noite": { start: 18 * 60, end: 23 * 60 + 59 }   // 1080 - 1439
+            };
+
+            function showToast(message) {
+                toastElement.textContent = message;
+                toastElement.classList.add('show');
+                clearTimeout(toastTimeout);
+                toastTimeout = setTimeout(() => {
+                    toastElement.classList.remove('show');
+                }, 3000); // Esconde após 3 segundos
+            }
+
+            function parseMinutes(timeStr) {
+                const parts = timeStr.split(':');
+                if (parts.length !== 2) return 0;
+                return parseInt(parts[0], 10) * 60 + parseInt(parts[1], 10);
+            }
+
+            function hasTimeOverlap(barOpen, barClose, filterId) {
+                if (!barOpen || !barClose) return false;
+                
+                let openMin = parseMinutes(barOpen);
+                let closeMin = parseMinutes(barClose);
+                
+                // Handle late closings past midnight (e.g., closing at 00:00, 01:00...)
+                if (closeMin <= openMin) closeMin += 1440; 
+                
+                const filter = periods[filterId];
+                if (!filter) return true;
+
+                // Intersection logic: max(start) <= min(end)
+                return Math.max(filter.start, openMin) <= Math.min(filter.end, closeMin);
+            }
+
+            function renderMarkers(dataToRender) {
+                markersLayer.clearLayers();
+
+                dataToRender.forEach(item => {
+                    const { bar, dish } = item;
+                    if (!bar.lat || !bar.lng) return;
+
+                    const tagsHtml = (dish.tags && dish.tags.length > 0) 
+                        ? dish.tags.map(tag => `<span class="chip">${tag}</span>`).join('') 
+                        : '';
+                    
+                    const hoursHtml = (bar.openHours && bar.openHours.length > 0)
+                        ? bar.openHours.map(h => `<div><strong>${h.day}</strong> <span>${h.open} - ${h.close}</span></div>`).join('')
+                        : '<div>Horários não informados</div>';
+
+                    const popupContent = `
+                        <div class="popup-container">
+                            <a href="${dish.link}" target="_blank" class="popup-title">${bar.name}</a>
+                            <a href="${dish.link}" target="_blank" class="popup-image-link">
+                                <img src="${dish.photoUrl}" alt="Foto do prato ${dish.name}" class="popup-image" loading="lazy" />
+                            </a>
+                            <div class="popup-tags">${tagsHtml}</div>
+                            <div class="popup-dish-name">${dish.name}</div>
+                            <div class="popup-dish-desc">${dish.description}</div>
+                            <div class="popup-footer">
+                                <div class="popup-address">${bar.address}</div>
+                                <div class="popup-hours-container">
+                                    <div class="popup-hours-title">Horários de Funcionamento</div>
+                                    <div class="popup-hours">${hoursHtml}</div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+
+                    const marker = L.marker([parseFloat(bar.lat), parseFloat(bar.lng)]);
+                    marker.bindPopup(popupContent, { maxWidth: 320, minWidth: 300, className: 'custom-popup' });
+                    markersLayer.addLayer(marker);
+                });
+            }
+
+            function applyFilters() {
+                const searchVal = searchInput.value.toLowerCase().trim();
+                const dayVal = daySelect.value;
+                const timeVal = timeSelect.value;
+                const tagVal = tagSelect.value;
+
+                const filtered = activeData.filter(item => {
+                    const { bar, dish } = item;
+
+                    // 1. Text Search Filter (name, dish.name, dish.description) -> Enter trigged
+                    if (searchVal) {
+                        const searchableText = `${bar.name} ${dish.name} ${dish.description}`.toLowerCase();
+                        if (!searchableText.includes(searchVal)) return false;
+                    }
+
+                    // 2. Tags Filter
+                    if (tagVal) {
+                        if (!dish.tags || !dish.tags.includes(tagVal)) return false;
+                    }
+
+                    // 3. Day and 4. Time Filters
+                    if (dayVal || timeVal) {
+                        if (!bar.openHours || bar.openHours.length === 0) return false;
+                        
+                        let matchesDayAndTime = false;
+
+                        for (const oh of bar.openHours) {
+                            let dayMatch = true;
+                            let timeMatch = true;
+
+                            if (dayVal && oh.day !== dayVal) {
+                                dayMatch = false;
+                            }
+
+                            if (timeVal) {
+                                timeMatch = hasTimeOverlap(oh.open, oh.close, timeVal);
+                            }
+
+                            // If this specific schedule item satisfies both constraints for this day loop
+                            if (dayMatch && timeMatch) {
+                                matchesDayAndTime = true;
+                                break;
+                            }
+                        }
+
+                        if (!matchesDayAndTime) return false;
+                    }
+
+                    return true; // Keeps the item if all filters pass
+                });
+
+                renderMarkers(filtered);
+                
+                // Show notification about how many items were found
+                showToast(`Encontrado(s) ${filtered.length} restaurante(s)`);
+            }
+
+            try {
+                const response = await fetch('./data/cdb2026.json');
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                const data = await response.json();
+                activeData = data;
+
+                // Populate Tags dropdown Dynamically
+                const allTags = new Set();
+                data.forEach(item => {
+                    if (item.dish && item.dish.tags) {
+                        item.dish.tags.forEach(t => allTags.add(t));
+                    }
+                });
+
+                const sortedTags = Array.from(allTags).sort((a,b) => a.localeCompare(b));
+                sortedTags.forEach(tag => {
+                    const option = document.createElement("option");
+                    option.value = tag;
+                    // Capitalize the first letter for display
+                    option.textContent = tag.charAt(0).toUpperCase() + tag.slice(1);
+                    tagSelect.appendChild(option);
+                });
+
+                // Attach Events
+                searchInput.addEventListener('keyup', (e) => {
+                    if (e.key === 'Enter') applyFilters();
+                });
+                daySelect.addEventListener('change', applyFilters);
+                timeSelect.addEventListener('change', applyFilters);
+                tagSelect.addEventListener('change', applyFilters);
+
+                // Initial Render
+                renderMarkers(activeData);
+            } catch (error) {
+                console.error("Erro ao carregar dados dos restaurantes:", error);
+            }
+        });
+    </script>
+</body>
+</html>

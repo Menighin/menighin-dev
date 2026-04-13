@@ -3,5 +3,11 @@
 	xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	<url>
 		<loc>https://www.menighin.dev</loc>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.menighin.dev/comida-di-buteco</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
 	</url>
 </urlset>

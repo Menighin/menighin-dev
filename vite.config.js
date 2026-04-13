@@ -10,5 +10,27 @@ export default defineConfig({
     build: {
         sourcemap: true,
         outDir: '../dist',
+        rollupOptions: {
+            input: {
+                main: 'src/index.html',
+                "comida-di-boteco": 'src/cdb.html',
+            },
+        },
     },
+    // Plugin customizado para interceptar a URL no ambiente de Local Dev
+    plugins: [
+        {
+            name: 'dev-server-rewrite',
+            configureServer(server) {
+                server.middlewares.use((req, res, next) => {
+                    // Quando o usuario acessar a url literal /comida-di-boteco
+                    if (req.url === '/comida-di-buteco') {
+                        // O Vite internamente servirá nosso arquivo src/cdb.html
+                        req.url = '/cdb.html';
+                    }
+                    next();
+                });
+            }
+        }
+    ]
 });
