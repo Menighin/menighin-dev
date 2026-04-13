@@ -3,8 +3,8 @@
         "bar": {
             "name": "Bar dos Meninos",
             "address": "Rua Lindolfo Deodoro, 503 – A | Salgado Filho, Belo Horizonte – MG",
-            "lat": -19.9396503,
-            "lng": -43.9789774,
+            "lat": -19.9396546,
+            "lng": -43.9786674,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -48,8 +48,8 @@
         "bar": {
             "name": "Bar da Fia",
             "address": "R. dos Astecas, 2722 | Santa Mônica, Belo Horizonte – MG",
-            "lat": -19.8299231,
-            "lng": -43.9791637,
+            "lat": -19.8279178,
+            "lng": -43.9800563,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -98,8 +98,8 @@
         "bar": {
             "name": "Bar Estabelecimento",
             "address": "R. Monte Alegre, 160 | Serra, Belo Horizonte – MG",
-            "lat": -19.9363019,
-            "lng": -43.9239093,
+            "lat": -19.9364107,
+            "lng": -43.9237627,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -148,8 +148,8 @@
         "bar": {
             "name": "Sunset Bar",
             "address": "R. Érico Veríssimo, 2039 | Santa Mônica, Belo Horizonte – MG",
-            "lat": -19.8222794,
-            "lng": -43.9786635,
+            "lat": -19.8207359,
+            "lng": -43.9779391,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -202,8 +202,8 @@
         "bar": {
             "name": "Zoo Bar",
             "address": "Av. Otacílio Negrão de Lima, 7844 | Pampulha, Belo Horizonte – MG",
-            "lat": -19.8545889,
-            "lng": -44.0040585,
+            "lat": -19.854613,
+            "lng": -44.0041071,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -251,8 +251,8 @@
         "bar": {
             "name": "Zé Bolacha",
             "address": "Rua das Melancias, 35 | Vila Clóris, Belo Horizonte – MG",
-            "lat": -19.8202025,
-            "lng": -43.9510724,
+            "lat": -19.8217603,
+            "lng": -43.9521411,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -301,8 +301,8 @@
         "bar": {
             "name": "Iracema bar",
             "address": "R. Almandina, 56 | Santa Teresa, Belo Horizonte – MG",
-            "lat": -19.9182962,
-            "lng": -43.9246508,
+            "lat": -19.9186343,
+            "lng": -43.9248955,
             "openHours": [
                 {
                     "day": "Quarta-feira",
@@ -347,8 +347,8 @@
         "bar": {
             "name": "Boteco 86",
             "address": "R. Jacarina, 86 | Padre Eustáquio, Belo Horizonte – MG",
-            "lat": -19.913254,
-            "lng": -43.9719321,
+            "lat": -19.9134156,
+            "lng": -43.9720344,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -402,8 +402,8 @@
         "bar": {
             "name": "Bar Mania Mineira",
             "address": "Rua Paracatu, 1099 | Santo Agostinho, Belo Horizonte – MG",
-            "lat": -19.927068,
-            "lng": -43.9531281,
+            "lat": -19.9275471,
+            "lng": -43.9532141,
             "openHours": [
                 {
                     "day": "Quarta-feira",
@@ -447,8 +447,8 @@
         "bar": {
             "name": "Bar do Bem",
             "address": "Rua Vicentina Coutinho Camargos, 100 | Álvaro Camargos, Belo Horizonte – MG",
-            "lat": -19.9153621,
-            "lng": -44.0062588,
+            "lat": -19.9149137,
+            "lng": -44.0049204,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -496,8 +496,8 @@
         "bar": {
             "name": "Conectados Bar",
             "address": "Av. Francisco Sá, 280 | Prado, Belo Horizonte – MG",
-            "lat": -19.9356623,
-            "lng": -43.9595796,
+            "lat": -19.9251305,
+            "lng": -43.9594433,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -545,8 +545,8 @@
         "bar": {
             "name": "O Fino do Alho",
             "address": "R. Capitão Sérgio Pires, 41 | Minascaixa, Belo Horizonte – MG",
-            "lat": -19.8066128,
-            "lng": -43.9563356,
+            "lat": -19.8068507,
+            "lng": -43.9562928,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -599,8 +599,8 @@
         "bar": {
             "name": "Sô Bar",
             "address": "Av. Altamiro Avelino Soares, 426 | Castelo, Belo Horizonte – MG",
-            "lat": -19.8842816,
-            "lng": -43.9967121,
+            "lat": -19.8828308,
+            "lng": -43.9982042,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -648,8 +648,8 @@
         "bar": {
             "name": "Magnífico Quintal",
             "address": "R. Doutor Jefferson de Oliveira, 56 | Santa Amélia, Belo Horizonte – MG",
-            "lat": -19.8421348,
-            "lng": -43.9759104,
+            "lat": -19.842697,
+            "lng": -43.9745867,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -704,8 +704,8 @@
         "bar": {
             "name": "Espetinho do Boi",
             "address": "R. São Paulo da Cruz, 357 | Barreiro, Belo Horizonte – MG",
-            "lat": -19.9810622,
-            "lng": -44.0133834,
+            "lat": -19.9814393,
+            "lng": -44.0145029,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -748,8 +748,8 @@
         "bar": {
             "name": "Pé de Goiaba",
             "address": "Av. Amazonas, 4676  | Nova Suíça, Belo Horizonte – MG",
-            "lat": -19.9298,
-            "lng": -43.9781,
+            "lat": -19.9291424,
+            "lng": -43.975771,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -793,8 +793,8 @@
         "bar": {
             "name": "Bar do Tião",
             "address": "Avenida Doutor Cristiano Guimarães, 2570 | Planalto, Belo Horizonte – MG",
-            "lat": -19.8406259,
-            "lng": -43.95035,
+            "lat": -19.8416131,
+            "lng": -43.9495036,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -848,8 +848,8 @@
         "bar": {
             "name": "Geraldin da Cida",
             "address": "Rua Contria, 1459 | Grajaú, Belo Horizonte – MG",
-            "lat": -19.936342,
-            "lng": -43.968268,
+            "lat": -19.9381854,
+            "lng": -43.9675967,
             "openHours": []
         },
         "dish": {
@@ -866,8 +866,8 @@
         "bar": {
             "name": "Quioxque Botequim Carioca",
             "address": "Rua Henrique Badaró Portugal, 157 | Buritis, Belo Horizonte – MG",
-            "lat": -19.9724056,
-            "lng": -43.9758798,
+            "lat": -19.975114,
+            "lng": -43.9765634,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -920,8 +920,8 @@
         "bar": {
             "name": "Santuário Retrô",
             "address": "Av. Padre Vieira, 150 | Minas Brasil, Belo Horizonte – MG",
-            "lat": -19.9160217,
-            "lng": -43.9899947,
+            "lat": -19.9159187,
+            "lng": -43.9897715,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -969,8 +969,8 @@
         "bar": {
             "name": "Armazém Santa Amélia",
             "address": "Rua da Sinfonia, 253 | Santa Amélia, Belo Horizonte – MG",
-            "lat": -19.8329,
-            "lng": -43.9723,
+            "lat": -19.8327892,
+            "lng": -43.9732667,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -1019,8 +1019,8 @@
         "bar": {
             "name": "Bar Temático Sta. Teresa",
             "address": "R. Pirite, 187  | Santa Teresa, Belo Horizonte – MG",
-            "lat": -19.9104623,
-            "lng": -43.9084168,
+            "lat": -19.9117134,
+            "lng": -43.9111296,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -1068,8 +1068,8 @@
         "bar": {
             "name": "Café Palhares",
             "address": "Rua dos Tupinambás, 638 | Centro, Belo Horizonte – MG",
-            "lat": -19.9188101,
-            "lng": -43.9345824,
+            "lat": -19.9172672,
+            "lng": -43.940204,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -1117,8 +1117,8 @@
         "bar": {
             "name": "Leo da Quadra",
             "address": "R. Oliveira Lisboa, 107 | Barreiro, Belo Horizonte – MG",
-            "lat": -19.9761639,
-            "lng": -44.0131047,
+            "lat": -19.9764724,
+            "lng": -44.0132381,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -1166,8 +1166,8 @@
         "bar": {
             "name": "Bar do Dedinho",
             "address": "Avenida Guarapari, 872 | Santa Amélia, Belo Horizonte – MG",
-            "lat": -19.8335,
-            "lng": -43.9750,
+            "lat": -19.838363,
+            "lng": -43.9769689,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -1220,8 +1220,8 @@
         "bar": {
             "name": "Quitandas da Tia Nice Bar",
             "address": "R. Alabastro, 146  | Horto, Belo Horizonte – MG",
-            "lat": -19.9113358,
-            "lng": -43.9208918,
+            "lat": -19.911229,
+            "lng": -43.9207988,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -1269,8 +1269,8 @@
         "bar": {
             "name": "Bar e Restaurante Bom Sabor",
             "address": "R. Java, 386  | Nova Suíça, Belo Horizonte – MG",
-            "lat": -19.9333627,
-            "lng": -43.9746709,
+            "lat": -19.9330131,
+            "lng": -43.9772529,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -1318,8 +1318,8 @@
         "bar": {
             "name": "Rei da Picanha",
             "address": "Avenida Sebastião de Brito, 400 | Dona Clara, Belo Horizonte – MG",
-            "lat": -19.8614898,
-            "lng": -43.9437183,
+            "lat": -19.8616182,
+            "lng": -43.9437574,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -1367,8 +1367,8 @@
         "bar": {
             "name": "Bar e Restaurante do Branco",
             "address": "Rua Pitangui, 3197 | Sagrada Família, Belo Horizonte – MG",
-            "lat": -19.905944,
-            "lng": -43.9302957,
+            "lat": -19.9076428,
+            "lng": -43.9181784,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -1422,8 +1422,8 @@
         "bar": {
             "name": "Dona Ju Gastro Bar",
             "address": "Rua dos Borges, 1520  | Jardim Vitória, Belo Horizonte – MG",
-            "lat": -19.8517855,
-            "lng": -43.8879409,
+            "lat": -19.8448013,
+            "lng": -43.8802121,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -1471,8 +1471,8 @@
         "bar": {
             "name": "Galpão Flor do Campo",
             "address": "Rua Coronel Otávio Diniz, 449 | Santa Efigênia, Belo Horizonte – MG",
-            "lat": -19.916345,
-            "lng": -43.9073823,
+            "lat": -19.9179595,
+            "lng": -43.9071235,
             "openHours": [
                 {
                     "day": "Quarta-feira",
@@ -1516,8 +1516,8 @@
         "bar": {
             "name": "Toca do Ogro",
             "address": "R. Professor Nelson de Sena, 4 | Pampulha, Belo Horizonte – MG",
-            "lat": -19.8543191,
-            "lng": -43.9568613,
+            "lat": -19.85347,
+            "lng": -43.9559535,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -1567,8 +1567,8 @@
         "bar": {
             "name": "Resenha da Naty",
             "address": "R. Gonçalves Lêdo, 288 | Cachoeirinha, Belo Horizonte – MG",
-            "lat": -19.8930163,
-            "lng": -43.9460919,
+            "lat": -19.8923803,
+            "lng": -43.9460747,
             "openHours": [
                 {
                     "day": "Quarta-feira",
@@ -1611,8 +1611,8 @@
         "bar": {
             "name": "NUBAR",
             "address": "Avenida dos Engenheiros, 843 | Alípio de Melo, Belo Horizonte – MG",
-            "lat": -19.8909945,
-            "lng": -43.9999259,
+            "lat": -19.8895101,
+            "lng": -44.0018906,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -1661,8 +1661,8 @@
         "bar": {
             "name": "Choperia América Norte Sul",
             "address": "R. Chico Rei, 190 | Estrela do Oriente, Belo Horizonte – MG",
-            "lat": -19.9615872,
-            "lng": -43.9847596,
+            "lat": -19.9621417,
+            "lng": -43.9852231,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -1710,8 +1710,8 @@
         "bar": {
             "name": "Buteco Tô D’Boa",
             "address": "Av. Virgílio de Melo Franco, 400 | Jardim Atlântico, Belo Horizonte – MG",
-            "lat": -19.8396625,
-            "lng": -43.9813567,
+            "lat": -19.8444438,
+            "lng": -43.9821135,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -1754,8 +1754,8 @@
         "bar": {
             "name": "Andrade’s Beer",
             "address": "R. Dona Geni, 32 | Maria Helena, Belo Horizonte – MG",
-            "lat": -19.8049138,
-            "lng": -43.9969411,
+            "lat": -19.800632,
+            "lng": -43.9965283,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -1809,8 +1809,8 @@
         "bar": {
             "name": "Bar da Silvânia",
             "address": "R. Soares Nogueira, 801 | Camargos, Belo Horizonte – MG",
-            "lat": -19.9413608,
-            "lng": -44.0180235,
+            "lat": -19.9418096,
+            "lng": -44.0178773,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -1853,8 +1853,8 @@
         "bar": {
             "name": "Bar do Momô",
             "address": "Avenida Coronel José Benjamim, 777 | Padre Eustáquio, Belo Horizonte – MG",
-            "lat": -19.9166757,
-            "lng": -43.9703332,
+            "lat": -19.9192056,
+            "lng": -43.9764141,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -1902,8 +1902,8 @@
         "bar": {
             "name": "Espettinho.com",
             "address": "R. Eli Seabra Filho, 510 | Buritis, Belo Horizonte – MG",
-            "lat": -19.9756214,
-            "lng": -43.9751097,
+            "lat": -19.9754556,
+            "lng": -43.9768423,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -1952,8 +1952,8 @@
         "bar": {
             "name": "Pé de Cana",
             "address": "R. Flórida, 15 | Carmo, Belo Horizonte – MG",
-            "lat": -19.9489897,
-            "lng": -43.9322579,
+            "lat": -19.9484881,
+            "lng": -43.9339669,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -2006,8 +2006,8 @@
         "bar": {
             "name": "Bar do Regis",
             "address": "R. Gávea, 422 | Jardim América, Belo Horizonte – MG",
-            "lat": -19.9395,
-            "lng": -43.9760,
+            "lat": -19.9398014,
+            "lng": -43.9775496,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -2055,8 +2055,8 @@
         "bar": {
             "name": "Empório Laís",
             "address": "Rua Olavo Andrade, 195 | Cachoeirinha, Belo Horizonte – MG",
-            "lat": -19.890209,
-            "lng": -43.9482261,
+            "lat": -19.8900135,
+            "lng": -43.9449515,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -2099,8 +2099,8 @@
         "bar": {
             "name": "Queremos Frango",
             "address": "Avenida Joaquim Clemente, 730 | Floramar, Belo Horizonte – MG",
-            "lat": -19.8390,
-            "lng": -43.9320,
+            "lat": -19.8367995,
+            "lng": -43.9334056,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -2148,8 +2148,8 @@
         "bar": {
             "name": "Dona Suica",
             "address": "Av. João Samaha, 390 | São João Batista (Venda Nova), Belo Horizonte – MG",
-            "lat": -19.8212767,
-            "lng": -43.9664315,
+            "lat": -19.8267119,
+            "lng": -43.9626666,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -2197,8 +2197,8 @@
         "bar": {
             "name": "Mamute Bar",
             "address": "R. Brás Cubas, 116 | Cruzeiro, Belo Horizonte – MG",
-            "lat": -19.9453396,
-            "lng": -43.9286133,
+            "lat": -19.9448741,
+            "lng": -43.9285324,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -2247,8 +2247,8 @@
         "bar": {
             "name": "Azougue Fogo e Bar",
             "address": "Rua do Ouro, 835  | Serra, Belo Horizonte – MG",
-            "lat": -19.9403611,
-            "lng": -43.9200245,
+            "lat": -19.9383853,
+            "lng": -43.9201823,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -2296,8 +2296,8 @@
         "bar": {
             "name": "Tanganica Art Bar",
             "address": "R. Padre Demerval Gomes, 380 | Coração Eucarístico, Belo Horizonte – MG",
-            "lat": -19.9254737,
-            "lng": -43.9917045,
+            "lat": -19.9253528,
+            "lng": -43.9916198,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -2341,8 +2341,8 @@
         "bar": {
             "name": "Quintal do Louzada",
             "address": "Rua Gávea, 358 | Nova Suíça, Belo Horizonte – MG",
-            "lat": -19.9388,
-            "lng": -43.9752,
+            "lat": -19.939545,
+            "lng": -43.976954,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -2385,8 +2385,8 @@
         "bar": {
             "name": "Bazin Bar",
             "address": "R. Min. Orozimbo Nonato, 1053| Dona Clara, Belo Horizonte – MG",
-            "lat": -19.8596,
-            "lng": -43.9439,
+            "lat": -19.8567357,
+            "lng": -43.9427263,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -2434,8 +2434,8 @@
         "bar": {
             "name": "Camisola Bar",
             "address": "R. Luther King, 242 | Cidade Nova, Belo Horizonte – MG",
-            "lat": -19.8926606,
-            "lng": -43.9246059,
+            "lat": -19.8915452,
+            "lng": -43.9247094,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -2483,8 +2483,8 @@
         "bar": {
             "name": "Bar do Bartolomeu",
             "address": "R. Arthur Luchesi, 356 | Santa Helena (Barreiro), Belo Horizonte – MG",
-            "lat": -19.985134,
-            "lng": -44.0112649,
+            "lat": -19.9846946,
+            "lng": -44.0114818,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -2533,8 +2533,8 @@
         "bar": {
             "name": "Garagge Vintage",
             "address": "Av. Doutor Cristiano Guimarães, 1258 | Planalto, Belo Horizonte – MG",
-            "lat": -19.8315762,
-            "lng": -43.9547337,
+            "lat": -19.8316265,
+            "lng": -43.9548952,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -2588,8 +2588,8 @@
         "bar": {
             "name": "Cipoeiro Bar",
             "address": "Rua Desembargador José Satyro, 451 | Castelo, Belo Horizonte – MG",
-            "lat": -19.8895,
-            "lng": -43.9975,
+            "lat": -19.8888538,
+            "lng": -43.995686,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -2638,8 +2638,8 @@
         "bar": {
             "name": "COSMOS",
             "address": "R. Vicente Risola, 1305 | Santa Inês, Belo Horizonte – MG",
-            "lat": -19.8916887,
-            "lng": -43.9083866,
+            "lat": -19.8805434,
+            "lng": -43.9101174,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -2687,8 +2687,8 @@
         "bar": {
             "name": "Oratório Bar",
             "address": "Av. Brasil, 161 | Santa Efigênia, Belo Horizonte – MG",
-            "lat": -19.9288133,
-            "lng": -43.9301073,
+            "lat": -19.9296213,
+            "lng": -43.931233,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -2736,8 +2736,8 @@
         "bar": {
             "name": "Spetim",
             "address": "R. Ilacir Pereira Lima, 518 | Silveira, Belo Horizonte – MG",
-            "lat": -19.8893745,
-            "lng": -43.9301626,
+            "lat": -19.8899061,
+            "lng": -43.9298348,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -2791,8 +2791,8 @@
         "bar": {
             "name": "Espetinho do Tilias",
             "address": "Praça Manoel Batista Baía, 235 | Mantiqueira, Belo Horizonte – MG",
-            "lat": -19.8000554,
-            "lng": -43.9839421,
+            "lat": -19.7998729,
+            "lng": -43.9834833,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -2840,8 +2840,8 @@
         "bar": {
             "name": "Mulão",
             "address": "R. Marambaia, 291 | Caiçara, Belo Horizonte – MG",
-            "lat": -19.9090992,
-            "lng": -43.9683517,
+            "lat": -19.9082148,
+            "lng": -43.9683758,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -2889,8 +2889,8 @@
         "bar": {
             "name": "222",
             "address": "R. Francisco Deslandes, 222 | Cruzeiro, Belo Horizonte – MG",
-            "lat": -19.9456523,
-            "lng": -43.9295759,
+            "lat": -19.9456664,
+            "lng": -43.9297315,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -2938,8 +2938,8 @@
         "bar": {
             "name": "Koqueiros Bar",
             "address": "Av. Silviano Brandão, 1293 | Sagrada Família, Belo Horizonte – MG",
-            "lat": -19.9088958,
-            "lng": -43.914647,
+            "lat": -19.911212,
+            "lng": -43.9254403,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -2987,8 +2987,8 @@
         "bar": {
             "name": "PoiZé Bar e Petisqueira",
             "address": "R. Pium-I, 686  | Cruzeiro, Belo Horizonte – MG",
-            "lat": -19.9475492,
-            "lng": -43.9312652,
+            "lat": -19.945659,
+            "lng": -43.9309165,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -3036,8 +3036,8 @@
         "bar": {
             "name": "Ivo Grill",
             "address": "Rua Professor Tristão da Cunha, 183 | Planalto, Belo Horizonte – MG",
-            "lat": -19.8369086,
-            "lng": -43.9483954,
+            "lat": -19.8375071,
+            "lng": -43.9475477,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -3085,8 +3085,8 @@
         "bar": {
             "name": "Parada do Sabor",
             "address": "Av. General Carlos Guedes, 346 | Planalto, Belo Horizonte – MG",
-            "lat": -19.8373712,
-            "lng": -43.9480678,
+            "lat": -19.837958,
+            "lng": -43.9483778,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -3134,8 +3134,8 @@
         "bar": {
             "name": "Seu Justino",
             "address": "Rua Dona Conceição Martins, 63 | Maria Helena, Belo Horizonte – MG",
-            "lat": -19.8022926,
-            "lng": -43.9995124,
+            "lat": -19.8025223,
+            "lng": -43.9974447,
             "openHours": [
                 {
                     "day": "Quarta-feira",
@@ -3179,8 +3179,8 @@
         "bar": {
             "name": "Cantina Arte Quintal",
             "address": "R. Realengo, 150 | Caiçara, Belo Horizonte – MG",
-            "lat": -19.9014096,
-            "lng": -43.9756523,
+            "lat": -19.9011587,
+            "lng": -43.9757609,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -3228,8 +3228,8 @@
         "bar": {
             "name": "Bar da Gisa",
             "address": "Rua Maria Ferreira da Silva, 367 | Fernão Dias, Belo Horizonte – MG",
-            "lat": -19.8773115,
-            "lng": -43.916571,
+            "lat": -19.8760484,
+            "lng": -43.9160656,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -3278,8 +3278,8 @@
         "bar": {
             "name": "Planeta Lúpulo",
             "address": "Av. Guarapari, 108 | Santa Amélia, Belo Horizonte – MG",
-            "lat": -19.8385,
-            "lng": -43.9710,
+            "lat": -19.8445588,
+            "lng": -43.9770869,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -3327,8 +3327,8 @@
         "bar": {
             "name": "Butiquim On Cê Tá?",
             "address": "Av. Gen. Olímpio Mourão Filho, 754 | Itapoã, Belo Horizonte – MG",
-            "lat": -19.8287634,
-            "lng": -43.9606177,
+            "lat": -19.8341983,
+            "lng": -43.9565902,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -3377,8 +3377,8 @@
         "bar": {
             "name": "Bar do Nelson",
             "address": "R. Vicente Risola, 1000 | Santa Inês, Belo Horizonte – MG",
-            "lat": -19.8828976,
-            "lng": -43.9096206,
+            "lat": -19.8839843,
+            "lng": -43.9092247,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -3426,8 +3426,8 @@
         "bar": {
             "name": "Já Tô Inno",
             "address": "R. Benjamim Dias, 379 | Barreiro, Belo Horizonte – MG",
-            "lat": -19.9764,
-            "lng": -44.0223,
+            "lat": -19.9783173,
+            "lng": -44.0154373,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -3475,8 +3475,8 @@
         "bar": {
             "name": "Prado Beer",
             "address": "Av. Francisco Sá, 590 | Prado, Belo Horizonte – MG",
-            "lat": -19.9296111,
-            "lng": -43.9598277,
+            "lat": -19.9270272,
+            "lng": -43.9597701,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -3529,8 +3529,8 @@
         "bar": {
             "name": "Golden Grill",
             "address": "R. Amílcar Cabral, 515 | Milionários, Belo Horizonte – MG",
-            "lat": -19.9818967,
-            "lng": -44.0047592,
+            "lat": -19.9854385,
+            "lng": -44.00262,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -3578,8 +3578,8 @@
         "bar": {
             "name": "Barrigudinha Buteco",
             "address": "Av. dos Engenheiros, 1071 | Alípio de Melo, Belo Horizonte – MG",
-            "lat": -19.8895,
-            "lng": -44.0015,
+            "lat": -19.8888042,
+            "lng": -44.0027601,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -3628,8 +3628,8 @@
         "bar": {
             "name": "Bar Du Du",
             "address": "R. Vinte e Oito de Setembro, 229 | Esplanada, Belo Horizonte – MG",
-            "lat": -19.9110478,
-            "lng": -43.9070201,
+            "lat": -19.9082491,
+            "lng": -43.9061121,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -3678,8 +3678,8 @@
         "bar": {
             "name": "Magrelo’s bar",
             "address": "Av. Serrana, 635 | Serrano, Belo Horizonte – MG",
-            "lat": -19.8808275,
-            "lng": -44.0115442,
+            "lat": -19.880126,
+            "lng": -44.0117667,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -3727,8 +3727,8 @@
         "bar": {
             "name": "Cantinho da Baiana",
             "address": "R. Itaité, 422 | São Geraldo, Belo Horizonte – MG",
-            "lat": -19.896322,
-            "lng": -43.8930937,
+            "lat": -19.8984545,
+            "lng": -43.899903,
             "openHours": [
                 {
                     "day": "Quarta-feira",
@@ -3771,8 +3771,8 @@
         "bar": {
             "name": "Mineiros Beer",
             "address": "R. Romualdo Lopes Cançado, 399 | Castelo, Belo Horizonte – MG",
-            "lat": -19.8881972,
-            "lng": -43.996875,
+            "lat": -19.8886654,
+            "lng": -43.9970161,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -3825,8 +3825,8 @@
         "bar": {
             "name": "Santa Boemia",
             "address": "R. Mármore, 534 | Santa Teresa, Belo Horizonte – MG",
-            "lat": -19.9162948,
-            "lng": -43.9182816,
+            "lat": -19.9166073,
+            "lng": -43.9175112,
             "openHours": [
                 {
                     "day": "Quarta-feira",
@@ -3870,8 +3870,8 @@
         "bar": {
             "name": "Nosso Spetim",
             "address": "Rua dos Astecas, 3219 | Santa Mônica, Belo Horizonte – MG",
-            "lat": -19.8317919,
-            "lng": -43.9768669,
+            "lat": -19.83178,
+            "lng": -43.97723,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -3919,8 +3919,8 @@
         "bar": {
             "name": "Bar do Kim",
             "address": "Rua Júlio de Castilho, 1071 | Palmeiras, Belo Horizonte – MG",
-            "lat": -19.9590946,
-            "lng": -43.9818958,
+            "lat": -19.9646048,
+            "lng": -43.9806296,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -3973,8 +3973,8 @@
         "bar": {
             "name": "Bar Stella",
             "address": "Av. Saramenha, 1599 | Guarani, Belo Horizonte – MG",
-            "lat": -19.8418393,
-            "lng": -43.9293269,
+            "lat": -19.8440095,
+            "lng": -43.9174634,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -4027,8 +4027,8 @@
         "bar": {
             "name": "Rei do Peixe",
             "address": "R. Ramalho Ortigão, 735 | Santa Branca, Belo Horizonte – MG",
-            "lat": -19.8307,
-            "lng": -43.9654,
+            "lat": -19.8325312,
+            "lng": -43.9664769,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -4076,8 +4076,8 @@
         "bar": {
             "name": "Baiúca",
             "address": "R. Piauí, 1884 | Funcionários, Belo Horizonte – MG",
-            "lat": -19.9368282,
-            "lng": -43.9282795,
+            "lat": -19.9379829,
+            "lng": -43.928739,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -4126,8 +4126,8 @@
         "bar": {
             "name": "Bar Pompéu",
             "address": "R. São Miguel, 779 – antigo 1243 | Itapoã, Belo Horizonte – MG",
-            "lat": -19.8373,
-            "lng": -43.9585,
+            "lat": -19.8426032,
+            "lng": -43.9582978,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -4180,8 +4180,8 @@
         "bar": {
             "name": "Bar do Peixinho",
             "address": "Avenida Bernardo de Vasconcelos, 1824 | Cachoeirinha, Belo Horizonte – MG",
-            "lat": -19.8757884,
-            "lng": -43.9293954,
+            "lat": -19.8808161,
+            "lng": -43.9353931,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -4225,8 +4225,8 @@
         "bar": {
             "name": "Toninho – Alto Forno",
             "address": "R. Miracema, 100 | Santo André, Belo Horizonte – MG",
-            "lat": -19.8999841,
-            "lng": -43.9522977,
+            "lat": -19.899922,
+            "lng": -43.9523404,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -4275,8 +4275,8 @@
         "bar": {
             "name": "Buteco’s Bar",
             "address": "R. Ernesto Braga, 2 | Jardim Atlântico, Belo Horizonte – MG",
-            "lat": -19.8475324,
-            "lng": -43.9828181,
+            "lat": -19.8478449,
+            "lng": -43.9821879,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -4324,8 +4324,8 @@
         "bar": {
             "name": "Alexandre’s Bar",
             "address": "R. David Alves do Vale, 68  | Santa Rosa, Belo Horizonte – MG",
-            "lat": -19.8634011,
-            "lng": -43.9441692,
+            "lat": -19.8618987,
+            "lng": -43.944369,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -4373,8 +4373,8 @@
         "bar": {
             "name": "Bar do Primo",
             "address": "Avenida Amazonas, 4649 | Nova Suíça, Belo Horizonte – MG",
-            "lat": -19.9297,
-            "lng": -43.9779,
+            "lat": -19.9295944,
+            "lng": -43.9757771,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -4427,8 +4427,8 @@
         "bar": {
             "name": "Parada 10.95 Bar",
             "address": "Avenida dos Engenheiros, 1095 | Alípio de Melo, Belo Horizonte – MG",
-            "lat": -19.8890,
-            "lng": -44.0018,
+            "lat": -19.8886402,
+            "lng": -44.0029196,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -4482,8 +4482,8 @@
         "bar": {
             "name": "Köbes Emporium Bar",
             "address": "R. Professor Raimundo Nonato, 31 – A | Santa Tereza, Belo Horizonte – MG",
-            "lat": -19.9119307,
-            "lng": -43.9157622,
+            "lat": -19.9102827,
+            "lng": -43.9160322,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -4531,8 +4531,8 @@
         "bar": {
             "name": "Bar da Lu",
             "address": "R. Geralda Marinho, 41 | São João Batista (Venda Nova), Belo Horizonte – MG",
-            "lat": -19.8272,
-            "lng": -43.9648,
+            "lat": -19.8273428,
+            "lng": -43.9640763,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -4580,8 +4580,8 @@
         "bar": {
             "name": "Comida & Prosa",
             "address": "Av. Francisco Sá, 306 | Prado, Belo Horizonte – MG",
-            "lat": -19.924344,
-            "lng": -43.9592689,
+            "lat": -19.9253051,
+            "lng": -43.9594799,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -4629,8 +4629,8 @@
         "bar": {
             "name": "S.O.S Pub",
             "address": "Avenida Padre José Maurício, 1126 | Vista Alegre, Belo Horizonte – MG",
-            "lat": -19.9520894,
-            "lng": -43.9926409,
+            "lat": -19.95561,
+            "lng": -43.99804,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -4683,8 +4683,8 @@
         "bar": {
             "name": "Buteco do Lili",
             "address": "R. Líbero Badaró, 493 | Dona Clara, Belo Horizonte – MG",
-            "lat": -19.8633295,
-            "lng": -43.9459414,
+            "lat": -19.8611471,
+            "lng": -43.9460218,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -4737,8 +4737,8 @@
         "bar": {
             "name": "Avalanche Bar e Restaurante",
             "address": "R. Doutor Álvaro Camargos, 1113 | São João Batista, Belo Horizonte – MG",
-            "lat": -19.8286695,
-            "lng": -43.9631565,
+            "lat": -19.8250148,
+            "lng": -43.960121,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -4791,8 +4791,8 @@
         "bar": {
             "name": "Companhia do Dino",
             "address": "Avenida Joaquim Clemente, 682 | Floramar, Belo Horizonte – MG",
-            "lat": -19.8396,
-            "lng": -43.9332,
+            "lat": -19.8372249,
+            "lng": -43.933255,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -4840,8 +4840,8 @@
         "bar": {
             "name": "Graffica Bar",
             "address": "Av. Augusto de Lima, 233 – Varanda | Centro, Belo Horizonte – MG",
-            "lat": -19.9238,
-            "lng": -43.9405,
+            "lat": -19.92462,
+            "lng": -43.93794,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -4889,8 +4889,8 @@
         "bar": {
             "name": "Us Motoca",
             "address": "R. Blenda, 91 | Camargos, Belo Horizonte – MG",
-            "lat": -19.9407705,
-            "lng": -44.0148074,
+            "lat": -19.9403546,
+            "lng": -44.0141472,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -4938,8 +4938,8 @@
         "bar": {
             "name": "Chapa Mágica",
             "address": "Av. Waldomiro Lobo, 305 | Guarani, Belo Horizonte – MG",
-            "lat": -19.846473,
-            "lng": -43.9356296,
+            "lat": -19.845422,
+            "lng": -43.9216718,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -4994,8 +4994,8 @@
         "bar": {
             "name": "Espetinho Rei e Família",
             "address": "Av. Guarapari, 1281 | Santa Amélia, Belo Horizonte – MG",
-            "lat": -19.8320,
-            "lng": -43.9765,
+            "lat": -19.8351724,
+            "lng": -43.9749438,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -5043,8 +5043,8 @@
         "bar": {
             "name": "Boi Major",
             "address": "R. Major Lopes, 7 | São Pedro, Belo Horizonte – MG",
-            "lat": -19.9437587,
-            "lng": -43.9353029,
+            "lat": -19.941174,
+            "lng": -43.9375874,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -5097,8 +5097,8 @@
         "bar": {
             "name": "Xambar",
             "address": "Av. Augusto de Lima, 233 – Edifício Maleta  | Centro, Belo Horizonte – MG",
-            "lat": -19.9238,
-            "lng": -43.9405,
+            "lat": -19.9247048,
+            "lng": -43.9379225,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -5146,8 +5146,8 @@
         "bar": {
             "name": "Barzim dos Amigos",
             "address": "R. Lindolfo de Azevedo, 1263 | Jardim América, Belo Horizonte – MG",
-            "lat": -19.9481638,
-            "lng": -43.9712349,
+            "lat": -19.9435009,
+            "lng": -43.9737939,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -5200,8 +5200,8 @@
         "bar": {
             "name": "Bar da Cintia",
             "address": "R. Pastor Rui Franco, 257 | São João Batista (Venda Nova), Belo Horizonte – MG",
-            "lat": -19.8168676,
-            "lng": -43.9694756,
+            "lat": -19.8166948,
+            "lng": -43.9695635,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -5251,8 +5251,8 @@
         "bar": {
             "name": "Bar Bambú",
             "address": "R. Divisa Nova, 670 | Salgado Filho, Belo Horizonte – MG",
-            "lat": -19.9440127,
-            "lng": -43.9840632,
+            "lat": -19.9454547,
+            "lng": -43.9819144,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -5300,8 +5300,8 @@
         "bar": {
             "name": "Butiquim 325",
             "address": "Avenida Francisco Sá, 325 | Prado, Belo Horizonte – MG",
-            "lat": -19.928111,
-            "lng": -43.9596885,
+            "lat": -19.9255133,
+            "lng": -43.9592582,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -5350,8 +5350,8 @@
         "bar": {
             "name": "Via Deslandes",
             "address": "Rua Francisco Deslandes, 10 | Anchieta, Belo Horizonte – MG",
-            "lat": -19.9516053,
-            "lng": -43.9277365,
+            "lat": -19.9442152,
+            "lng": -43.9302028,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -5404,8 +5404,8 @@
         "bar": {
             "name": "Bar Du Magrelo",
             "address": "Rua São Felipe, 21 – Perto do Independência | Horto, Belo Horizonte – MG",
-            "lat": -19.9079,
-            "lng": -43.9185,
+            "lat": -19.907602,
+            "lng": -43.9180116,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -5453,8 +5453,8 @@
         "bar": {
             "name": "Locomotivas Bar",
             "address": "R. Carmésia, 568 | Santa Inês, Belo Horizonte – MG",
-            "lat": -19.8902344,
-            "lng": -43.9078323,
+            "lat": -19.8867198,
+            "lng": -43.9082903,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -5503,8 +5503,8 @@
         "bar": {
             "name": "Bar Bendita Baderna",
             "address": "R. Silva Fortes, 47  | União, Belo Horizonte – MG",
-            "lat": -19.8811789,
-            "lng": -43.9272578,
+            "lat": -19.8793837,
+            "lng": -43.9278418,
             "openHours": [
                 {
                     "day": "Quarta-feira",
@@ -5553,8 +5553,8 @@
         "bar": {
             "name": "Bar Junto Juntinho",
             "address": "Rua Cura D’Ars, 542 | Prado, Belo Horizonte – MG",
-            "lat": -19.9336587,
-            "lng": -43.9625614,
+            "lat": -19.927335,
+            "lng": -43.9643573,
             "openHours": [
                 {
                     "day": "Quarta-feira",
@@ -5598,8 +5598,8 @@
         "bar": {
             "name": "Deck Boi na Brasa",
             "address": "R. Desembargador José Satyro, 302  | Manacás, Belo Horizonte – MG",
-            "lat": -19.8886,
-            "lng": -43.9960,
+            "lat": -19.8876361,
+            "lng": -43.9964471,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -5647,8 +5647,8 @@
         "bar": {
             "name": "Beco Restaurante",
             "address": "R. dos Tamoios, 232 | Centro, Belo Horizonte – MG",
-            "lat": -19.9182822,
-            "lng": -43.9477147,
+            "lat": -19.9202735,
+            "lng": -43.9386206,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -5696,8 +5696,8 @@
         "bar": {
             "name": "Dona Dora",
             "address": "R. Rio de Janeiro, 1205 | Centro, Belo Horizonte – MG",
-            "lat": -19.925814,
-            "lng": -43.9404836,
+            "lat": -19.9249056,
+            "lng": -43.94012,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -5745,8 +5745,8 @@
         "bar": {
             "name": "Bar da Praça",
             "address": "Rua Oeste, 517 | Calafate, Belo Horizonte – MG",
-            "lat": -19.9217945,
-            "lng": -43.9677897,
+            "lat": -19.9234463,
+            "lng": -43.9681647,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -5790,8 +5790,8 @@
         "bar": {
             "name": "Juzé Bar",
             "address": "R. Carlos Sá, 180| Jardim Atlântico, Belo Horizonte – MG",
-            "lat": -19.8414871,
-            "lng": -43.9890445,
+            "lat": -19.843062,
+            "lng": -43.9866591,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -5839,8 +5839,8 @@
         "bar": {
             "name": "Reforma Bar",
             "address": "Rua Joaquim Nabuco, 577 | Nova Suíça, Belo Horizonte – MG",
-            "lat": -19.9354463,
-            "lng": -43.9772205,
+            "lat": -19.936167,
+            "lng": -43.976954,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -5883,8 +5883,8 @@
         "bar": {
             "name": "Chopp da Esquina",
             "address": "R. Garret, 263 | Nova Granada, Belo Horizonte – MG",
-            "lat": -19.9432796,
-            "lng": -43.9684262,
+            "lat": -19.9426678,
+            "lng": -43.9657597,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -5932,8 +5932,8 @@
         "bar": {
             "name": "Bar do João (São João Batista)",
             "address": "R. Geralda Marinho, 117 | São João Batista (Venda Nova), Belo Horizonte – MG",
-            "lat": -19.8268,
-            "lng": -43.9645,
+            "lat": -19.8268747,
+            "lng": -43.9647017,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -5986,8 +5986,8 @@
         "bar": {
             "name": "Casa Mojubá",
             "address": "Rua Mármore, 817 | Santa Tereza, Belo Horizonte – MG",
-            "lat": -19.9162948,
-            "lng": -43.9182816,
+            "lat": -19.9170036,
+            "lng": -43.9147352,
             "openHours": [
                 {
                     "day": "Terça-feira",
@@ -6035,8 +6035,8 @@
         "bar": {
             "name": "Espetinho São Pedro QUIÓ",
             "address": "Rua Cristina, 870 | São Pedro, Belo Horizonte – MG",
-            "lat": -19.9481585,
-            "lng": -43.9313917,
+            "lat": -19.9464294,
+            "lng": -43.9379354,
             "openHours": [
                 {
                     "day": "Terça a sexta de 17",
@@ -6059,8 +6059,8 @@
         "bar": {
             "name": "Sant’Esquina Butiquim",
             "address": "Rua Ramalho Ortigão, 650 | Santa Branca, Belo Horizonte – MG",
-            "lat": -19.8366877,
-            "lng": -43.9683649,
+            "lat": -19.8330535,
+            "lng": -43.9665114,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -6113,8 +6113,8 @@
         "bar": {
             "name": "Bella Bar e Restaurante",
             "address": "Rua dos Odontólogos, 422 | Alípio de Melo, Belo Horizonte – MG",
-            "lat": -19.8891471,
-            "lng": -44.0028099,
+            "lat": -19.8893626,
+            "lng": -44.0028413,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -6162,8 +6162,8 @@
         "bar": {
             "name": "Botequim Buritis",
             "address": "Rua Vitório Magnavacca, 39 | Buritis, Belo Horizonte – MG",
-            "lat": -19.9698998,
-            "lng": -43.965677,
+            "lat": -19.9704048,
+            "lng": -43.9655636,
             "openHours": [
                 {
                     "day": "Segunda-feira",
@@ -6217,8 +6217,8 @@
         "bar": {
             "name": "Recanto da Traíra",
             "address": "Rua Alberto Cintra, 47 | União, Belo Horizonte – MG",
-            "lat": -19.8838936,
-            "lng": -43.9290558,
+            "lat": -19.8795434,
+            "lng": -43.9285777,
             "openHours": [
                 {
                     "day": "Terça-feira",
