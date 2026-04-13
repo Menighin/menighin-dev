@@ -1,5 +1,6 @@
 /* src/css/cdb.css */
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -25,13 +26,14 @@ body, html {
 
 .custom-popup .leaflet-popup-content {
     margin: 0 !important;
-    width: 300px !important; /* Fixed width for better layout */
+    width: 300px !important;
+    /* Fixed width for better layout */
 }
 
 /* Remove default close button styling and adjust */
 .custom-popup .leaflet-popup-close-button {
     color: #fff !important;
-    text-shadow: 0px 0px 4px rgba(0,0,0,0.8);
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.8);
     right: 8px !important;
     top: 8px !important;
     z-index: 10;
@@ -55,7 +57,8 @@ body, html {
 }
 
 .popup-title:hover {
-    color: #d32f2f; /* Premium red for hover */
+    color: #d32f2f;
+    /* Premium red for hover */
 }
 
 .popup-image-link {
@@ -75,7 +78,8 @@ body, html {
 }
 
 .popup-image-link:hover .popup-image {
-    transform: scale(1.05); /* Smooth zoom effect */
+    transform: scale(1.05);
+    /* Smooth zoom effect */
 }
 
 .popup-tags {
@@ -186,7 +190,8 @@ body, html {
     gap: 12px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     transition: all 0.3s ease;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
     width: 90%;
     max-width: 900px;
     justify-content: center;
@@ -239,7 +244,7 @@ body, html {
         padding: 10px;
         gap: 8px;
     }
-    
+
     .filters-container input {
         flex: 1 1 100%;
         min-width: unset;
@@ -249,10 +254,14 @@ body, html {
     .filters-container select {
         flex: 1 1 0%;
         min-width: 0;
-        padding: 8px 24px 8px 8px; /* Reduzindo padding para caber */
-        font-size: 11px; /* Fonte menor para telas pequenas */
-        text-overflow: ellipsis; /* Crop do texto caso não caiba */
-        background-position: right 6px center; /* Aproxima a seta */
+        padding: 8px 24px 8px 8px;
+        /* Reduzindo padding para caber */
+        font-size: 11px;
+        /* Fonte menor para telas pequenas */
+        text-overflow: ellipsis;
+        /* Crop do texto caso não caiba */
+        background-position: right 6px center;
+        /* Aproxima a seta */
     }
 }
 
@@ -296,13 +305,13 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     font-weight: 700;
     font-size: 20px;
     color: #333;
     transition: background-color 0.2s, transform 0.2s;
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(5px);
 }
 
@@ -320,7 +329,7 @@ body, html {
     color: #444;
     padding: 16px;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     font-size: 13px;
     line-height: 1.5;
     opacity: 0;
@@ -344,4 +353,12 @@ body, html {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+}
+
+/* --- Active Marker --- */
+img.marker-active {
+    /* Transforms the default Blue Leaflet marker into a Vibrant Red */
+    filter: hue-rotate(150deg) saturate(3) brightness(0.9) drop-shadow(0 0 2px rgba(255, 0, 0, 0.6)) !important;
+    z-index: 1000 !important;
+    /* Bring to front */
 }

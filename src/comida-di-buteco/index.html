@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa Comida di Buteco 2026 - Belo Horizonte | Menighin</title>
-    
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Mapa interativo com os 127 bares e pratos participantes do concurso Comida di Buteco 2026 em Belo Horizonte. Encontre os melhores botecos perto de você com filtros de horários e dias.">
-    <meta name="keywords" content="Comida di Buteco 2026, Belo Horizonte, BH, Bares BH, Restaurantes BH, Concurso Comida de Boteco, Mapa Comida di Buteco">
+    <meta name="description"
+        content="Mapa interativo com os 127 bares e pratos participantes do concurso Comida di Buteco 2026 em Belo Horizonte. Encontre os melhores botecos perto de você com filtros de horários e dias.">
+    <meta name="keywords"
+        content="Comida di Buteco 2026, Belo Horizonte, BH, Bares BH, Restaurantes BH, Concurso Comida de Boteco, Mapa Comida di Buteco">
     <meta name="author" content="João Menighin">
     <link rel="canonical" href="https://www.menighin.dev/comida-di-buteco" />
 
@@ -15,18 +18,20 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.menighin.dev/comida-di-buteco">
     <meta property="og:title" content="Mapa Interativo: Comida di Buteco BH 2026">
-    <meta property="og:description" content="Explore e filtre os pratos e bares concorrentes em Belo Horizonte em 2026.">
+    <meta property="og:description"
+        content="Explore e filtre os pratos e bares concorrentes em Belo Horizonte em 2026.">
     <!-- Link to Leaflet CSS for map styling -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
-    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+
     <!-- Google Fonts for modern typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/cdb.css">
 </head>
+
 <body>
     <!-- Form Container for the Map Filters -->
     <div class="filters-container">
@@ -60,7 +65,8 @@
     <div class="info-container" id="info-container">
         <div class="info-icon" id="info-icon">ℹ</div>
         <div class="info-tooltip">
-            Todas as informações foram retiradas do site <a href="https://comidadibuteco.com.br/" target="_blank">Comida di Buteco</a> e processadas. Confirme no local se estão corretas.
+            Todas as informações foram retiradas do site <a href="https://comidadibuteco.com.br/" target="_blank">Comida
+                di Buteco</a> e processadas. Confirme o endereço e se os pratos estão corretos no site oficial.
         </div>
     </div>
 
@@ -69,21 +75,22 @@
 
     <!-- Leaflet JS library -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-    
+
     <!-- Map initialization and data rendering script -->
     <script>
         document.addEventListener("DOMContentLoaded", async () => {
             const map = L.map('map').setView([-19.9167, -43.9345], 13);
-            
+
             // Using CartoDB Voyager BaseMap for a clean, distraction-free UI
-            L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+            L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png', {
                 maxZoom: 19,
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+                attribution: '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>'
             }).addTo(map);
 
             // LayerGroup allows easy clearing of markers without deleting the map itself
             const markersLayer = L.layerGroup().addTo(map);
             let activeData = [];
+            let activeMarker = null;
 
             // DOM Elements
             const searchInput = document.getElementById('filter-search');
@@ -111,9 +118,9 @@
 
             // Periods mapping
             const periods = {
-              "manha": { start: 8 * 60, end: 11 * 60 + 59 },   // 480 - 719
-              "tarde": { start: 12 * 60, end: 17 * 60 + 59 },  // 720 - 1079
-              "noite": { start: 18 * 60, end: 23 * 60 + 59 }   // 1080 - 1439
+                "manha": { start: 8 * 60, end: 11 * 60 + 59 },   // 480 - 719
+                "tarde": { start: 12 * 60, end: 17 * 60 + 59 },  // 720 - 1079
+                "noite": { start: 18 * 60, end: 23 * 60 + 59 }   // 1080 - 1439
             };
 
             function showToast(message) {
@@ -133,13 +140,13 @@
 
             function hasTimeOverlap(barOpen, barClose, filterId) {
                 if (!barOpen || !barClose) return false;
-                
+
                 let openMin = parseMinutes(barOpen);
                 let closeMin = parseMinutes(barClose);
-                
+
                 // Handle late closings past midnight (e.g., closing at 00:00, 01:00...)
-                if (closeMin <= openMin) closeMin += 1440; 
-                
+                if (closeMin <= openMin) closeMin += 1440;
+
                 const filter = periods[filterId];
                 if (!filter) return true;
 
@@ -154,10 +161,10 @@
                     const { bar, dish } = item;
                     if (!bar.lat || !bar.lng) return;
 
-                    const tagsHtml = (dish.tags && dish.tags.length > 0) 
-                        ? dish.tags.map(tag => `<span class="chip">${tag}</span>`).join('') 
+                    const tagsHtml = (dish.tags && dish.tags.length > 0)
+                        ? dish.tags.map(tag => `<span class="chip">${tag}</span>`).join('')
                         : '';
-                    
+
                     const hoursHtml = (bar.openHours && bar.openHours.length > 0)
                         ? bar.openHours.map(h => `<div><strong>${h.day}</strong> <span>${h.open} - ${h.close}</span></div>`).join('')
                         : '<div>Horários não informados</div>';
@@ -183,6 +190,20 @@
 
                     const marker = L.marker([parseFloat(bar.lat), parseFloat(bar.lng)]);
                     marker.bindPopup(popupContent, { maxWidth: 320, minWidth: 300, className: 'custom-popup' });
+                    
+                    // Evento para colorir de vermelho ao clicar
+                    marker.on('click', function() {
+                        // Se houver um marcador ativo e não for este mesmo, remova a cor
+                        if (activeMarker && activeMarker !== this && activeMarker._icon) {
+                            L.DomUtil.removeClass(activeMarker._icon, 'marker-active');
+                        }
+                        // Adicione a cor ao recem clicado
+                        if (this._icon) {
+                            L.DomUtil.addClass(this._icon, 'marker-active');
+                        }
+                        activeMarker = this;
+                    });
+
                     markersLayer.addLayer(marker);
                 });
             }
@@ -210,7 +231,7 @@
                     // 3. Day and 4. Time Filters
                     if (dayVal || timeVal) {
                         if (!bar.openHours || bar.openHours.length === 0) return false;
-                        
+
                         let matchesDayAndTime = false;
 
                         for (const oh of bar.openHours) {
@@ -239,7 +260,7 @@
                 });
 
                 renderMarkers(filtered);
-                
+
                 // Show notification about how many items were found
                 showToast(`Encontrado(s) ${filtered.length} restaurante(s)`);
             }
@@ -258,7 +279,7 @@
                     }
                 });
 
-                const sortedTags = Array.from(allTags).sort((a,b) => a.localeCompare(b));
+                const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b));
                 sortedTags.forEach(tag => {
                     const option = document.createElement("option");
                     option.value = tag;
@@ -283,4 +304,5 @@
         });
     </script>
 </body>
+
 </html>
