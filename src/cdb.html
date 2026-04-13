@@ -245,7 +245,7 @@
             }
 
             try {
-                const response = await fetch('./data/cdb2026.json');
+                const response = await fetch('/data/cdb2026.json');
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 const data = await response.json();
                 activeData = data;

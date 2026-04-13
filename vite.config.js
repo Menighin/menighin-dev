@@ -13,7 +13,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: 'src/index.html',
-                "comida-di-boteco": 'src/cdb.html',
+                "comida-di-buteco": 'src/cdb.html',
             },
         },
     },
