@@ -81,10 +81,10 @@
         document.addEventListener("DOMContentLoaded", async () => {
             const map = L.map('map').setView([-19.9167, -43.9345], 13);
 
-            // Using CartoDB Voyager BaseMap for a clean, distraction-free UI
-            L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png', {
+            // Usando Esri World Topo Map (Alternativa ao Wikimedia livre de Error 403)
+            L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
                 maxZoom: 19,
-                attribution: '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>'
+                attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
             }).addTo(map);
 
             // LayerGroup allows easy clearing of markers without deleting the map itself
@@ -190,9 +190,9 @@
 
                     const marker = L.marker([parseFloat(bar.lat), parseFloat(bar.lng)]);
                     marker.bindPopup(popupContent, { maxWidth: 320, minWidth: 300, className: 'custom-popup' });
-                    
+
                     // Evento para colorir de vermelho ao clicar
-                    marker.on('click', function() {
+                    marker.on('click', function () {
                         // Se houver um marcador ativo e não for este mesmo, remova a cor
                         if (activeMarker && activeMarker !== this && activeMarker._icon) {
                             L.DomUtil.removeClass(activeMarker._icon, 'marker-active');
