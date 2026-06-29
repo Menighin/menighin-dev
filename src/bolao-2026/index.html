@@ -344,17 +344,22 @@
                 });
 
                 // Create array of data for the frame
-                const frameData = Object.keys(userPoints).map(name => ({
-                    name: name,
-                    value: userPoints[name]
-                }));
+                const frameData = Object.keys(userPoints).map(name => {
+                    const userGamePoints = game.points.find(p => p.userName === name);
+                    const scored = userGamePoints ? userGamePoints.points : 0;
+                    return {
+                        name: name,
+                        value: userPoints[name],
+                        scored: scored
+                    };
+                });
 
                 // Sort to define the rank
                 frameData.sort((a, b) => b.value - a.value);
                 frameData.forEach((d, i) => d.rank = i);
 
                 frames.push({
-                    gameLabel: `Jogo ${index + 1}: ${game.homeTeamId} x ${game.awayTeamId} (${game.phase})`,
+                    gameLabel: `<div>Jogo ${index + 1}</div><div>${game.homeTeamId} x ${game.awayTeamId}</div><div style="font-size: 0.85em; color: #64748b;">${game.phase}</div>`,
                     data: frameData
                 });
             });
@@ -422,7 +427,7 @@
 
             function update(frame) {
                 // Update text
-                gameInfo.textContent = frame.gameLabel;
+                gameInfo.innerHTML = frame.gameLabel;
 
                 // Update X scales
                 const maxVal = d3.max(frame.data, d => d.value);
@@ -467,9 +472,17 @@
                     .attr("x", d => x(d.value) + 10)
                     .attr("text-anchor", "start")
                     .attr("y", d => y(d.rank) + y.bandwidth() / 2)
+                    .attr("fill", d => {
+                        if (d.scored === 10) return "#10b981";
+                        if (d.scored === 0) return "#ef4444";
+                        return "var(--text-color)";
+                    })
                     .textTween(function (d) {
                         const i = d3.interpolateRound(parseInt(this.textContent) || 0, d.value);
-                        return function (t) { return i(t); };
+                        let suffix = "";
+                        if (d.scored === 10) suffix = " 🎯";
+                        else if (d.scored === 0) suffix = " ❌";
+                        return function (t) { return i(t) + suffix; };
                     });
 
                 // NAMES (Y-axis labels)
