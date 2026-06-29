@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolão 2026 - Bar Chart Race | Menighin</title>
+
+    <!-- Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --primary-color: #3b82f6;
+            --primary-hover: #2563eb;
+            --font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            padding: 2rem 1rem;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        p.subtitle {
+            margin: 0;
+            color: #64748b;
+            font-size: 1rem;
+        }
+
+        .dashboard {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.25rem;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            font-family: var(--font-family);
+        }
+
+        button:hover {
+            background-color: var(--primary-hover);
+        }
+
+        button:disabled {
+            background-color: #94a3b8;
+            cursor: not-allowed;
+        }
+
+        .game-info {
+            text-align: center;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #0f172a;
+            min-height: 30px;
+        }
+
+        .chart-container {
+            width: 100%;
+            position: relative;
+        }
+
+        /* SVG Styles */
+        svg {
+            width: 100%;
+            height: auto;
+            font-family: var(--font-family);
+        }
+
+        .bar-label {
+            fill: var(--text-color);
+            font-weight: 600;
+            font-size: 14px;
+            pointer-events: none;
+        }
+
+        .name-label {
+            fill: #334155;
+            font-weight: 600;
+            font-size: 14px;
+            text-anchor: end;
+        }
+
+        .axis text {
+            font-size: 12px;
+            fill: #64748b;
+        }
+
+        .axis path,
+        .axis line {
+            stroke: #cbd5e1;
+        }
+
+        @media (max-width: 600px) {
+
+            .name-label,
+            .bar-label {
+                font-size: 16px;
+            }
+
+            .container {
+                padding: 1rem 0.5rem;
+            }
+
+            .dashboard {
+                padding: 1rem;
+            }
+
+            .game-info {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            backdrop-filter: blur(4px);
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            max-width: 400px;
+            width: 90%;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #64748b;
+            padding: 0;
+            line-height: 1;
+        }
+
+        .modal-title {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: var(--text-color);
+        }
+
+        .modal-stats {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .stat-label {
+            font-weight: 500;
+            color: #475569;
+            font-size: 0.95rem;
+        }
+
+        .stat-value {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+        }
+
+        .bar {
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .bar:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Bolão 2026</h1>
+            <p class="subtitle">Bar Chart Race - Pontuação Acumulada</p>
+        </header>
+
+        <div class="dashboard">
+            <div class="controls">
+                <button id="btn-restart">Reiniciar</button>
+                <button id="btn-play-pause">Play</button>
+                <button id="btn-skip">Fim</button>
+            </div>
+
+            <div class="game-info" id="game-info">Carregando dados...</div>
+
+            <div class="chart-container" id="chart-container"></div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <h2 class="modal-title" id="modal-title">Nome</h2>
+            <div class="modal-stats">
+                <div class="stat-item">
+                    <span class="stat-label">Melhor Posição:</span>
+                    <span class="stat-value" id="stat-best"></span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Vezes na Melhor Posição:</span>
+                    <span class="stat-value" id="stat-count"></span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Pior Posição:</span>
+                    <span class="stat-value" id="stat-worst"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const chartContainer = document.getElementById('chart-container');
+            const gameInfo = document.getElementById('game-info');
+            const btnPlayPause = document.getElementById('btn-play-pause');
+            const btnRestart = document.getElementById('btn-restart');
+            const btnSkip = document.getElementById('btn-skip');
+
+            let rawData;
+            try {
+                const response = await fetch('/data/bolao2026.json');
+                if (!response.ok) throw new Error('Falha ao carregar dados');
+                rawData = await response.json();
+            } catch (e) {
+                gameInfo.textContent = "Erro ao carregar os dados.";
+                console.error(e);
+                return;
+            }
+
+            // Filter only finished games and sort by date
+            const finishedGames = rawData
+                .filter(d => d.status === 'FINISHED')
+                .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+            if (finishedGames.length === 0) {
+                gameInfo.textContent = "Nenhum jogo finalizado ainda.";
+                return;
+            }
+
+            // Prepare frames
+            const frames = [];
+            const userPoints = {};
+
+            // Initialize users
+            finishedGames[0].points.forEach(p => {
+                userPoints[p.userName] = 0;
+            });
+
+            finishedGames.forEach((game, index) => {
+                // Add points from the current game
+                game.points.forEach(p => {
+                    userPoints[p.userName] += p.points;
+                });
+
+                // Create array of data for the frame
+                const frameData = Object.keys(userPoints).map(name => ({
+                    name: name,
+                    value: userPoints[name]
+                }));
+
+                // Sort to define the rank
+                frameData.sort((a, b) => b.value - a.value);
+                frameData.forEach((d, i) => d.rank = i);
+
+                frames.push({
+                    gameLabel: `Jogo ${index + 1}: ${game.homeTeamId} x ${game.awayTeamId} (${game.phase})`,
+                    data: frameData
+                });
+            });
+
+            // Calculate historical statistics for users
+            const userStats = {};
+            Object.keys(userPoints).forEach(name => {
+                userStats[name] = {
+                    bestRank: Infinity,
+                    worstRank: -Infinity,
+                    bestRankCount: 0
+                };
+            });
+
+            frames.forEach(frame => {
+                frame.data.forEach(d => {
+                    const rank = d.rank + 1; // 1-indexed
+                    const stats = userStats[d.name];
+
+                    if (rank < stats.bestRank) {
+                        stats.bestRank = rank;
+                        stats.bestRankCount = 1;
+                    } else if (rank === stats.bestRank) {
+                        stats.bestRankCount++;
+                    }
+
+                    if (rank > stats.worstRank) {
+                        stats.worstRank = rank;
+                    }
+                });
+            });
+
+            // D3 configurations
+            const width = 800;
+            const height = 500;
+            // right margin increased to accommodate text outside the bar
+            const margin = { top: 20, right: 60, bottom: 30, left: 100 };
+            const innerWidth = width - margin.left - margin.right;
+            const innerHeight = height - margin.top - margin.bottom;
+            const duration = 750; // Transition duration in ms
+
+            // Create SVG
+            const svg = d3.select("#chart-container")
+                .append("svg")
+                .attr("viewBox", [0, 0, width, height])
+                .attr("preserveAspectRatio", "xMidYMid meet");
+
+            const g = svg.append("g")
+                .attr("transform", `translate(${margin.left},${margin.top})`);
+
+            // Scales
+            const x = d3.scaleLinear().range([0, innerWidth]);
+            const y = d3.scaleBand().domain(d3.range(7)).range([0, innerHeight]).padding(0.15);
+            const color = d3.scaleOrdinal(d3.schemeTableau10); // Standard D3 categorical colors
+
+            // Axes
+            const xAxisG = g.append("g")
+                .attr("class", "axis")
+                .attr("transform", `translate(0,${innerHeight})`);
+
+            // Animation state
+            let currentFrameIndex = 0;
+            let timer = null;
+            let playing = false;
+
+            function update(frame) {
+                // Update text
+                gameInfo.textContent = frame.gameLabel;
+
+                // Update X scales
+                const maxVal = d3.max(frame.data, d => d.value);
+                x.domain([0, Math.max(10, maxVal)]); // Minimum to prevent X axis from being zero at the start
+
+                xAxisG.transition().duration(duration).ease(d3.easeLinear)
+                    .call(d3.axisBottom(x).ticks(innerWidth / 100));
+
+                // BARS
+                const bars = g.selectAll(".bar")
+                    .data(frame.data, d => d.name);
+
+                bars.enter()
+                    .append("rect")
+                    .attr("class", "bar")
+                    .attr("x", x(0))
+                    .attr("y", d => y(d.rank))
+                    .attr("height", y.bandwidth())
+                    .attr("fill", d => color(d.name))
+                    .attr("width", 0)
+                    .attr("rx", 4)
+                    .on("click", (event, d) => {
+                        openModal(d.name);
+                    })
+                    .merge(bars)
+                    .transition().duration(duration).ease(d3.easeLinear)
+                    .attr("y", d => y(d.rank))
+                    .attr("width", d => x(d.value) - x(0));
+
+                // LABELS (Values just outside bars)
+                const labels = g.selectAll(".bar-label")
+                    .data(frame.data, d => d.name);
+
+                labels.enter()
+                    .append("text")
+                    .attr("class", "bar-label")
+                    .attr("x", x(0))
+                    .attr("y", d => y(d.rank) + y.bandwidth() / 2)
+                    .attr("dy", "0.35em")
+                    .merge(labels)
+                    .transition().duration(duration).ease(d3.easeLinear)
+                    .attr("x", d => x(d.value) + 10)
+                    .attr("text-anchor", "start")
+                    .attr("y", d => y(d.rank) + y.bandwidth() / 2)
+                    .textTween(function (d) {
+                        const i = d3.interpolateRound(parseInt(this.textContent) || 0, d.value);
+                        return function (t) { return i(t); };
+                    });
+
+                // NAMES (Y-axis labels)
+                const names = g.selectAll(".name-label")
+                    .data(frame.data, d => d.name);
+
+                names.enter()
+                    .append("text")
+                    .attr("class", "name-label")
+                    .attr("x", -10)
+                    .attr("y", d => y(d.rank) + y.bandwidth() / 2)
+                    .attr("dy", "0.35em")
+                    .text(d => d.name)
+                    .merge(names)
+                    .transition().duration(duration).ease(d3.easeLinear)
+                    .attr("y", d => y(d.rank) + y.bandwidth() / 2);
+            }
+
+            function step() {
+                if (currentFrameIndex >= frames.length - 1) {
+                    stopAnimation();
+                    return;
+                }
+                currentFrameIndex++;
+                update(frames[currentFrameIndex]);
+            }
+
+            function startAnimation() {
+                if (currentFrameIndex >= frames.length - 1) {
+                    currentFrameIndex = 0; // restart if ending
+                }
+                playing = true;
+                btnPlayPause.textContent = "Pause";
+                // Show current frame and schedule next
+                update(frames[currentFrameIndex]);
+                timer = d3.interval(step, duration);
+            }
+
+            function stopAnimation() {
+                playing = false;
+                btnPlayPause.textContent = "Play";
+                if (timer) timer.stop();
+            }
+
+            // Event Listeners dos Controles
+            btnPlayPause.addEventListener('click', () => {
+                if (playing) {
+                    stopAnimation();
+                } else {
+                    startAnimation();
+                }
+            });
+
+            btnRestart.addEventListener('click', () => {
+                stopAnimation();
+                currentFrameIndex = 0;
+                update(frames[currentFrameIndex]);
+            });
+
+            btnSkip.addEventListener('click', () => {
+                stopAnimation();
+                currentFrameIndex = frames.length - 1;
+                update(frames[currentFrameIndex]);
+            });
+
+            // Initialize first frame
+            update(frames[0]);
+
+            // Modal Logic
+            const modalOverlay = document.getElementById('modal-overlay');
+            const modalClose = document.getElementById('modal-close');
+
+            function openModal(name) {
+                const stats = userStats[name];
+                if (!stats) return;
+
+                document.getElementById('modal-title').textContent = name;
+                document.getElementById('stat-best').textContent = `${stats.bestRank}º`;
+                document.getElementById('stat-count').textContent = stats.bestRankCount;
+                document.getElementById('stat-worst').textContent = `${stats.worstRank}º`;
+
+                modalOverlay.classList.add('active');
+                if (playing) stopAnimation(); // Pause animation when modal opens
+            }
+
+            modalClose.addEventListener('click', () => {
+                modalOverlay.classList.remove('active');
+            });
+
+            modalOverlay.addEventListener('click', (e) => {
+                if (e.target === modalOverlay) {
+                    modalOverlay.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

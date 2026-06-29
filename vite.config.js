@@ -14,6 +14,7 @@ export default defineConfig({
             input: {
                 main: 'src/index.html',
                 "comida-di-buteco": 'src/comida-di-buteco/index.html',
+                "bolao-2026": 'src/bolao-2026/index.html'
             },
         },
     }

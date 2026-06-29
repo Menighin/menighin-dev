@@ -1,0 +1,3541 @@
+[
+  {
+    "id": "m-A1",
+    "homeTeamId": "México",
+    "awayTeamId": "África do Sul",
+    "date": "2026-06-11T19:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 10
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 10
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 5
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 5
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 6
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 10
+      }
+    ]
+  },
+  {
+    "id": "m-A2",
+    "homeTeamId": "Coréia do Sul",
+    "awayTeamId": "República Tcheca",
+    "date": "2026-06-12T02:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 10
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-B1",
+    "homeTeamId": "Canadá",
+    "awayTeamId": "Bósnia",
+    "date": "2026-06-12T19:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-D1",
+    "homeTeamId": "Estados Unidos",
+    "awayTeamId": "Paraguai",
+    "date": "2026-06-13T01:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-B2",
+    "homeTeamId": "Catar",
+    "awayTeamId": "Suíça",
+    "date": "2026-06-13T19:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 5
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-C1",
+    "homeTeamId": "Brasil",
+    "awayTeamId": "Marrocos",
+    "date": "2026-06-13T22:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 10
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-C2",
+    "homeTeamId": "Haiti",
+    "awayTeamId": "Escócia",
+    "date": "2026-06-14T01:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 10
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-D2",
+    "homeTeamId": "Austrália",
+    "awayTeamId": "Turquia",
+    "date": "2026-06-14T04:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-E1",
+    "homeTeamId": "Alemanha",
+    "awayTeamId": "Curaçau",
+    "date": "2026-06-14T17:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-F1",
+    "homeTeamId": "Holanda",
+    "awayTeamId": "Japão",
+    "date": "2026-06-14T20:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 10
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 10
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-E2",
+    "homeTeamId": "Costa do Marfim",
+    "awayTeamId": "Equador",
+    "date": "2026-06-14T23:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-F2",
+    "homeTeamId": "Suécia",
+    "awayTeamId": "Tunísia",
+    "date": "2026-06-15T02:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-H1",
+    "homeTeamId": "Espanha",
+    "awayTeamId": "Cabo Verde",
+    "date": "2026-06-15T16:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-G1",
+    "homeTeamId": "Bélgica",
+    "awayTeamId": "Egito",
+    "date": "2026-06-15T19:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-H2",
+    "homeTeamId": "Arábia Saudita",
+    "awayTeamId": "Uruguai",
+    "date": "2026-06-15T22:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-G2",
+    "homeTeamId": "Irã",
+    "awayTeamId": "Nova Zelândia",
+    "date": "2026-06-16T01:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 10
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-I1",
+    "homeTeamId": "França",
+    "awayTeamId": "Senegal",
+    "date": "2026-06-16T19:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 10
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 10
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 10
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 6
+      }
+    ]
+  },
+  {
+    "id": "m-I2",
+    "homeTeamId": "Iraque",
+    "awayTeamId": "Noruega",
+    "date": "2026-06-16T22:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 6
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 5
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 6
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-J1",
+    "homeTeamId": "Argentina",
+    "awayTeamId": "Argélia",
+    "date": "2026-06-17T01:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 10
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 10
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 5
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 10
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-J2",
+    "homeTeamId": "Áustria",
+    "awayTeamId": "Jordânia",
+    "date": "2026-06-17T04:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 5
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 10
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 5
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 6
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-K1",
+    "homeTeamId": "Portugal",
+    "awayTeamId": "RD Congo",
+    "date": "2026-06-17T17:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-L1",
+    "homeTeamId": "Inglaterra",
+    "awayTeamId": "Croácia",
+    "date": "2026-06-17T20:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 6
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-L2",
+    "homeTeamId": "Gana",
+    "awayTeamId": "Panamá",
+    "date": "2026-06-17T23:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 6
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 6
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 6
+      }
+    ]
+  },
+  {
+    "id": "m-K2",
+    "homeTeamId": "Uzbequistão",
+    "awayTeamId": "Colômbia",
+    "date": "2026-06-18T02:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 6
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 6
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 5
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 6
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 6
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 6
+      }
+    ]
+  },
+  {
+    "id": "m-A4",
+    "homeTeamId": "República Tcheca",
+    "awayTeamId": "África do Sul",
+    "date": "2026-06-18T16:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 10
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 10
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-B4",
+    "homeTeamId": "Suíça",
+    "awayTeamId": "Bósnia",
+    "date": "2026-06-18T19:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-B3",
+    "homeTeamId": "Canadá",
+    "awayTeamId": "Catar",
+    "date": "2026-06-18T22:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-A3",
+    "homeTeamId": "México",
+    "awayTeamId": "Coréia do Sul",
+    "date": "2026-06-19T01:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 6
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 6
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 6
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-D3",
+    "homeTeamId": "Estados Unidos",
+    "awayTeamId": "Austrália",
+    "date": "2026-06-19T19:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 6
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 5
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 5
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 10
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 5
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-C4",
+    "homeTeamId": "Escócia",
+    "awayTeamId": "Marrocos",
+    "date": "2026-06-19T22:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 6
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-C3",
+    "homeTeamId": "Brasil",
+    "awayTeamId": "Haiti",
+    "date": "2026-06-20T00:30:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 10
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 10
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 10
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 10
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-D4",
+    "homeTeamId": "Turquia",
+    "awayTeamId": "Paraguai",
+    "date": "2026-06-20T03:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 6
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 6
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-F3",
+    "homeTeamId": "Holanda",
+    "awayTeamId": "Suécia",
+    "date": "2026-06-20T17:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-E3",
+    "homeTeamId": "Alemanha",
+    "awayTeamId": "Costa do Marfim",
+    "date": "2026-06-20T20:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 10
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-E4",
+    "homeTeamId": "Equador",
+    "awayTeamId": "Curaçau",
+    "date": "2026-06-21T00:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-F4",
+    "homeTeamId": "Tunísia",
+    "awayTeamId": "Japão",
+    "date": "2026-06-21T04:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-H3",
+    "homeTeamId": "Espanha",
+    "awayTeamId": "Arábia Saudita",
+    "date": "2026-06-21T16:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 10
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-G3",
+    "homeTeamId": "Bélgica",
+    "awayTeamId": "Irã",
+    "date": "2026-06-21T19:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 5
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-H4",
+    "homeTeamId": "Uruguai",
+    "awayTeamId": "Cabo Verde",
+    "date": "2026-06-21T22:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 5
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-G4",
+    "homeTeamId": "Nova Zelândia",
+    "awayTeamId": "Egito",
+    "date": "2026-06-22T01:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 6
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 6
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-J3",
+    "homeTeamId": "Argentina",
+    "awayTeamId": "Áustria",
+    "date": "2026-06-22T17:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 6
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 10
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 6
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-I3",
+    "homeTeamId": "França",
+    "awayTeamId": "Iraque",
+    "date": "2026-06-22T21:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 5
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 10
+      }
+    ]
+  },
+  {
+    "id": "m-I4",
+    "homeTeamId": "Noruega",
+    "awayTeamId": "Senegal",
+    "date": "2026-06-23T00:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 10
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 5
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 6
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 5
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 6
+      }
+    ]
+  },
+  {
+    "id": "m-J4",
+    "homeTeamId": "Jordânia",
+    "awayTeamId": "Argélia",
+    "date": "2026-06-23T03:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 6
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 10
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 10
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 10
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 10
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 10
+      }
+    ]
+  },
+  {
+    "id": "m-K3",
+    "homeTeamId": "Portugal",
+    "awayTeamId": "Uzbequistão",
+    "date": "2026-06-23T17:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-L3",
+    "homeTeamId": "Inglaterra",
+    "awayTeamId": "Gana",
+    "date": "2026-06-23T20:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-L4",
+    "homeTeamId": "Panamá",
+    "awayTeamId": "Croácia",
+    "date": "2026-06-23T23:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 10
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-K4",
+    "homeTeamId": "Colômbia",
+    "awayTeamId": "RD Congo",
+    "date": "2026-06-24T02:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 6
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 6
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 6
+      }
+    ]
+  },
+  {
+    "id": "m-B5",
+    "homeTeamId": "Suíça",
+    "awayTeamId": "Canadá",
+    "date": "2026-06-24T19:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 10
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-B6",
+    "homeTeamId": "Bósnia",
+    "awayTeamId": "Catar",
+    "date": "2026-06-24T19:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 6
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 6
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 6
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 6
+      }
+    ]
+  },
+  {
+    "id": "m-C5",
+    "homeTeamId": "Escócia",
+    "awayTeamId": "Brasil",
+    "date": "2026-06-24T22:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 5
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 10
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 5
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 10
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-C6",
+    "homeTeamId": "Marrocos",
+    "awayTeamId": "Haiti",
+    "date": "2026-06-24T22:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 5
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 6
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 5
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 6
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 5
+      }
+    ]
+  },
+  {
+    "id": "m-A5",
+    "homeTeamId": "República Tcheca",
+    "awayTeamId": "México",
+    "date": "2026-06-25T01:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-A6",
+    "homeTeamId": "África do Sul",
+    "awayTeamId": "Coréia do Sul",
+    "date": "2026-06-25T01:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-E5",
+    "homeTeamId": "Equador",
+    "awayTeamId": "Alemanha",
+    "date": "2026-06-25T20:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-E6",
+    "homeTeamId": "Curaçau",
+    "awayTeamId": "Costa do Marfim",
+    "date": "2026-06-25T20:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 10
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 5
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 5
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 10
+      }
+    ]
+  },
+  {
+    "id": "m-F5",
+    "homeTeamId": "Tunísia",
+    "awayTeamId": "Holanda",
+    "date": "2026-06-25T23:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 5
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 10
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 5
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 6
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 5
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 5
+      }
+    ]
+  },
+  {
+    "id": "m-F6",
+    "homeTeamId": "Japão",
+    "awayTeamId": "Suécia",
+    "date": "2026-06-25T23:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 5
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 5
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 5
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 5
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-D5",
+    "homeTeamId": "Turquia",
+    "awayTeamId": "Estados Unidos",
+    "date": "2026-06-26T02:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-D6",
+    "homeTeamId": "Paraguai",
+    "awayTeamId": "Austrália",
+    "date": "2026-06-26T02:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 10
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 5
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 5
+      }
+    ]
+  },
+  {
+    "id": "m-I5",
+    "homeTeamId": "Noruega",
+    "awayTeamId": "França",
+    "date": "2026-06-26T19:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-I6",
+    "homeTeamId": "Senegal",
+    "awayTeamId": "Iraque",
+    "date": "2026-06-26T19:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-H5",
+    "homeTeamId": "Uruguai",
+    "awayTeamId": "Espanha",
+    "date": "2026-06-27T00:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 6
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 6
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 6
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-H6",
+    "homeTeamId": "Cabo Verde",
+    "awayTeamId": "Arábia Saudita",
+    "date": "2026-06-27T00:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 5
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 5
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-G5",
+    "homeTeamId": "Nova Zelândia",
+    "awayTeamId": "Bélgica",
+    "date": "2026-06-27T03:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-G6",
+    "homeTeamId": "Egito",
+    "awayTeamId": "Irã",
+    "date": "2026-06-27T03:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 5
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 10
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 10
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-L5",
+    "homeTeamId": "Panamá",
+    "awayTeamId": "Inglaterra",
+    "date": "2026-06-27T21:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 6
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-L6",
+    "homeTeamId": "Croácia",
+    "awayTeamId": "Gana",
+    "date": "2026-06-27T21:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 10
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-K5",
+    "homeTeamId": "Colômbia",
+    "awayTeamId": "Portugal",
+    "date": "2026-06-27T23:30:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 5
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "id": "m-K6",
+    "homeTeamId": "RD Congo",
+    "awayTeamId": "Uzbequistão",
+    "date": "2026-06-27T23:30:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 6
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 6
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-J5",
+    "homeTeamId": "Jordânia",
+    "awayTeamId": "Argentina",
+    "date": "2026-06-28T02:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 5
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 5
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 5
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 10
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 5
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 5
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 5
+      }
+    ]
+  },
+  {
+    "id": "m-J6",
+    "homeTeamId": "Argélia",
+    "awayTeamId": "Áustria",
+    "date": "2026-06-28T02:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "Grupos",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 5
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 5
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 5
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 5
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 5
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 5
+      }
+    ]
+  },
+  {
+    "id": "m-R32-3",
+    "homeTeamId": "África do Sul",
+    "awayTeamId": "Canadá",
+    "date": "2026-06-28T19:00:00.000Z",
+    "status": "FINISHED",
+    "phase": "16-avos de Final",
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 6
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "id": "m-R32-9",
+    "homeTeamId": "Brasil",
+    "awayTeamId": "Japão",
+    "date": "2026-06-29T17:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "16-avos de Final",
+    "points": []
+  },
+  {
+    "id": "m-R32-1",
+    "homeTeamId": "Alemanha",
+    "awayTeamId": "Paraguai",
+    "date": "2026-06-29T20:30:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "16-avos de Final",
+    "points": []
+  },
+  {
+    "id": "m-R32-4",
+    "homeTeamId": "Holanda",
+    "awayTeamId": "Marrocos",
+    "date": "2026-06-30T01:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "16-avos de Final",
+    "points": []
+  },
+  {
+    "id": "m-R32-10",
+    "homeTeamId": "Costa do Marfim",
+    "awayTeamId": "Noruega",
+    "date": "2026-06-30T17:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "16-avos de Final",
+    "points": []
+  },
+  {
+    "id": "m-R32-2",
+    "homeTeamId": "França",
+    "awayTeamId": "Suécia",
+    "date": "2026-06-30T21:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "16-avos de Final",
+    "points": []
+  },
+  {
+    "id": "m-R32-11",
+    "homeTeamId": "México",
+    "awayTeamId": "Equador",
+    "date": "2026-07-01T01:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "16-avos de Final",
+    "points": []
+  },
+  {
+    "id": "m-R32-12",
+    "homeTeamId": "Inglaterra",
+    "awayTeamId": "RD Congo",
+    "date": "2026-07-01T16:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "16-avos de Final",
+    "points": []
+  },
+  {
+    "id": "m-R32-8",
+    "homeTeamId": "Bélgica",
+    "awayTeamId": "Senegal",
+    "date": "2026-07-01T20:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "16-avos de Final",
+    "points": []
+  },
+  {
+    "id": "m-R32-7",
+    "homeTeamId": "Estados Unidos",
+    "awayTeamId": "Bósnia",
+    "date": "2026-07-02T00:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "16-avos de Final",
+    "points": []
+  },
+  {
+    "id": "m-R32-6",
+    "homeTeamId": "Espanha",
+    "awayTeamId": "Áustria",
+    "date": "2026-07-02T19:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "16-avos de Final",
+    "points": []
+  },
+  {
+    "id": "m-R32-5",
+    "homeTeamId": "Portugal",
+    "awayTeamId": "Croácia",
+    "date": "2026-07-02T23:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "16-avos de Final",
+    "points": []
+  },
+  {
+    "id": "m-R32-15",
+    "homeTeamId": "Suíça",
+    "awayTeamId": "Argélia",
+    "date": "2026-07-03T03:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "16-avos de Final",
+    "points": []
+  },
+  {
+    "id": "m-R32-14",
+    "homeTeamId": "Austrália",
+    "awayTeamId": "Egito",
+    "date": "2026-07-03T18:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "16-avos de Final",
+    "points": []
+  },
+  {
+    "id": "m-R32-13",
+    "homeTeamId": "Argentina",
+    "awayTeamId": "Cabo Verde",
+    "date": "2026-07-03T22:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "16-avos de Final",
+    "points": []
+  },
+  {
+    "id": "m-R32-16",
+    "homeTeamId": "Colômbia",
+    "awayTeamId": "Gana",
+    "date": "2026-07-04T01:30:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "16-avos de Final",
+    "points": []
+  },
+  {
+    "id": "m-R16-2",
+    "homeTeamId": "Canadá",
+    "awayTeamId": "Venc. R32-4",
+    "date": "2026-07-04T17:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "Oitavas de Final",
+    "points": []
+  },
+  {
+    "id": "m-R16-1",
+    "homeTeamId": "Venc. R32-1",
+    "awayTeamId": "Venc. R32-2",
+    "date": "2026-07-04T21:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "Oitavas de Final",
+    "points": []
+  },
+  {
+    "id": "m-R16-5",
+    "homeTeamId": "Venc. R32-9",
+    "awayTeamId": "Venc. R32-10",
+    "date": "2026-07-05T20:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "Oitavas de Final",
+    "points": []
+  },
+  {
+    "id": "m-R16-6",
+    "homeTeamId": "Venc. R32-11",
+    "awayTeamId": "Venc. R32-12",
+    "date": "2026-07-06T00:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "Oitavas de Final",
+    "points": []
+  },
+  {
+    "id": "m-R16-3",
+    "homeTeamId": "Venc. R32-5",
+    "awayTeamId": "Venc. R32-6",
+    "date": "2026-07-06T19:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "Oitavas de Final",
+    "points": []
+  },
+  {
+    "id": "m-R16-4",
+    "homeTeamId": "Venc. R32-7",
+    "awayTeamId": "Venc. R32-8",
+    "date": "2026-07-07T00:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "Oitavas de Final",
+    "points": []
+  },
+  {
+    "id": "m-R16-7",
+    "homeTeamId": "Venc. R32-13",
+    "awayTeamId": "Venc. R32-14",
+    "date": "2026-07-07T16:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "Oitavas de Final",
+    "points": []
+  },
+  {
+    "id": "m-R16-8",
+    "homeTeamId": "Venc. R32-15",
+    "awayTeamId": "Venc. R32-16",
+    "date": "2026-07-07T20:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "Oitavas de Final",
+    "points": []
+  },
+  {
+    "id": "m-QF-1",
+    "homeTeamId": "Venc. R16-1",
+    "awayTeamId": "Venc. R16-2",
+    "date": "2026-07-09T20:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "Quartas de Final",
+    "points": []
+  },
+  {
+    "id": "m-QF-2",
+    "homeTeamId": "Venc. R16-3",
+    "awayTeamId": "Venc. R16-4",
+    "date": "2026-07-10T19:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "Quartas de Final",
+    "points": []
+  },
+  {
+    "id": "m-QF-3",
+    "homeTeamId": "Venc. R16-5",
+    "awayTeamId": "Venc. R16-6",
+    "date": "2026-07-11T21:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "Quartas de Final",
+    "points": []
+  },
+  {
+    "id": "m-QF-4",
+    "homeTeamId": "Venc. R16-7",
+    "awayTeamId": "Venc. R16-8",
+    "date": "2026-07-12T01:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "Quartas de Final",
+    "points": []
+  },
+  {
+    "id": "m-SF-1",
+    "homeTeamId": "Venc. QF-1",
+    "awayTeamId": "Venc. QF-2",
+    "date": "2026-07-14T19:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "Semifinal",
+    "points": []
+  },
+  {
+    "id": "m-SF-2",
+    "homeTeamId": "Venc. QF-3",
+    "awayTeamId": "Venc. QF-4",
+    "date": "2026-07-15T19:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "Semifinal",
+    "points": []
+  },
+  {
+    "id": "m-3RD",
+    "homeTeamId": "Perd. SF-1",
+    "awayTeamId": "Perd. SF-2",
+    "date": "2026-07-18T21:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "Final",
+    "points": []
+  },
+  {
+    "id": "m-FINAL",
+    "homeTeamId": "Venc. SF-1",
+    "awayTeamId": "Venc. SF-2",
+    "date": "2026-07-19T19:00:00.000Z",
+    "status": "SCHEDULED",
+    "phase": "Final",
+    "points": []
+  }
+]
