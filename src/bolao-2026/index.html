@@ -261,7 +261,9 @@
         <div class="dashboard">
             <div class="controls">
                 <button id="btn-restart">Reiniciar</button>
+                <button id="btn-prev">Anterior</button>
                 <button id="btn-play-pause">Play</button>
+                <button id="btn-next">Próximo</button>
                 <button id="btn-skip">Fim</button>
             </div>
 
@@ -302,6 +304,8 @@
             const btnPlayPause = document.getElementById('btn-play-pause');
             const btnRestart = document.getElementById('btn-restart');
             const btnSkip = document.getElementById('btn-skip');
+            const btnPrev = document.getElementById('btn-prev');
+            const btnNext = document.getElementById('btn-next');
 
             let rawData;
             try {
@@ -529,6 +533,22 @@
                 stopAnimation();
                 currentFrameIndex = frames.length - 1;
                 update(frames[currentFrameIndex]);
+            });
+
+            btnPrev.addEventListener('click', () => {
+                stopAnimation();
+                if (currentFrameIndex > 0) {
+                    currentFrameIndex--;
+                    update(frames[currentFrameIndex]);
+                }
+            });
+
+            btnNext.addEventListener('click', () => {
+                stopAnimation();
+                if (currentFrameIndex < frames.length - 1) {
+                    currentFrameIndex++;
+                    update(frames[currentFrameIndex]);
+                }
             });
 
             // Initialize first frame
