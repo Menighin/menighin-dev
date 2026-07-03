@@ -291,6 +291,10 @@
                     <span class="stat-label">Pior Posição:</span>
                     <span class="stat-value" id="stat-worst"></span>
                 </div>
+                <div class="stat-item">
+                    <span class="stat-label">Vezes na Pior Posição:</span>
+                    <span class="stat-value" id="stat-worst-count"></span>
+                </div>
             </div>
         </div>
     </div>
@@ -370,7 +374,8 @@
                 userStats[name] = {
                     bestRank: Infinity,
                     worstRank: -Infinity,
-                    bestRankCount: 0
+                    bestRankCount: 0,
+                    worstRankCount: 0,
                 };
             });
 
@@ -388,6 +393,9 @@
 
                     if (rank > stats.worstRank) {
                         stats.worstRank = rank;
+                        stats.worstRankCount = 1;
+                    } else if (rank === stats.worstRank) {
+                        stats.worstRankCount++;
                     }
                 });
             });
@@ -495,8 +503,12 @@
                     .attr("x", -10)
                     .attr("y", d => y(d.rank) + y.bandwidth() / 2)
                     .attr("dy", "0.35em")
-                    .text(d => d.name)
                     .merge(names)
+                    .text(d => {
+                        if (d.rank === 0) return d.name + " 👑";
+                        if (d.rank === frame.data.length - 1) return d.name + " 🔦";
+                        return d.name;
+                    })
                     .transition().duration(duration).ease(d3.easeLinear)
                     .attr("y", d => y(d.rank) + y.bandwidth() / 2);
             }
@@ -579,6 +591,7 @@
                 document.getElementById('stat-best').textContent = `${stats.bestRank}º`;
                 document.getElementById('stat-count').textContent = stats.bestRankCount;
                 document.getElementById('stat-worst').textContent = `${stats.worstRank}º`;
+                document.getElementById('stat-worst-count').textContent = stats.worstRankCount;
 
                 modalOverlay.classList.add('active');
                 if (playing) stopAnimation(); // Pause animation when modal opens

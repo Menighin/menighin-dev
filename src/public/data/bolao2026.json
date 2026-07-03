@@ -3264,108 +3264,540 @@
     "homeTeamId": "Brasil",
     "awayTeamId": "Japão",
     "date": "2026-06-29T17:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "16-avos de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 6
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 5
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 5
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 5
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 5
+      }
+    ]
   },
   {
     "id": "m-R32-1",
     "homeTeamId": "Alemanha",
     "awayTeamId": "Paraguai",
     "date": "2026-06-29T20:30:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "16-avos de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
   },
   {
     "id": "m-R32-4",
     "homeTeamId": "Holanda",
     "awayTeamId": "Marrocos",
     "date": "2026-06-30T01:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "16-avos de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 10
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 5
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 0
+      }
+    ]
   },
   {
     "id": "m-R32-10",
     "homeTeamId": "Costa do Marfim",
     "awayTeamId": "Noruega",
     "date": "2026-06-30T17:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "16-avos de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 5
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 10
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 6
+      }
+    ]
   },
   {
     "id": "m-R32-2",
     "homeTeamId": "França",
     "awayTeamId": "Suécia",
     "date": "2026-06-30T21:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "16-avos de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 5
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 10
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 10
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 5
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 10
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 5
+      }
+    ]
   },
   {
     "id": "m-R32-11",
     "homeTeamId": "México",
     "awayTeamId": "Equador",
     "date": "2026-07-01T01:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "16-avos de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 5
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 5
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 5
+      }
+    ]
   },
   {
     "id": "m-R32-12",
     "homeTeamId": "Inglaterra",
     "awayTeamId": "RD Congo",
     "date": "2026-07-01T16:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "16-avos de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 5
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 5
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 5
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 5
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 5
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
   },
   {
     "id": "m-R32-8",
     "homeTeamId": "Bélgica",
     "awayTeamId": "Senegal",
     "date": "2026-07-01T20:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "16-avos de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 6
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
   },
   {
     "id": "m-R32-7",
     "homeTeamId": "Estados Unidos",
     "awayTeamId": "Bósnia",
     "date": "2026-07-02T00:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "16-avos de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 10
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 6
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 5
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 10
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 10
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 10
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
   },
   {
     "id": "m-R32-6",
     "homeTeamId": "Espanha",
     "awayTeamId": "Áustria",
     "date": "2026-07-02T19:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "16-avos de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 10
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 5
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
   },
   {
     "id": "m-R32-5",
     "homeTeamId": "Portugal",
     "awayTeamId": "Croácia",
     "date": "2026-07-02T23:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "16-avos de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 5
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 10
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 10
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 10
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 10
+      }
+    ]
   },
   {
     "id": "m-R32-15",
     "homeTeamId": "Suíça",
     "awayTeamId": "Argélia",
     "date": "2026-07-03T03:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "16-avos de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "points": 5
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "points": 5
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "points": 5
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "points": 4
+      }
+    ]
   },
   {
     "id": "m-R32-14",
@@ -3374,7 +3806,13 @@
     "date": "2026-07-03T18:00:00.000Z",
     "status": "SCHEDULED",
     "phase": "16-avos de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      }
+    ]
   },
   {
     "id": "m-R32-13",
@@ -3383,7 +3821,13 @@
     "date": "2026-07-03T22:00:00.000Z",
     "status": "SCHEDULED",
     "phase": "16-avos de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      }
+    ]
   },
   {
     "id": "m-R32-16",
@@ -3392,12 +3836,18 @@
     "date": "2026-07-04T01:30:00.000Z",
     "status": "SCHEDULED",
     "phase": "16-avos de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "points": 0
+      }
+    ]
   },
   {
     "id": "m-R16-2",
     "homeTeamId": "Canadá",
-    "awayTeamId": "Venc. R32-4",
+    "awayTeamId": "Marrocos",
     "date": "2026-07-04T17:00:00.000Z",
     "status": "SCHEDULED",
     "phase": "Oitavas de Final",
@@ -3405,8 +3855,8 @@
   },
   {
     "id": "m-R16-1",
-    "homeTeamId": "Venc. R32-1",
-    "awayTeamId": "Venc. R32-2",
+    "homeTeamId": "Paraguai",
+    "awayTeamId": "França",
     "date": "2026-07-04T21:00:00.000Z",
     "status": "SCHEDULED",
     "phase": "Oitavas de Final",
@@ -3414,8 +3864,8 @@
   },
   {
     "id": "m-R16-5",
-    "homeTeamId": "Venc. R32-9",
-    "awayTeamId": "Venc. R32-10",
+    "homeTeamId": "Brasil",
+    "awayTeamId": "Noruega",
     "date": "2026-07-05T20:00:00.000Z",
     "status": "SCHEDULED",
     "phase": "Oitavas de Final",
@@ -3423,8 +3873,8 @@
   },
   {
     "id": "m-R16-6",
-    "homeTeamId": "Venc. R32-11",
-    "awayTeamId": "Venc. R32-12",
+    "homeTeamId": "México",
+    "awayTeamId": "Inglaterra",
     "date": "2026-07-06T00:00:00.000Z",
     "status": "SCHEDULED",
     "phase": "Oitavas de Final",
@@ -3432,8 +3882,8 @@
   },
   {
     "id": "m-R16-3",
-    "homeTeamId": "Venc. R32-5",
-    "awayTeamId": "Venc. R32-6",
+    "homeTeamId": "Portugal",
+    "awayTeamId": "Espanha",
     "date": "2026-07-06T19:00:00.000Z",
     "status": "SCHEDULED",
     "phase": "Oitavas de Final",
@@ -3441,8 +3891,8 @@
   },
   {
     "id": "m-R16-4",
-    "homeTeamId": "Venc. R32-7",
-    "awayTeamId": "Venc. R32-8",
+    "homeTeamId": "Estados Unidos",
+    "awayTeamId": "Bélgica",
     "date": "2026-07-07T00:00:00.000Z",
     "status": "SCHEDULED",
     "phase": "Oitavas de Final",
