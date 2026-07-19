@@ -10,36 +10,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 10
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 10
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 6
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 10
       }
     ]
@@ -55,36 +69,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 2,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 10
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 1,
         "points": 0
       }
     ]
@@ -100,36 +128,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 0
       }
     ]
@@ -145,36 +187,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       }
     ]
@@ -190,36 +246,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 2,
         "points": 5
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 4,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 0
       }
     ]
@@ -235,36 +305,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 10
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 0
       }
     ]
@@ -280,36 +364,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 4,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 0,
+        "awayScore": 1,
         "points": 10
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       }
     ]
@@ -325,31 +423,43 @@
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 1,
         "points": 0
       }
     ]
@@ -365,36 +475,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 5,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 4,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 4,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 4,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 4,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       }
     ]
@@ -410,36 +534,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 2,
         "points": 10
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 2,
         "points": 10
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       }
     ]
@@ -455,36 +593,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 0,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       }
     ]
@@ -500,36 +652,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 4
       }
     ]
@@ -545,36 +711,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 4,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 5,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 4,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 5,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 5,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 0
       }
     ]
@@ -590,36 +770,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 0
       }
     ]
@@ -635,36 +829,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 3,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 1,
         "points": 0
       }
     ]
@@ -680,36 +888,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 2,
         "points": 10
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 0
       }
     ]
@@ -725,36 +947,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 10
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 4,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 10
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 10
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 6
       }
     ]
@@ -770,36 +1006,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 6
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 4,
         "points": 5
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 6
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       }
     ]
@@ -815,36 +1065,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 10
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 10
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 10
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       }
     ]
@@ -860,36 +1124,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 5
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 10
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 5
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 6
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       }
     ]
@@ -905,36 +1183,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 4,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 4,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 0
       }
     ]
@@ -950,36 +1242,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 3,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 6
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       }
     ]
@@ -995,36 +1301,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 0,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 6
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 0,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 6
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 6
       }
     ]
@@ -1040,36 +1360,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 6
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 6
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 5
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 6
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 6
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 6
       }
     ]
@@ -1085,36 +1419,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 10
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 10
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       }
     ]
@@ -1130,36 +1478,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 4
       }
     ]
@@ -1175,36 +1537,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       }
     ]
@@ -1220,36 +1596,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 6
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 6
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 6
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       }
     ]
@@ -1265,36 +1655,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 6
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 10
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       }
     ]
@@ -1310,36 +1714,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 3,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 6
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       }
     ]
@@ -1355,36 +1773,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 4,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 10
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 4,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 10
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 10
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 10
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 4,
+        "awayScore": 0,
         "points": 4
       }
     ]
@@ -1400,31 +1832,43 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 6
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 6
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       }
     ]
@@ -1440,36 +1884,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 2,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       }
     ]
@@ -1485,36 +1943,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 4,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 10
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       }
     ]
@@ -1530,36 +2002,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 0
       }
     ]
@@ -1575,36 +2061,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 3,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 3,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 3,
         "points": 4
       }
     ]
@@ -1620,36 +2120,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 4,
+        "awayScore": 0,
         "points": 10
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       }
     ]
@@ -1665,36 +2179,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 0
       }
     ]
@@ -1710,36 +2238,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 0
       }
     ]
@@ -1755,36 +2297,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 6
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 6
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 4
       }
     ]
@@ -1800,36 +2356,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 6
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 10
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 6
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       }
     ]
@@ -1845,36 +2415,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 5,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 4,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 4,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 4,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 4,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 10
       }
     ]
@@ -1890,36 +2474,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 3,
+        "awayScore": 2,
         "points": 10
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 6
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 3,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 6
       }
     ]
@@ -1935,36 +2533,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 0,
+        "awayScore": 1,
         "points": 6
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 10
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 10
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 0,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 10
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 10
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 10
       }
     ]
@@ -1980,36 +2592,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 4,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 4,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       }
     ]
@@ -2025,36 +2651,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 4,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 4,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       }
     ]
@@ -2070,36 +2710,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 0,
+        "awayScore": 1,
         "points": 10
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       }
     ]
@@ -2115,36 +2769,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 6
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 6
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 6
       }
     ]
@@ -2160,36 +2828,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 10
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       }
     ]
@@ -2205,36 +2887,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 6
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 6
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 6
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 6
       }
     ]
@@ -2250,36 +2946,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 3,
         "points": 5
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 10
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 3,
         "points": 5
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 10
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       }
     ]
@@ -2295,36 +3005,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 4,
+        "awayScore": 0,
         "points": 5
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 6
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 4,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 6
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 4,
+        "awayScore": 0,
         "points": 5
       }
     ]
@@ -2340,36 +3064,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 4
       }
     ]
@@ -2385,36 +3123,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       }
     ]
@@ -2430,36 +3182,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 3,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 0
       }
     ]
@@ -2475,36 +3241,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 0,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 10
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 5
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 5
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 4,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 10
       }
     ]
@@ -2520,36 +3300,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 5
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 3,
         "points": 10
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 5
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 6
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 0,
+        "awayScore": 4,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 5
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 5
       }
     ]
@@ -2565,36 +3359,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 2,
+        "awayScore": 2,
         "points": 5
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 2,
         "points": 5
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 2,
         "points": 5
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 2,
         "points": 5
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       }
     ]
@@ -2610,36 +3418,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       }
     ]
@@ -2655,36 +3477,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 0,
+        "awayScore": 0,
         "points": 10
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 5
       }
     ]
@@ -2700,36 +3536,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 3,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 3,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       }
     ]
@@ -2745,36 +3595,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       }
     ]
@@ -2790,36 +3654,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 3,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 6
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 6
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 6
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 3,
         "points": 4
       }
     ]
@@ -2835,36 +3713,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       }
     ]
@@ -2880,36 +3772,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 0,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 3,
         "points": 4
       }
     ]
@@ -2925,36 +3831,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 0,
+        "awayScore": 0,
         "points": 5
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 10
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 10
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       }
     ]
@@ -2970,36 +3890,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 3,
         "points": 6
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 0,
+        "awayScore": 4,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 4
       }
     ]
@@ -3015,36 +3949,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 0,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 10
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 4
       }
     ]
@@ -3060,36 +4008,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       }
     ]
@@ -3105,36 +4067,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 6
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 6
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 4
       }
     ]
@@ -3150,36 +4126,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 5
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 5
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 5
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 3,
         "points": 10
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 5
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 5
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 3,
         "points": 5
       }
     ]
@@ -3195,36 +4185,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 2,
         "points": 5
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 5
       }
     ]
@@ -3240,21 +4244,29 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 0,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 3,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 6
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 4
       }
     ]
@@ -3270,36 +4282,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 3,
+        "awayScore": 2,
         "points": 6
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 5
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 5
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 5
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 5
       }
     ]
@@ -3315,36 +4341,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 0
       }
     ]
@@ -3360,36 +4400,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 10
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 2,
         "points": 5
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       }
     ]
@@ -3405,36 +4459,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 2,
         "points": 5
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 10
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 0
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 3,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 1,
         "points": 6
       }
     ]
@@ -3450,36 +4518,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 10
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 10
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 10
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 5
       }
     ]
@@ -3495,36 +4577,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 5
       }
     ]
@@ -3540,36 +4636,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 5
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 5
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 5
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 5
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 5
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 4
       }
     ]
@@ -3585,36 +4695,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 6
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       }
     ]
@@ -3630,36 +4754,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 10
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 6
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 10
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 10
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 10
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 4
       }
     ]
@@ -3675,36 +4813,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 3,
+        "awayScore": 0,
         "points": 10
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 3,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 4
       }
     ]
@@ -3720,36 +4872,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 0,
         "points": 5
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 10
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 10
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 10
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 10
       }
     ]
@@ -3765,36 +4931,50 @@
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 4
       },
       {
         "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
         "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
       },
       {
         "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
         "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 2,
         "points": 0
       },
       {
         "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
         "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
         "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
         "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 1,
         "points": 5
       },
       {
         "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
         "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 0,
         "points": 4
       }
     ]
@@ -3804,12 +4984,56 @@
     "homeTeamId": "Austrália",
     "awayTeamId": "Egito",
     "date": "2026-07-03T18:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "16-avos de Final",
     "points": [
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 1,
+        "awayScore": 1,
+        "points": 10
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 0,
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 1,
+        "points": 10
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 1,
         "points": 0
       }
     ]
@@ -3819,13 +5043,57 @@
     "homeTeamId": "Argentina",
     "awayTeamId": "Cabo Verde",
     "date": "2026-07-03T22:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "16-avos de Final",
     "points": [
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
-        "points": 0
+        "homeScore": 2,
+        "awayScore": 0,
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 0,
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 0,
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "homeScore": 3,
+        "awayScore": 1,
+        "points": 5
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "homeScore": 3,
+        "awayScore": 0,
+        "points": 5
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "homeScore": 3,
+        "awayScore": 0,
+        "points": 5
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "homeScore": 3,
+        "awayScore": 0,
+        "points": 5
       }
     ]
   },
@@ -3834,13 +5102,57 @@
     "homeTeamId": "Colômbia",
     "awayTeamId": "Gana",
     "date": "2026-07-04T01:30:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "16-avos de Final",
     "points": [
       {
         "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
         "userName": "João",
+        "homeScore": 3,
+        "awayScore": 2,
+        "points": 6
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 1,
         "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 6
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 6
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 6
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 0,
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 6
       }
     ]
   },
@@ -3849,143 +5161,922 @@
     "homeTeamId": "Canadá",
     "awayTeamId": "Marrocos",
     "date": "2026-07-04T17:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "Oitavas de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "homeScore": 1,
+        "awayScore": 3,
+        "points": 5
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 3,
+        "points": 10
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 1,
+        "points": 4
+      }
+    ]
   },
   {
     "id": "m-R16-1",
     "homeTeamId": "Paraguai",
     "awayTeamId": "França",
     "date": "2026-07-04T21:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "Oitavas de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "homeScore": 0,
+        "awayScore": 3,
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 3,
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "homeScore": 0,
+        "awayScore": 2,
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "homeScore": 0,
+        "awayScore": 2,
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "homeScore": 0,
+        "awayScore": 2,
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "homeScore": 0,
+        "awayScore": 3,
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 3,
+        "points": 4
+      }
+    ]
   },
   {
     "id": "m-R16-5",
     "homeTeamId": "Brasil",
     "awayTeamId": "Noruega",
     "date": "2026-07-05T20:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "Oitavas de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "homeScore": 2,
+        "awayScore": 2,
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "homeScore": 3,
+        "awayScore": 0,
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "homeScore": 3,
+        "awayScore": 1,
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 0,
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 0
+      }
+    ]
   },
   {
     "id": "m-R16-6",
     "homeTeamId": "México",
     "awayTeamId": "Inglaterra",
     "date": "2026-07-06T00:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "Oitavas de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 6
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 6
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 1,
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 6
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 6
+      }
+    ]
   },
   {
     "id": "m-R16-3",
     "homeTeamId": "Portugal",
     "awayTeamId": "Espanha",
     "date": "2026-07-06T19:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "Oitavas de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "homeScore": 0,
+        "awayScore": 2,
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 3,
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 6
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 6
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 2,
+        "points": 4
+      }
+    ]
   },
   {
     "id": "m-R16-4",
     "homeTeamId": "Estados Unidos",
     "awayTeamId": "Bélgica",
     "date": "2026-07-07T00:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "Oitavas de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "homeScore": 1,
+        "awayScore": 1,
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 2,
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 2,
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 1,
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 1,
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 1,
+        "points": 4
+      }
+    ]
   },
   {
     "id": "m-R16-7",
-    "homeTeamId": "Venc. R32-13",
-    "awayTeamId": "Venc. R32-14",
+    "homeTeamId": "Argentina",
+    "awayTeamId": "Egito",
     "date": "2026-07-07T16:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "Oitavas de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "homeScore": 2,
+        "awayScore": 0,
+        "points": 4
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "homeScore": 3,
+        "awayScore": 0,
+        "points": 5
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 0,
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 6
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "homeScore": 3,
+        "awayScore": 1,
+        "points": 5
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "homeScore": 3,
+        "awayScore": 0,
+        "points": 5
+      }
+    ]
   },
   {
     "id": "m-R16-8",
-    "homeTeamId": "Venc. R32-15",
-    "awayTeamId": "Venc. R32-16",
+    "homeTeamId": "Suíça",
+    "awayTeamId": "Colômbia",
     "date": "2026-07-07T20:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "Oitavas de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "homeScore": 0,
+        "awayScore": 2,
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "homeScore": 0,
+        "awayScore": 2,
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 1,
+        "points": 5
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 0
+      }
+    ]
   },
   {
     "id": "m-QF-1",
-    "homeTeamId": "Venc. R16-1",
-    "awayTeamId": "Venc. R16-2",
+    "homeTeamId": "França",
+    "awayTeamId": "Marrocos",
     "date": "2026-07-09T20:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "Quartas de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "homeScore": 3,
+        "awayScore": 1,
+        "points": 6
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 0,
+        "points": 10
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "homeScore": 3,
+        "awayScore": 1,
+        "points": 6
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 5
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 0,
+        "points": 10
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "homeScore": 3,
+        "awayScore": 1,
+        "points": 6
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 0,
+        "points": 10
+      }
+    ]
   },
   {
     "id": "m-QF-2",
-    "homeTeamId": "Venc. R16-3",
-    "awayTeamId": "Venc. R16-4",
+    "homeTeamId": "Espanha",
+    "awayTeamId": "Bélgica",
     "date": "2026-07-10T19:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "Quartas de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "homeScore": 1,
+        "awayScore": 0,
+        "points": 6
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 0,
+        "points": 5
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 0,
+        "points": 5
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 10
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 10
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 10
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 0,
+        "points": 5
+      }
+    ]
   },
   {
     "id": "m-QF-3",
-    "homeTeamId": "Venc. R16-5",
-    "awayTeamId": "Venc. R16-6",
+    "homeTeamId": "Noruega",
+    "awayTeamId": "Inglaterra",
     "date": "2026-07-11T21:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "Quartas de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "homeScore": 2,
+        "awayScore": 2,
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "homeScore": 1,
+        "awayScore": 3,
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 10
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 10
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 10
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "homeScore": 0,
+        "awayScore": 1,
+        "points": 6
+      }
+    ]
   },
   {
     "id": "m-QF-4",
-    "homeTeamId": "Venc. R16-7",
-    "awayTeamId": "Venc. R16-8",
+    "homeTeamId": "Argentina",
+    "awayTeamId": "Suíça",
     "date": "2026-07-12T01:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "Quartas de Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "homeScore": 2,
+        "awayScore": 0,
+        "points": 6
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 0,
+        "points": 6
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "homeScore": 1,
+        "awayScore": 0,
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 1,
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 4
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 0,
+        "points": 6
+      }
+    ]
   },
   {
     "id": "m-SF-1",
-    "homeTeamId": "Venc. QF-1",
-    "awayTeamId": "Venc. QF-2",
+    "homeTeamId": "França",
+    "awayTeamId": "Espanha",
     "date": "2026-07-14T19:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "Semifinal",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "homeScore": 3,
+        "awayScore": 2,
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "homeScore": 3,
+        "awayScore": 0,
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 3,
+        "points": 4
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 0
+      }
+    ]
   },
   {
     "id": "m-SF-2",
-    "homeTeamId": "Venc. QF-3",
-    "awayTeamId": "Venc. QF-4",
+    "homeTeamId": "Inglaterra",
+    "awayTeamId": "Argentina",
     "date": "2026-07-15T19:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "Semifinal",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "homeScore": 3,
+        "awayScore": 2,
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "homeScore": 2,
+        "awayScore": 0,
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 2,
+        "points": 0
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "homeScore": 1,
+        "awayScore": 0,
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 0
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 0
+      }
+    ]
   },
   {
     "id": "m-3RD",
-    "homeTeamId": "Perd. SF-1",
-    "awayTeamId": "Perd. SF-2",
+    "homeTeamId": "França",
+    "awayTeamId": "Inglaterra",
     "date": "2026-07-18T21:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "homeScore": 3,
+        "awayScore": 0,
+        "points": 0
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 0,
+        "points": 0
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 4
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 0
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 0
+      }
+    ]
   },
   {
     "id": "m-FINAL",
-    "homeTeamId": "Venc. SF-1",
-    "awayTeamId": "Venc. SF-2",
+    "homeTeamId": "Espanha",
+    "awayTeamId": "Argentina",
     "date": "2026-07-19T19:00:00.000Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "phase": "Final",
-    "points": []
+    "points": [
+      {
+        "userId": "4b9bbbf7-c443-425f-a758-931013c18a31",
+        "userName": "João",
+        "homeScore": 1,
+        "awayScore": 1,
+        "points": 0
+      },
+      {
+        "userId": "b8d8e06a-8b7d-4ebc-ab87-1f5f499c5242",
+        "userName": "Marcilio",
+        "homeScore": 3,
+        "awayScore": 0,
+        "points": 4
+      },
+      {
+        "userId": "a0b2fdf3-8d3c-401a-b536-354abd12975b",
+        "userName": "Pão",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 6
+      },
+      {
+        "userId": "db3cdb58-d073-42b0-a8a2-596c5e9e2f43",
+        "userName": "Lucas",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 6
+      },
+      {
+        "userId": "5f33fd2b-dfd4-4b86-9e08-e6bd3599e32a",
+        "userName": "Bruno",
+        "homeScore": 2,
+        "awayScore": 0,
+        "points": 4
+      },
+      {
+        "userId": "ca90ec69-d54a-4d85-a8e9-d0ed7f18df5a",
+        "userName": "Carlos",
+        "homeScore": 2,
+        "awayScore": 1,
+        "points": 6
+      },
+      {
+        "userId": "c23c4ea8-0660-4588-b60d-3c6d152e6199",
+        "userName": "Alex",
+        "homeScore": 1,
+        "awayScore": 2,
+        "points": 0
+      }
+    ]
   }
 ]

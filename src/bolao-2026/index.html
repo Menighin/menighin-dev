@@ -248,6 +248,127 @@
         .bar:hover {
             opacity: 0.8;
         }
+
+        /* Table Styles */
+        .awards-section {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            margin-top: 1rem;
+            overflow-x: auto;
+        }
+
+        .awards-section h2 {
+            margin: 0 0 1.5rem 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            min-width: 600px;
+        }
+
+        th, td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #f1f5f9;
+            color: #334155;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        td.winner {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .info-btn {
+            background: none;
+            border: none;
+            color: #64748b;
+            cursor: pointer;
+            padding: 0 0 0 0.5rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            vertical-align: middle;
+        }
+
+        .info-btn:hover {
+            color: var(--primary-color);
+            background: none;
+        }
+
+        .info-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Popover Styles */
+        .info-popover {
+            padding: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: var(--card-bg);
+            color: var(--text-color);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            font-family: var(--font-family);
+            font-size: 0.9rem;
+            max-width: 250px;
+            line-height: 1.5;
+            margin: auto;
+            
+            /* Native popover animation */
+            opacity: 0;
+            transform: translateY(10px);
+            transition-property: opacity, transform, display, overlay;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-out;
+            transition-behavior: allow-discrete;
+        }
+
+        .info-popover:popover-open,
+        .info-popover.\:popover-open {
+            opacity: 1;
+            transform: translateY(0);
+
+            @starting-style {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+        }
+        
+        .info-popover::backdrop {
+            background: rgba(0, 0, 0, 0.2);
+            transition:
+                display 0.3s allow-discrete,
+                overlay 0.3s allow-discrete,
+                background-color 0.3s ease-out;
+        }
+
+        .info-popover:popover-open::backdrop,
+        .info-popover.\:popover-open::backdrop {
+            background-color: rgba(0, 0, 0, 0.4);
+
+            @starting-style {
+                background-color: rgba(0, 0, 0, 0);
+            }
+        }
     </style>
 </head>
 
@@ -270,6 +391,170 @@
             <div class="game-info" id="game-info">Carregando dados...</div>
 
             <div class="chart-container" id="chart-container"></div>
+        </div>
+
+        <div class="awards-section">
+            <h2>Premiações do Bolão</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Ganhador</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Campeão
+                            <button class="info-btn" popovertarget="popover-campeao" aria-label="Informação">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" /></svg>
+                            </button>
+                            <div id="popover-campeao" class="info-popover" popover>Ganhador do torneio</div>
+                        </td>
+                        <td class="winner">Bruno (364 pontos)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Lanterna
+                            <button class="info-btn" popovertarget="popover-lanterna" aria-label="Informação">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" /></svg>
+                            </button>
+                            <div id="popover-lanterna" class="info-popover" popover>Perdedor do torneio</div>
+                        </td>
+                        <td class="winner">Alex (333 pontos)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Guaicurus
+                            <button class="info-btn" popovertarget="popover-guaicurus" aria-label="Informação">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" /></svg>
+                            </button>
+                            <div id="popover-guaicurus" class="info-popover" popover>Quem mais subiu e desceu no torneio</div>
+                        </td>
+                        <td class="winner">Lucas (49 posições movimentadas)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Casado Fiel
+                            <button class="info-btn" popovertarget="popover-casadofiel" aria-label="Informação">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" /></svg>
+                            </button>
+                            <div id="popover-casadofiel" class="info-popover" popover>Quem menos mudou de posicao durante o torneio</div>
+                        </td>
+                        <td class="winner">Carlos (19 posições movimentadas)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Rubinho
+                            <button class="info-btn" popovertarget="popover-rubinho" aria-label="Informação">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" /></svg>
+                            </button>
+                            <div id="popover-rubinho" class="info-popover" popover>Quem ficou mais tempo seguido sem pontuar</div>
+                        </td>
+                        <td class="winner">Carlos, Lucas e Marcilio (5 jogos seguidos sem pontuar)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Mestre
+                            <button class="info-btn" popovertarget="popover-mestre" aria-label="Informação">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" /></svg>
+                            </button>
+                            <div id="popover-mestre" class="info-popover" popover>Quem mais pontuou sozinho quandos os outros todos erraram (quantidade de jogos)</div>
+                        </td>
+                        <td class="winner">Bruno e Lucas (3 jogos)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Burro
+                            <button class="info-btn" popovertarget="popover-burro" aria-label="Informação">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" /></svg>
+                            </button>
+                            <div id="popover-burro" class="info-popover" popover>Quem mais ficou sem pontuar quando os outros todos pontuaram (quantidade de jogos)</div>
+                        </td>
+                        <td class="winner">Lucas (7 jogos)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Melhor que o Ancelotti
+                            <button class="info-btn" popovertarget="popover-ancelotti" aria-label="Informação">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" /></svg>
+                            </button>
+                            <div id="popover-ancelotti" class="info-popover" popover>Quem mais pontuou em jogos do brasil (quantidade de pontos)</div>
+                        </td>
+                        <td class="winner">João e Marcilio (25 pontos)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Infantino
+                            <button class="info-btn" popovertarget="popover-infantino" aria-label="Informação">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" /></svg>
+                            </button>
+                            <div id="popover-infantino" class="info-popover" popover>Quem mais pontuou em jogos da Argentina (pontos)</div>
+                        </td>
+                        <td class="winner">Carlos (39 pontos)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Cavalo Paraguaio
+                            <button class="info-btn" popovertarget="popover-cavalo" aria-label="Informação">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" /></svg>
+                            </button>
+                            <div id="popover-cavalo" class="info-popover" popover>Quem mais liderou o ranking e não foi campeao (jogos)</div>
+                        </td>
+                        <td class="winner">João e Marcilio (39 rodadas na liderança)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Leão da Fase de grupos
+                            <button class="info-btn" popovertarget="popover-leao" aria-label="Informação">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" /></svg>
+                            </button>
+                            <div id="popover-leao" class="info-popover" popover>Quem mais pontuou na fase de grupos (pontos)</div>
+                        </td>
+                        <td class="winner">João (246 pontos)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Vasco
+                            <button class="info-btn" popovertarget="popover-vasco" aria-label="Informação">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" /></svg>
+                            </button>
+                            <div id="popover-vasco" class="info-popover" popover>Quem mais ficou na zona de rebaixamento (3 ultimos) e não terminou em ultimo (jogos)</div>
+                        </td>
+                        <td class="winner">Carlos (91 rodadas na zona de rebaixamento)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Diferentão
+                            <button class="info-btn" popovertarget="popover-diferentao" aria-label="Informação">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" /></svg>
+                            </button>
+                            <div id="popover-diferentao" class="info-popover" popover>Quem mais apostou placares unicos, independente de acertar (jogos)</div>
+                        </td>
+                        <td class="winner">Lucas (43 jogos)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Vai com as outras
+                            <button class="info-btn" popovertarget="popover-maria" aria-label="Informação">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" /></svg>
+                            </button>
+                            <div id="popover-maria" class="info-popover" popover>Quem mais apostou um placar igual a outros participantes, independente de acertar (jogos)</div>
+                        </td>
+                        <td class="winner">Carlos (82 jogos)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            "Conseguimos os 3 pontos"
+                            <button class="info-btn" popovertarget="popover-3pontos" aria-label="Informação">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" /></svg>
+                            </button>
+                            <div id="popover-3pontos" class="info-popover" popover>Quem mais pontuou em algum jogo</div>
+                        </td>
+                        <td class="winner">Pão e Alex (66 jogos pontuando)</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
@@ -298,6 +583,15 @@
             </div>
         </div>
     </div>
+
+    <!-- Popover Polyfill for Legacy Browser Support -->
+    <script type="module">
+        if (!('popover' in HTMLElement.prototype)) {
+            import('https://unpkg.com/@oddbird/popover-polyfill@latest/dist/popover-fn.js').then(({ apply }) => {
+                apply();
+            });
+        }
+    </script>
 
     <!-- D3.js -->
     <script src="https://d3js.org/d3.v7.min.js"></script>

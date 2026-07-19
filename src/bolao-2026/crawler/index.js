@@ -84,6 +84,8 @@ for (const user of users) {
         match.points.push({
             userId: user.id,
             userName: user.name,
+            homeScore: prediction.home_score,
+            awayScore: prediction.away_score,
             points: prediction.points,
         });
     });
